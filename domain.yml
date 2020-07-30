@@ -33,6 +33,25 @@ intents:
 - emergency_patient
 - protocol_selection
 - scan_setup_screen
+scan_patient_position
+scan_parameters
+scan_dosage_info
+patient_schedule
+retro_recon
+recon_management
+setting_imageworks
+multitask_bar
+ui_conv
+select_items
+cancel
+buttons
+textfield_invalid
+air_caliberations
+scan_aborts
+wrong_screen
+no_response
+lowdisk_space
+harddrive_failure
 - regulation_information
 - system_uses
 - Dose_Check
@@ -242,10 +261,122 @@ Area 2 = protocol selection area. Protocols are set and edited in Protocol Manag
     - image: (pg 16)
     - text: "The Scan Setup screen displays when an exam is in process. It is divided into multiple areas: "
     - buttons:
+      - payload: Patient Position and Series Level Functions area 
+        title: Patient Position and Series Level Functions area 
       - payload: ViewEdit Area
         title: ViewEdit Area
       - payload: Displays multiple types of content 
         title: Displays multiple types of content 
+
+  utter_scan_patient_position:
+    - text: "The buttons that display in the Series Level Functions area may vary depending on your system configurations and purchased options."
+
+
+  utter_scan_parameters:
+    - text: "This is the area in which you adjust scan parameters. It also displays real-time scan progress information. 
+ViewEditconventions:  You can edit the fields by row or column. If you edit by column, then the changes will apply to all rows. If you edit by row, any changes only apply to the selected row. 
+
+"
+
+  utter_scan_dosage_info:
+    - text: "Typically, dose information is displayed in this area. It may also display Real-Time information when the active application requires it
+"
+
+  utter_patient_schedule:
+    - text: "Click the Patient Schedule icon to enable the Schedule screen. Here, you can update and select the patients by clicking the appropriate buttons
+Retro Scan
+"
+
+  utter_retro_recon:
+    - text: "Click Retro Recon to open the Retro Recon List Select screen. Select the desired exam and series, then click Select Series to open Retro Recon. Retro ViewEdit conventions. 
+
+ You can edit the fields by row or column. If you edit by column, then the changes will apply to all rows. If you edit by row, the change only applies to the selected row.
+"
+
+  utter_recon_management:
+    - image: (pg 19)
+    - text: "Click ReconStatus to display the Recon Management screen(1), some options will open the second area (2)."
+
+  utter_setting_imageworks:
+    - image: (pg 20)
+    - text: "
+Click Image Works to open the browser. Select exam/series/images from the patient list (2) and select an application from the browser list of applications (1).
+"
+
+  utter_multitask_bar:
+    - text: "Click the Film icon to enter film."
+    - image: (pg 21)
+
+  utter_ui_conv:
+    - text: "Please select any one of the following to know its conventions"
+    - button:
+      - payload: Select items from a list
+        title: Select items from a list
+      - payload: cancel
+        title: cancel
+      - payload: buttons
+        title: buttons
+  utter_select_items:
+    - text: "Single item: Click the item. 
+Multiple contiguous items: Click and drag over to cover a desired list of items. Click a start point in the list, press Shift, click an end point in the list, and all items between start and end are selected. 
+Multiple Non-contiguous: items Press Ctrl and simultaneously click each item."
+
+  utter_cancel:
+    - text: "The Cancel button closes a screen without executing the actions or implementing the parameters given on the screen.
+"
+
+  utter_buttons:
+    - image: (pg 22,23)
+    - text: "Buttons that are gray are currently not available
+Buttons that are selected are yellow
+Buttons that are sensitive and invalid are red. 
+Buttons that are sensitive and the value appearing in the button is updated by the system are orange. 
+"
+  utter_troubleshoot:
+    - buttons:
+      - payload: invalid text field
+        title: invalid text field
+      - payload: air caliberations
+        title: air caliberations
+      - payload: scan abort
+        title: scan abort
+      - payload: wrong screen
+        title: wrong screen
+      - payload: no response
+        title: no response
+      - payload: lowdisk space
+        title: low disk space
+      - payload: hard drive failure
+        title: hard drive failure
+
+
+  utter_textfield_invalid:
+    - text: "If you can no longer type in a field, move the cursor to the field and click the middle mouse to restore functionality. If this does not work, then a system shutdown is required.
+"
+
+  utter_air_caliberations:
+    - text: "Complete all Fast Cal sections. This will ensure the validity of system air calibrations and generator calibrations
+"
+
+  utter_scan_aborts:
+    - text: "Scan aborts may occur during Axial or Helical scanning. Always be aware of the scan progress during an Exam, in the event it stops, select Resume immediately to continue
+"
+
+  utter_wrong_screen:
+    - text: "In general, wait for a screen transition to complete before making another selection. Switching desktops before the user interface is displayed can result in the wrong screen displayed on the desktop."
+
+
+  utter_no_response:
+    - text: "If the console has no response after 2 minutes or longer, please click Shutdown to restart the system. If you cannot select Shutdown, turn off the console power switch, wait 10 seconds, then turn the console power switch back on. The system should come up normally."
+
+
+  utter_lowdisk_space:
+    - text: "A pink warning dialog may appear indicating the system has low disk space due to a full system disk partition. Removing images does not resolve the problem. Contact your service representative to help resolve the problem. If a message to run store log appears, select the option to remove the logs.
+"
+
+  utter_harddrive_failure:
+    - text: "If you see the following message, please contact your service provider: Attention – Scan disk array has encountered a hard drive failure The system is functional, but if another hard drive fails you will lose scan data. Please contact GE service to have the disk array repaired as soon as possible.
+"
 
   utter_Configure_the_system_for_protocol_change_control:
   - image: http://localhost:7000/img/config_system_for_protocol_change.png
@@ -328,58 +459,223 @@ Area 2 = protocol selection area. Protocols are set and edited in Protocol Manag
       \ mGy  The value must be lower than the Adult AV value. 5. Click save "
 
   utter_Building_protocols_using_protocol_change_control:
-    - text: ""
+    - image: (pg 70)
+    - text: "When PCC is enabled the system will require an authorized user to accept protocol parameter updates. Perform the Following steps.
+
+1. Click DoseCheck Management From Protocol Management. 
+2. Click LogonName.
+3. Type the user name.
+4. ClickPassword.
+5. Type the User password.
+6. Click Logon.
+
+9. Authorized user for building protocols using protocol change control 
+
+HIPAA is enabled and the currently logged in user has Standard User Role. 
+If HIPAA is not enabled, when Protocol Management is selected the user will be presented with a authorization screen
+"
 
   utter_Building_protocols_with_notification_values:
-    - text: ""
+    - image: (pg 72)
+    - text: "NV values can only be set in Protocol Management. 
+1. From the scan monitor, click the Protocol Management Icon. 
+2. On the Auto Voice and Protocol Management screen, click Protocol Management. 
+3. On the Protocol Selection screen, click User. 
+4. On the User tab click an Anatomical area. 
+5. In the Anatomical Area click on a protocol.
+6. Click Next Series to go to the first non-scout series in the protocol. 
+7. From the Dose Information area click Set Up.
+8. Type the desired CTDIvol or DLP NV value by group.  
+Only one CTDIvol or DLP value can be set for SmartPrep scan groups.
+ 9. Click Info to return to the Dose Information display. 
+10. Click Accept to save the protocol parameters.
+ The system compares all the CTDIvol and DLP values in the scan groups to the entered NV value. 
+The protocol parameters will not be accepted until the NV value is no longer exceeded or the user has entered a Diagnostic Reason for continuing to accept the scan parameters exceeding the NV Value
+Saving a protocol with a dose level exceeding an NV value demands a high degree of consideration for appropriateness. Therefore, in most cases, you will click Cancel to go back to adjust parameters. However, if there is a true clinical reason to save a protocol exceeding an NV value, then enter a diagnostic reason. 
+
+11. Click in theDiagnostic Reason text field. 
+12. Type the reason for scanning exceeding the NV value.  
+The maximum number of characters is 64.  
+Once the maximum number of characters is reached the system will not accept any additional character input.
+13. Click Confirm to accept the protocol scan parameters
+"
 
   utter_Building_protocols_with_notification_values_by_factor:
-    - text: ""
+    - image: (pg 73)
+    - text: "If the NV value in a scan group were 5 and a factor of 1.5 was entered, the new NV value for the group would be 7.5
+
+Can by entered in increments of 0.1
+Must be greater than 0  
+Maximum value of 10
+
+1. From the scan monitor, click the Protocol Management Icon. 
+2. On the Auto Voice and Protocol Management screen, click Protocol Management.
+3. On the Protocol Selection screen, click User. 
+4. On the User tab click an Anatomical area. 
+5. In the Anatomical Area click on a protocol. 
+6. Click Next Series to go to the first non-scout series in the protocol. 
+7. From the Dose Information area click Set Up
+8. Click NV column edit. 
+9. Type the desired factor. 
+10. Click Accept. 
+11. Click Info to return to the Dose Information display"
 
   utter_Scan_using_alert_value_checking:
-    - text: ""
+    - text: "
+The CTDIvol or DLP value will be highlighted when the estimated dose for the protocol exceeds the AV value set for the system.
+"
+    - image: (74)
+    - text: "Adjust the scan parameters for the series in which the AV value is exceeded to adjust the dose below the prescribed AV value. If the AV value is still exceeded when Confirm is selected a confirmation pop up will be posted. The scan cannot be confirmed until the AV value is no longer exceeded or a user with a Dose Check AV Exceeding user role has authorized the scan. 
 
+Performing a scan exceeding an AV value demands a high degree of consideration for appropriateness. Therefore, in most cases, you will click cancel to go back to adjust parameters. However, if there is a true diagnostic need to perform a scan exceeding an AV value.
+"
+    - image: (74)
+    - text: "
+1. Click in the Logon Name text field. 
+2. Type the UserName. 
+3. Click in the Password text field. 
+4. Type the user password. 
+5. Click in the Diagnostic Reason text field. 
+6. Type the reason for scanning exceeding the AV value. 
+ The maximum number of characters is 64.  
+ Once the maximum number of characters is reached the system will not accept any additional character input. 
+7. Click Confirm to proceed to scanning.
+"
   utter_Scan_using_Notification_Value_nv_checking:
-    - text: ""
+    - image: (pg 76)
+    - text: "The CTDIvol or DLP value will be highlighted when the estimated dose for a scan group exceeds the NV value set for each scan group
+
+Adjust the scan parameters for the scan group in which the NV value is exceeded to adjust the dose below the prescribed NV value. If the NV value is still exceeded when Confirm is selected a confirmation pop up will be posted. The scan cannot be confirmed until the NV value is no longer exceeded or the user has entered a Diagnostic Reason for continuing the scan exceeding the NV Value
+
+1. Click in the Diagnostic Reason text field. 
+2. Type the reason for scanning exceeding the NV value.  
+The maximum number of characters is 64.  
+Once the maximum number of characters is reached the system will not accept any additional character input. 
+3. Click Confirm to proceed to scanning.
+
+"
 
   utter_Using_the_dose_audit_tool:
-    - text: ""
+    - text: "a. Dose Check Log detailing exams which exceeded NV or AV values 
+b. Protocol Summary for protocolNV values
+c. Export to save Dose Check Log data to media
+"
 
   utter_Dose_Check_Log:
-    - text: ""
+    - text: "1. On the Auto Voice, Protocol Management and Dose Check Management screen, click Dose Check Management. 
+2. On the Dose Check Management screen, click Log List.
+3. From the Dose Audit Tool, click Audit Tool. 
+4. On the Log List click on the desired log. 
+If the log data approaches the maximum size, the system will post a message directing the user to export the log data.
+"
 
   utter_Protocol_Summary:
-    - text: ""
+    - image: (pg 77)
+    - text: "1. Click DoseCheck Management from Protocol Management. 
+2. On the Dose Check Management screen, click Audit Tool. 
+3. In the Protocol Summary area, click All Protocols or Invalid Protocols.
+"
 
   utter_save_Dose_Check_Log:
-    - text: ""
+    - text: "1. Click DoseCheck Management From Protocol Management. 
+2. Insert CD –R media in the DVD RW drive or insert USB media in the USB port of the media tower. 
+3. On the Dose Check Management screen, click Audit Tool. 
+4. On the Dose Audit Tool, click Export. 
+5. On the Export Media screen, click media type CD/DVD or USB. 
+6. Onthe Export Contents, click 1 or more of the following: DoseCheck Log, Protocol Summary or User Protocols  
+If Protocol Summary is selected click All Protocols or Invalid Protocols. 
+7. On the Export screen, click OK.
+
+"
 
   utter_Radiation_exposure_sensitivity:
-    - text: ""
+    - text: "Radiation risk is higher in young patients, as they have more rapidly dividing cells than adults. The younger the patient, the more sensitive they are CT settings can be adjusted to reduce dose significantly while maintaining diagnostic image quality.
+"
 
   utter_Dose_reporting_considerations:
-    - text: ""
+    - text: "it is important to recognize that the dose reported by these indices is inversely proportional to phantom size This means that for the same scan technique, smaller phantoms (patients) will produce a higher absorbed dose than larger phantoms(patients). Therefore, it is critical to remember that the body filter uses the 32cmCTDI 1 phantom and the head filter uses the16 cm CTDI phantom for dose reporting purposes (CTDIvol is displayed in the Dose Information area on the ViewEdit screen). The table below indicates the phantom size used for calculating dose for each SFOV2"
 
   utter_Minimize_pediatric_and_small_patient_doses:
-    - text: ""
+    - text: "There are several steps that can be taken to reduce the amount of radiation that pediatrics and small patients receive from CT examinations.
+
+Perform only necessary CT examinations 
+Scan only the organ or anatomical region indicated
+Minimize multi-phase contrast CT examinations
+Properly center all patients in the gantry
+Lower mA settings for chest and bone imaging 
+Scan signal-to-noise
+Use pediatric positioning accessories
+Make a kid friendly environment
+
+"
 
   utter_Pediatric_and_small_patient_scans:
-    - text: ""
+    - text: "Follow the following steps. Select one to know more information on it
+"
+    - button:
+      - payload: Optimize pediatric protocols for your facility 
+        title: Optimize pediatric protocols for your facility 
+      - payload: Follow Pediatric protocols
+        title: Follow Pediatric protocols 
+      - payload: Color Coding for Kids Protocol Selection 
+        title: Color Coding for Kids Protocol Selection 
 
   utter_optimize_pediatric_protocol:
-    - text: ""
+    - text: "Work with your team of radiologists, medical physicists, and CT technologists to evaluate techniques that may reduce radiation dose and still provide adequate diagnostic information. Here are some links to help you out
+
+AmericanCollegeof Radiology (ACR): http://www.acr.org/  
+Society Of PediatricRadiology(SPR):http://www.pedrad.org/  NationalCancerInstitute(NCI):http://www.nci.nih.gov/aboutnci  ImageGently:http://www.imagegently
+"
 
   utter_pediatric_protocols:
-    - text: ""
+    - image: (pg 86)
+    - text: "The Pediatric Protocol area was designed to help facilitate protocol selection for pediatric patients by providing age based protocol areas for Head, Orbit, and Miscellaneous and color coding system forNeck, Upper Extremity, Chest, Abdomen, Spine, and Pelvis based on age, height and weight
+
+By entering the pediatric patient's weight in the Exam Rx screen, the system automatically selects the appropriate color code area for the anatomical area selected. 
+"
 
   utter_Color_Coding_for_Kids_Protocol:
-    - text: ""
+    - image: (pg 88)
+    - text: "Based on the Broselow-Luten Pediatric System,theColorCodingforKids system was developed to help you select the correct pediatric CT protocol by dividing the protocols into nine color zones based on height and weight, and incrementally increases scan technique as the patient’s size increases. 
+
+Once the anatomical area is selected, the Pediatric Protocol Category screen displays
+Selectors on the color/weight bar are labeled with the zone ranges for weight and length, with the word of the selected color and with the weight/color zone number.
+
+NOTE: Weight-specific protocols are enforced for all anatomical areas except Head, Orbit, and Miscellaneous
+"
 
   utter_Set_up_a_pediatric_or_small_patient_exam:
-    - text: ""
+    - text: "The data can also be input by using Patient Schedule or a bar code reader
+
+The / and control characters are not valid for entries on the Exam screen.
+
+1. On the scan monitor, click the Exam Rx icon.
+ The PATIENT INFORMATION screen displays the new Exam Number. 
+ The maximum Exam Number is 49, 999, which is reset by your Field Engineer.
+2. From the PATIENT INFORMATION area, type data into the appropriate fields.
+Press Enter To advance to the next field. Alternatively, use the mouse to navigate to each field.  
+Patient ID is a required field. If the patient does not have an identification number, type? or the word trauma. 
+3. Click PEDIATRIC. 
+4. From the Pediatric Protocol Selection screen, click an anatomical area. 
+ With the patient's weight entered,the system automatically selects the appropriate pediatric color code area for the anatomical area selected.  
+Use the arrows to scroll through the list. 
+Click a protocol from the list to download the scan parameter values.
+5. From The Pediatric Protocol Category screen, select the weight/length category based on the size of your patient or verify the correct Color category has been selected if you entered a weight.  
+The protocols in the selected color code are then displayed accordingly. 	
+The default weight/color selector displays the patient weight entered on the PATIENT INFORMATION screen,or the last weight/color selection (if no patient information was entered).  
+There is no reference protocol for Pediatric areasNeck, Upper Extremity, Chest, Abdomen, Spine, Pelvis, and Lower Extremity.  
+If you enter a patient weight on the Patient Information screen and select a color/weight that is not consistent with the entered information, an error message displays. You must acknowledge that you have chosen a protocol that does NOT match the patient size.
+
+6. Proceed with the Acquire a Scout scan procedure
+"
 
   utter_Adjust_pediatric_and_small_patient_scan_parameters:
-    - text: ""
+    - text: "Adjust the parameters by size, age, weight, height, and indications
+Consider decreasing the kVp
+Center the patient properly when using AutomA 
+Increase the pitch
+Use Small SFOV Filters 
+"
 
 actions:
 - utter_greet

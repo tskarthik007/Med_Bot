@@ -126,7 +126,91 @@
 * scan_setup_screen
   - utter_scan_setup_screen
 
+## scan_patient_position
+* scan_patient_position
+  - utter_scan_patient_position
+
+## scan_parameters
+* scan_parameters
+  - utter_scan_parameters
+
+## scan_dosage_info
+* scan_dosage_info
+  - utter_scan_dosage_info
+
+## patient_schedule
+* patient_schedule
+  - utter_patient_schedule
+
+## retro_recon
+* retro_recon
+  - utter_retro_recon
+
+## recon_management
+* recon_management
+  - utter_recon_management
+
+## setting_imageworks
+* setting_imageworks
+  - utter_setting_imageworks
+
+## multitask_bar
+* multitask_bar
+  - utter_multitask_bar
+
+## ui_conv
+* ui_conv
+  - utter_ui_conv
+
+## select_items
+* select_items
+  - utter_select_items
+
+## cancel
+* cancel
+  - utter_cancel
+
+## buttons
+* buttons
+  - utter_buttons
+
+## troubleshoot
+* troubleshoot
+  - utter_troubleshoot
+  
+## textfield_invalid
+* textfield_invalid
+  - utter_textfield_invalid
+
+## air_caliberations
+* air_caliberations
+  - utter_air_caliberations
+  
+## scan_aborts
+* scan_aborts
+  - utter_scan_aborts
+
+## wrong_screen
+* wrong_screen
+  - utter_wrong_screen
+
+## no_response
+* no_response
+  - utter_no_response
+
+## lowdisk_space
+* lowdisk_space
+  - utter_lowdisk_space
+
+## harddrive_failure
+* harddrive_failure
+  - utter_harddrive_failure
+
 <!-------------------------------------------------------------- CHAPTER 2 -------------------------------------------------------->
+
+
+
+
 
 <!-------------------------------------------------------------- CHAPTER 3 -------------------------------------------------------->
 

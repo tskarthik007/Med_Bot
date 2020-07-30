@@ -248,6 +248,156 @@
 - What are the different functions that the scan setup screen can do?
 - Options in scan setup screen.
 
+## intent:scan_patient_position
+- Patient Position and Series Level Functions area
+- How can I view the position of the patient 
+- I want to view the patient position on the screen.
+- Where can I check the patient position?
+- Position of the patient
+- Where is the series level function?
+
+## intent:scan_parameters
+- How can I adjust the scan parameters?
+- Adjusting scan parameters.
+- know the scan progress information
+- I want to know the scan progress information
+- Where can I find scan progress information?
+- Scan progress
+- View edit area
+
+## intents:scan_dosage_info
+- know the scan dose information
+- I want to know the scan dose information
+- Where can I find scan dose information?
+- Display Real-Time information
+- Dose information
+- Displays multiple types of content
+
+## intent:patient_schedule
+- How to know the schedule?
+- I want to check the patient schedule list.
+- know the scheduled patient list
+- Where can i find the schedule list of the patients?
+- How to view patient schedules?
+- Where to update patient schedules?
+- Where can I select the schedule of the patients 
+
+## intent:retro_recon
+- I want to perform retrospective reconstruction.
+- Where can I find retrospective image reconstruction?
+- How to open Retro Scan
+- How to edit Retro Scan?
+- Where can I access retro scan?
+
+## intent:recon_management
+- Display reconstruction status.
+- I want to know the recon queue management.
+- How to get the reconstruction status of the patients?
+- How to access the recon management status?
+
+## intent:setting_imageworks
+- How can I access the imageworks?
+- how to view the list of patients?
+- how to edit the list of patients?
+- I want to know the details of all the patients.
+
+## intent:multitask_bar
+- What is the use of the film icon?
+- what is the vertical bar on the screen?
+- purpose of the film icon.
+- What is present in the Multitask bar?  
+- How to enter film?
+
+## intent:ui_conv
+- What are the different User Interface Conventions
+- UI conventions options available.
+- What are the different User interaction options?
+
+## intent:select_items
+- Select items from a list
+- How can I select multiple items in the list?
+- I want to select a range of items from the list.
+- selecting continuous items from the list
+- How can I select different items in the list?
+- I want to select multiple items from the list.
+- selecting more than one item from the list
+- How to select items from a list?
+- Different ways of selecting items from a list
+- Conventions in selecting the items in list 
+
+## intent:cancel
+- cancel
+- How to cancel the process?
+- I want to abort an operation.
+- What does the cancel button do?
+
+## intent:buttons
+- buttons
+- Why is my button not working?
+- Why is my button all gray?
+- How do buttons appear?
+- Different button appearances. 
+- Why is my button all red?
+- What is the meaning of the yellow button.
+- Why is my button orange?
+- What is the meaning of the orange button.
+
+## intent:troubleshoot
+- tips for troubleshooting
+- troubleshoot
+- problem
+- need help
+- troubleshoot resolve
+- general trouble
+- i am struck
+- help me
+
+## intent:textfield_invalid
+- Why can’t I type text in the input?
+- My textfield not working
+- I can’t enter in the textfield
+
+## intent:air_caliberations
+- How to ensure the validity of the generator calibrations.
+- I want to ensure the validity of the air calibrations.
+- How to ensure the validity of system air calibrations?
+- Why should I complete all fast cal sections? 
+- Problem with system air calibrations
+- Problem with generator calibrations.
+
+## intent:scan_aborts
+- Scan cancelled during Axial or Helical scanning
+- What to do when a scan is aborted?
+- Why does my scan get aborted?
+- My scan progress stopped in the middle of a scan.
+
+## intent:wrong_screen
+- Wrong displayed during desktop switch
+- I can’t get the intended screen on the desktop
+- Desktop screen error
+
+## intent:no_response
+- My console is not working.
+- I can’t shutdown the console
+- When should I shutdown the system? 
+- No response on the console
+
+## intent:lowdisk_space
+- What does the pink color dialog box indicate?
+- run storelog message appears
+- What is the pink warning? 
+- Low disk space trouble. 
+- What to do if there is low disk space
+- I removed the images and still the pink warning appears.
+
+## intent:harddrive_failure
+- Attention – Scan disk array has encountered a hard drive failure 
+- Loss of scan data
+- Where did my scan data go? I can’t find it anywhere?
+- What to do if the data automatically got deleted?
+- When to call a service provider? 
+- Attention – Scan disk array has encountered a hard drive failure shown on screen
+- Scan disk array error.
 
 
 <!-------------------------------------------------------------- CHAPTER 2 -------------------------------------------------------->
