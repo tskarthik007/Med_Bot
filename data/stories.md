@@ -30,6 +30,106 @@
 * bot_challenge
   - utter_iamabot
 
+## purpose
+* purpose
+  - utter_purpose
+
+## cannot_do
+* cannot_do
+  - utter_cannot_do
+
+## usage
+* usage
+  - utter_usage
+
+## language
+* language
+  - utter_language
+
+## prerequisites
+* prerequisites
+  - utter_prerequisites
+
+## warning_label
+* warning_label
+  - utter_warning_label
+
+## precautionary_signs
+* precautionary_signs
+  - utter_precautionary_signs
+
+## popup
+* popup
+  - utter_popup
+
+## legends
+* legends
+  - utter_legends
+<!-------------------------------------------------------------- CHAPTER 1 -------------------------------------------------------->
+## navigation_bar
+* navigation_bar
+  - utter_navigation_bar
+
+## exam_rx
+* exam_rx
+  - utter_exam_rx
+  
+## image_works
+* image_works
+  - utter_image_works
+
+## disk_storage
+* disk_storage
+  - utter_disk_storage
+
+## daily_preparation
+* daily_preparation
+  - utter_daily_preparation
+
+## scanner_utilities
+* scanner_utilities
+  - utter_scanner_utilities
+
+## application_configuration
+* application_configuration
+  - utter_application_configuration
+
+## service
+* service
+  - utter_service
+
+## message_bar
+* message_bar
+  - utter_message_bar
+
+## function_status_area
+* function_status_area
+  - utter_function_status_area
+
+## system_status
+* system_status
+  - utter_system_status
+
+## new_patient
+* new_patient
+  - utter_new_patient
+
+## emergency_patient
+* emergency_patient
+  - utter_emergency_patient
+
+## protocol_selection
+* protocol_selection
+  - utter_protocol_selection
+
+## scan_setup_screen
+* scan_setup_screen
+  - utter_scan_setup_screen
+
+<!-------------------------------------------------------------- CHAPTER 2 -------------------------------------------------------->
+
+<!-------------------------------------------------------------- CHAPTER 3 -------------------------------------------------------->
+
 ## regulation_information
 * regulation_information
   - utter_regulation_information
@@ -37,6 +137,7 @@
 ## system_uses
 * system_uses
   - utter_system_uses
+<!-------------------------------------------------------------- CHAPTER 4 -------------------------------------------------------->
 
 ## Dose_Check
 * Dose_Check
@@ -65,3 +166,79 @@
 ## Configure_the_system_for_protocol_change_control
 * Configure_the_system_for_protocol_change_control
   - utter_Configure_the_system_for_protocol_change_control
+
+
+## Building_protocols_using_protocol_change_control
+* Building_protocols_using_protocol_change_control
+   - utter_Building_protocols_using_protocol_change_control
+
+## Building_protocols_with_notification_values
+* Building_protocols_with_notification_values
+  - utter_Building_protocols_with_notification_values
+
+## Building_protocols_with_notification_values_by_factor
+* Building_protocols_with_notification_values_by_factor
+  - utter_Building_protocols_with_notification_values_by_factor
+
+## Scan_using_alert_value_checking
+* Scan_using_alert_value_checking
+  - utter_Scan_using_alert_value_checking
+
+## Scan_using_Notification_Value_(NV)_checking
+* Scan_using_Notification_Value_nv_checking
+  - utter_Scan_using_Notification_Value_nv_checking
+
+
+## Using_the_dose_audit_tool
+* Using_the_dose_audit_tool
+  - utter_Using_the_dose_audit_tool
+
+## Dose_Check_Log
+* Dose_Check_Log
+  - utter_Dose_Check_Log
+
+## Protocol_Summary
+* Protocol_Summary
+  - utter_Protocol_Summary
+
+## save_Dose_Check_Log
+* save_Dose_Check_Log
+  - utter_save_Dose_Check_Log
+<!-------------------------------------------------------------- CHAPTER 5 -------------------------------------------------------->
+## Radiation_exposure_sensitivity
+* Radiation_exposure_sensitivity
+  - utter_Radiation_exposure_sensitivity
+
+## Dose_reporting_considerations
+* Dose_reporting_considerations
+  - utter_Dose_reporting_considerations
+
+## Minimize_pediatric_and_small_patient_doses
+* Minimize_pediatric_and_small_patient_doses
+  - utter_Minimize_pediatric_and_small_patient_doses
+
+## Pediatric_and_small_patient_scans
+* Pediatric_and_small_patient_scans
+  - utter_Pediatric_and_small_patient_scans
+
+## optimize_pediatric_protocol
+* optimize_pediatric_protocol
+  - utter_optimize_pediatric_protocol
+
+## pediatric_protocols
+* pediatric_protocols
+  - utter_pediatric_protocols
+
+## Color_Coding_for_Kids_Protocol
+* Color_Coding_for_Kids_Protocol
+  - utter_Color_Coding_for_Kids_Protocol
+
+## Set_up_a_pediatric_or_small_patient_exam
+* Set_up_a_pediatric_or_small_patient_exam
+  - utter_Set_up_a_pediatric_or_small_patient_exam
+
+## Adjust_pediatric_and_small_patient_scan_parameters
+* Adjust_pediatric_and_small_patient_scan_parameters
+  - utter_Adjust_pediatric_and_small_patient_scan_parameters
+
+<!-------------------------------------------------------------- CHAPTER 6 -------------------------------------------------------->

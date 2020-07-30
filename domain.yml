@@ -9,6 +9,15 @@ intents:
 - mood_great
 - mood_unhappy
 - bot_challenge
+- purpose
+- cannot_do
+- usage
+- language
+- prerequisites
+- warning_label
+- precautionary_signs
+- popup
+- legends
 - navigation_bar
 - exam_rx
 - image_works
@@ -65,52 +74,180 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_purpose:
+    - text: "It is a replacement to the manual, providing information on the purpose, prerequisite skills, organization, format, and graphic conventions that identify the visual symbols used throughout the MedBot.
+"
+  utter_cannot_do:
+    - text: "The assistant does not identify the following applications 
+
+Common user-interface with Advantage Windows for improved productivity. The OC1 now supports an expanded list of Advanced Application packages such as Volume Viewer, CT Perfusion 4- Multi-Organ or Neuro only, Advantage CTC Pro, AutoBone, AVA Xpress, and Dentascan. Volume Viewer is a prerequisite to support Advantage CTC Pro, AutoBone, and AVA Xpress
+
+It is not intended to teach imaging or to make any type of clinical diagnosis. It is necessary for you to have sufficient knowledge to competently perform the various diagnostic imaging procedures within your modality. 
+"
+  utter_usage:
+    - text: "The MedBot provides the necessary information relating to the proper operation of this system. It is intended to teach you the system components and features necessary to use it to its maximum potential.
+"
+  utter_language:
+    - text: "This user manual is originally written in English and so the MedBot can respond to queries in English only.
+"
+  utter_prerequisites:
+    - text: "The operator profile may be limited to registered CT technologists certified by national registries, state licenses, or organizational certification, physicians with or without specific training in radiology, physicists, or other persons adequately trained to operate the equipment.
+    The MedBot is not intended to teach imaging. This knowledge should be gained prior to the user.
+    "
+  utter_warning_label:
+    - image: (pg 2)
+    - text: "DANGER:  Danger is used to identify conditions or actions for which a specific hazard is known to exist that will cause severe personal injury, death, or substantial property damage if the instructions are ignored.  (image)
+
+WARNING: Warning is used to identify conditions or actions for which a specific hazard is known to exist that may cause severe personal injury, death, or substantial property damage if the instructions are ignored.  (image)
+
+CAUTION: Caution is used to identify conditions or actions for which a potential hazard may exist that will or can cause minor personal injury or property damage if the instructions are ignored.   (image)
+
+For more safety or warning symbols/icons, click here
+"
+    - button:
+      - payload: More warning labels
+        title: More warning labels
+        
+  utter_precautionary_signs:
+    - text: "
+IMPORTANT Important indicates information where adherence to procedures is crucial or where your comprehension is necessary to apply a concept or effectively use the product
+
+NOTE: Note provides additional information that is helpful to you. It may emphasize certain information regarding special tools or techniques, items to check before proceeding, or factors to consider about a concept or task
+
+TROUBLESHOOTING: Troubleshooting tips provide information that allows you to investigate the resolution of some type of problem, locate the difficulty, and make adjustments to solve the problem.
+"
+  utter_popup:
+    - text: "Pop-up message windows require an acknowledgment typically by clicking OK or Accept. Always respond to the message.
+"
+  utter_legends:
+    - text: "The following has a list of examples and its description for conventions and legends used by the MedBot.
+
+Select - Select an option in a checkbox or radial button and selecting a tab.
+
+Press Enter - Press a hard key on the keyboard or equipment.
+
+Press and hold shift - Press and hold down a hard key on the keyboard.
+
+Click viewer - A button label or Interface button name that you actively click. If there is a reference to a button label that is not actively clicked, it is not displayed in bold or italics.
+
+In the Spacing field - The name of the field in which you can select or type text
+
+Type supine in the Patient Position field - Text you enter into a field.
+
+Select Sort > Sort by date - The pathway of selecting options in a pull-down menu
+
+CtrlX simultaneously - Press and hold the Control button on the keyboard and simultaneously press the X button on the keyboard. Ctrl is the abbreviation used for the Control keyboard button, and ALT is the abbreviation used for the Alternative keyboard keys.
+
+“Messages” - A system message prompt is in quotations
+
+Cancel/Close - Cancel/Close typically closes a screen without executing the changes on the screen. The instructions to Cancel/Close cannot be answered by the MedBot as they are not included in manual procedures.
+"
   utter_navigation_bar:
-    - text: ""
+    - text: "The Navigation Bar can be considered as the switch for the work environment. When a desktop is open, all the functions related to that desktop are placed on the monitor. The Navigation Bar is divided into three sections
+"
+    - buttons:
+      - payload: Exam RX
+        title: Exam RX
+      - payload: ImageWorks 
+        title: ImageWorks 
+      - payload: Disk space and system time display 
+        title: Disk space and system time display 
 
   utter_exam_rx:
-    - text: ""
+    - text: "During scanning, display Viewport to view images, and the New Patient and Scan Equipment screen"
 
   utter_image_works:
-    - text: ""
+    - text: "Displays a browser from which you can view other exams, archive, network, manual film, apply measurements and apply other features to an image, perform 2D reformations, and access optional software features.
+"
 
   utter_disk_storage:
-    - text: ""
+    - text: "The disk space and system time display area displays the date, time, and available system disk space. As a whole, it displays the following
+1. Displays available disk space. 
+2. Current date and time display as per the selected format
+"
+    - buttons:
+      - payload: Daily Preparation
+        title: Daily Preparation
+      - payload: Scanner Utilities
+        title: Scanner Utilities 
+      - payload: Protocol Management
+        title: Protocol Management
+      - payload: Service
+        title: Service
 
   utter_daily_preparation:
-    - text: ""
+    - text: "Click the Daily Prep icon to start tube warm-up or quick calibration."
+    - image: "(pg 8)"
 
   utter_scanner_utilities:
-    - text: ""
+    - text: "Click the Scanner Utilities icon to view the Scanner Utilities screen. Utilities are used primarily by service representatives for system calibration activities."
+    - image: "(pg 9)"
 
   utter_application_configuration:
-    - text: ""
+    - text: "Click the icon, and then click Protocol Management to view the Protocol Management screen, or click Auto Voice Record to record new automated voice messages and click Dose check management to set dose check settings."
+    - image: (pg 10)
 
   utter_service:
-    - text: ""
+    - text: "Click Service icon to view study solutions, iLinq, service, and to shut down or restart the system "
+    - image: (pg 11)
 
   utter_message_bar:
-    - text: ""
+    - text: "The status area displays system messages and reconstruction, archive, network, film, and reconstruction status. It is divided into three areas
+    1.Operator Console Information Area
+2.Function and Status Area
+3.System Status Message Area 
+"
+    - buttons:
+      - payload: Function and Status Area
+        title: Function and Status Area
+      - payload: System Status Message Area 
+        title: System Status Message Area 
+
 
   utter_function_status_area:
-    - text: ""
+    - text: "i)The Recon Status displays the status as the percent of images completed for the exam, series, and image range for both prospective and retrospective reconstruction. Click Recon Status to display the Recon management screen. 
+ii)The Archive/Restore Status displays the status of the exam, series, and images currently being saved or restored as well as the status of the storage media.
+ iii)The Remove Status is displayed as Removing or Removed. The individual exams, series, or images are not listed.  
+iv)The Network Status displays the status of the exam, series, and images currently being sent or received.
+"
 
   utter_system_status:
-    - text: ""
+    - text: "i)Click on the area to see a list of system messages. These messages are not necessarily error messages but can be any informational message generated by the system.  
+ii)View Log opens the system log for more detailed information about messages and errors.  
+iii)Clear removes messages displayed in the message area.  
+iv)Close closes the message window.  
+v)Memo allows you to leave a memo for the service engineer
+"
 
   utter_new_patient:
-    - text: ""
+    - text: "i)Click on the area to see a list of system messages. These messages are not necessarily error messages but can be any informational message generated by the system.  
+ii)View Log opens the system log for more detailed information about messages and errors.  
+iii)Clear removes messages displayed in the message area.  
+iv)Close closes the message window.  
+v)Memo allows you to leave a memo for the service engineer
+"
+    - image: (pg 14)
 
   utter_emergency_patient:
-    - text: ""
+    - text: "Click the Emergency Patient icon to enable emergency protocol options. It is divided into multiple areas:
+Area 1 = patient information area. The Patient ID is always Trauma. The Patient Name is Year/Month/Day/ Time and the CT name. Both fields can be modified.
+Area 2 = protocol selection area. Protocols are set and edited in Protocol Management.
+"
+    - image: (pg 15)
 
   utter_protocol_selection:
-    - text: ""
+    - image: (pg 15 fig 2)
 
   utter_scan_setup_screen:
-    - text: ""
+    - image: (pg 16)
+    - text: "The Scan Setup screen displays when an exam is in process. It is divided into multiple areas: "
+    - buttons:
+      - payload: ViewEdit Area
+        title: ViewEdit Area
+      - payload: Displays multiple types of content 
+        title: Displays multiple types of content 
 
-    utter_Configure_the_system_for_protocol_change_control:
+  utter_Configure_the_system_for_protocol_change_control:
   - image: http://localhost:7000/img/config_system_for_protocol_change.png
   - text: "Please note that You must have one user that is assigned to a group with\
       \ the Dose Administrator role to enable Protocol Change Control.\n1. Click DoseCheck\
@@ -146,7 +283,7 @@ responses:
       dose without changing the scan parameters. 2.Defining Alert Values for Adult
       and Pediatric with age threshold. 3.Audit logging and review 4.ProtocolChangeControl '
   utter_Setting_Dose_Administrator_Role:
-  -image: http://localhost:7000/img/add_user.png
+  - image: http://localhost:7000/img/add_user.png
   - text: "1.Click Dose Check Management from Protocol Management. 2. Click the User\
       \ Admin Tool. 3. From the EA3 Administration screen, type your Username and\
       \ Password. Consult your service engineer or Application Representative for\
@@ -178,7 +315,7 @@ responses:
       \ Value should be determined by a collaboration between the Radiologist and\
       \ Physicist at the site.\n4. Click Save "
   utter_Configure_the_system_for_alert_value_by_age_threshold:
-  -image: http://localhost:7000/img/config_sys_for_alert_by_age_thershold.png
+  - image: http://localhost:7000/img/config_sys_for_alert_by_age_thershold.png
   - text: "Please note that you must have one user that is assigned to a group with\
       \ the Dose Administrator role to confirm Dose Check settings.\nAV value used\
       \ is based on the following criteria: Age value in New Patient. If no age value\
