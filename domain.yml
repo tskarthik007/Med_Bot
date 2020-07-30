@@ -1,0 +1,129 @@
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- regulation_information
+- system_uses
+- Dose_Check
+- Dose_check_use
+- Setting_Dose_Administrator_Role
+- Setting_AV_Exceeding_User_Role
+- Configure_the_system_for_dose_checking
+- Configure_the_system_for_alert_value_by_age_threshold
+- Configure_the_system_for_protocol_change_control
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_Configure_the_system_for_protocol_change_control:
+  - image: http://localhost:7000/img/config_system_for_protocol_change.png
+  - text: "Please note that You must have one user that is assigned to a group with\
+      \ the Dose Administrator role to enable Protocol Change Control.\n1. Click DoseCheck\
+      \ Management from Protocol Management. 2. In the Protocol, Change Control section.\
+      \ Click Off to enable PCC. 3. Click Save. "
+  utter_regulation_information:
+  - text: "1. What do the product’s regulations and standards?\nCouncil Directive\
+      \ 93/42/EEC concerning medical devices when it bears the following CE marking\
+      \ of conformity:\nManufacturer and Place of Origin: WIPRO GE HEALTHCARE PRIVATE\
+      \ LIMITED 122, PART 1, Export Promotion Industrial park, WHITEFIELD BANGALORE\
+      \ 560066, INDIA "
+  utter_system_uses:
+  - text: 'This system is designed for CT image scanning of the head and body. '
+  utter_Dose_Check:
+
+  - text: "The DoseCheck feature intends to notify and alert the operating personnel,\
+      \ generally technologists, that prepare and set the scan parameters, prior to\
+      \ starting a scan, whether the estimated dose index is above the value defined\
+      \ and set by the operating group, practice, or institution to warrant notification\
+      \ to the operator.\nBefore using DoseCheck, the site physicist, and/or radiation\
+      \ safety officer in collaboration with the Radiologist, should have an understanding\
+      \ of the current dose levels of site scanning protocols and the maximum dose\
+      \ threshold that should not be exceeded in the sites’ clinical practice. Using\
+      \ this information, an appropriate starting pointfortheNotification Value for\
+      \ each protocol and system Alert Value should be set\nThe various terminologies\
+      \ used are:\n1.Notification Value (NV) (button) 2.Alert Value (AV) (button)\
+      \ 3.DoseCheckAdministrator (button) 4.Dose Check AV Exceeding User (button)\
+      \ 5.ProtocolChangeControl (button) "
+  utter_Dose_check_use:
+  - text: '1.Checking against a Notification Value if the estimated dose for the scan
+      is above your site typical dose value. Checking against an Alert Value where
+      the user needs specific authority to continue the scan at the currently estimated
+      dose without changing the scan parameters. 2.Defining Alert Values for Adult
+      and Pediatric with age threshold. 3.Audit logging and review 4.ProtocolChangeControl '
+  utter_Setting_Dose_Administrator_Role:
+  -image: http://localhost:7000/img/add_user.png
+  - text: "1.Click Dose Check Management from Protocol Management. 2. Click the User\
+      \ Admin Tool. 3. From the EA3 Administration screen, type your Username and\
+      \ Password. Consult your service engineer or Application Representative for\
+      \ user name and password. 4. From the Local Users tab, click Add Local User.\
+      \ 5. From the pop-up panel, type information for each of the following: A unique\
+      \ user ID FullName Password Confirm password\n6. Click Add User. 7. From the\
+      \ Groups tab, click Add Local Group. Alternately, the system can be configured\
+      \ for Enterprise groups if Enterprise authentication has been enabled. 8. From\
+      \ the Add Local Group window, type and enter a unique group name 9. Click Add\
+      \ Group The group is highlighted in the Local Groups list box. All information\
+      \ and buttons in the center panel refer to the highlighted group. 10. To change\
+      \ a group's roles, select the Dose Admin Role option box, and click Apply Roles.\
+      \ a. A green label confirms the applied roles. b. An error message box displays\
+      \ if it is unsuccessful. "
+  utter_Configure_the_system_for_dose_checking:
+  - image: http://localhost:7000/img/config_system_for_protocol_change.png
+  - text: "Please note that you must have one user that is assigned to a group with\
+      \ Dose Administrator role to enable confirm DoseCheck settings\n1. Click DoseCheck\
+      \ Management from Protocol Management 2. Set Checking for Notification Value\
+      \ (NV). a. In the NV Checking section Click CTDIvol and/or DLP. b. Type a value\
+      \ for CTDIvol and/or DLP. The range for NV is 0 to ≤ to the value set for AV.\
+      \ Or, the letter N can be entered to indicate that no checking will be done.\n\
+      The system default is NV checking CTDIvol On and DLP Off. GE reference protocols\
+      \ will not contain any NV values.\n3. Set checking for Alert Value (AV). a.\
+      \ In the AV Checking section Click CTDIvol and/or DLP. b. Type a value for CTDIvol\
+      \ and/or DLP. The maximum AV value for CTDIvol is 2000 mGy. The maximum AV value\
+      \ for DLP is 400,000 mGy-cm.  The system default is AV checking by CTDIvol On\
+      \ with a value of 1000mGy. DLP checking Off with a value of 0 mGy-cm.\nAlert\
+      \ Value should be determined by a collaboration between the Radiologist and\
+      \ Physicist at the site.\n4. Click Save "
+  utter_Configure_the_system_for_alert_value_by_age_threshold:
+  -image: http://localhost:7000/img/config_sys_for_alert_by_age_thershold.png
+  - text: "Please note that you must have one user that is assigned to a group with\
+      \ the Dose Administrator role to confirm Dose Check settings.\nAV value used\
+      \ is based on the following criteria: Age value in New Patient. If no age value\
+      \ present then the system will default to the higher age range.\n\n1. Click\
+      \ Dose Check Management from Protocol Management. 2. In the AV (Alert Value)\
+      \ Checking section, click Add Age Threshold. 3. Type the desired Patient Age.\
+      \ 4. Type a value for CTDIvol and/or DLP. The maximum AV value for CTDIvol is\
+      \ 2000 mGy. The maximum AV value for DLP is 400,000 mGy-cm. The system default\
+      \ is AV checking by CTDIvol On with a value of 1000 mGy. DLP checking Off,0\
+      \ mGy  The value must be lower than the Adult AV value. 5. Click save "
+actions:
+- utter_greet
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- utter_iamabot
+- utter_Configure_the_system_for_protocol_change_control
+- utter_regulation_information
+- utter_system_uses
+- utter_Dose_Check
+- utter_Dose_check_use
+- utter_Setting_Dose_Administrator_Role
+- utter_Setting_AV_Exceeding_User_Role
+- utter_Configure_the_system_for_dose_checking
+- utter_Configure_the_system_for_alert_value_by_age_threshold
