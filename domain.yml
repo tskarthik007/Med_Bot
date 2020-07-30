@@ -110,7 +110,8 @@ responses:
   utter_scan_setup_screen:
     - text: ""
 
-  utter_Configure_the_system_for_protocol_change_control:
+    utter_Configure_the_system_for_protocol_change_control:
+  - image: http://localhost:7000/img/config_system_for_protocol_change.png
   - text: "Please note that You must have one user that is assigned to a group with\
       \ the Dose Administrator role to enable Protocol Change Control.\n1. Click DoseCheck\
       \ Management from Protocol Management. 2. In the Protocol, Change Control section.\
@@ -124,6 +125,7 @@ responses:
   utter_system_uses:
   - text: 'This system is designed for CT image scanning of the head and body. '
   utter_Dose_Check:
+
   - text: "The DoseCheck feature intends to notify and alert the operating personnel,\
       \ generally technologists, that prepare and set the scan parameters, prior to\
       \ starting a scan, whether the estimated dose index is above the value defined\
@@ -144,6 +146,7 @@ responses:
       dose without changing the scan parameters. 2.Defining Alert Values for Adult
       and Pediatric with age threshold. 3.Audit logging and review 4.ProtocolChangeControl '
   utter_Setting_Dose_Administrator_Role:
+  -image: http://localhost:7000/img/add_user.png
   - text: "1.Click Dose Check Management from Protocol Management. 2. Click the User\
       \ Admin Tool. 3. From the EA3 Administration screen, type your Username and\
       \ Password. Consult your service engineer or Application Representative for\
@@ -159,6 +162,7 @@ responses:
       \ a. A green label confirms the applied roles. b. An error message box displays\
       \ if it is unsuccessful. "
   utter_Configure_the_system_for_dose_checking:
+  - image: http://localhost:7000/img/config_system_for_protocol_change.png
   - text: "Please note that you must have one user that is assigned to a group with\
       \ Dose Administrator role to enable confirm DoseCheck settings\n1. Click DoseCheck\
       \ Management from Protocol Management 2. Set Checking for Notification Value\
@@ -174,6 +178,7 @@ responses:
       \ Value should be determined by a collaboration between the Radiologist and\
       \ Physicist at the site.\n4. Click Save "
   utter_Configure_the_system_for_alert_value_by_age_threshold:
+  -image: http://localhost:7000/img/config_sys_for_alert_by_age_thershold.png
   - text: "Please note that you must have one user that is assigned to a group with\
       \ the Dose Administrator role to confirm Dose Check settings.\nAV value used\
       \ is based on the following criteria: Age value in New Patient. If no age value\
