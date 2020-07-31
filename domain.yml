@@ -114,7 +114,7 @@ It is not intended to teach imaging or to make any type of clinical diagnosis. I
     The MedBot is not intended to teach imaging. This knowledge should be gained prior to the user.
     "
   utter_warning_label:
-    - image: (pg 2)
+    - image: http://localhost:7000/img/danger.png
     - text: "DANGER:  Danger is used to identify conditions or actions for which a specific hazard is known to exist that will cause severe personal injury, death, or substantial property damage if the instructions are ignored.  (image)
 
 WARNING: Warning is used to identify conditions or actions for which a specific hazard is known to exist that may cause severe personal injury, death, or substantial property damage if the instructions are ignored.  (image)
@@ -196,19 +196,18 @@ Cancel/Close - Cancel/Close typically closes a screen without executing the chan
 
   utter_daily_preparation:
     - text: "Click the Daily Prep icon to start tube warm-up or quick calibration."
-    - image: "(pg 8)"
+    - image: http://localhost:7000/img/daily_preparation.png
 
   utter_scanner_utilities:
     - text: "Click the Scanner Utilities icon to view the Scanner Utilities screen. Utilities are used primarily by service representatives for system calibration activities."
-    - image: "(pg 9)"
+    - image: http://localhost:7000/img/scanner_utilities.png
 
   utter_application_configuration:
     - text: "Click the icon, and then click Protocol Management to view the Protocol Management screen, or click Auto Voice Record to record new automated voice messages and click Dose check management to set dose check settings."
-    - image: (pg 10)
-
+    - image: http://localhost:7000/img/application_configuration.png
   utter_service:
     - text: "Click Service icon to view study solutions, iLinq, service, and to shut down or restart the system "
-    - image: (pg 11)
+    - image: http://localhost:7000/img/service.png
 
   utter_message_bar:
     - text: "The status area displays system messages and reconstruction, archive, network, film, and reconstruction status. It is divided into three areas
@@ -245,20 +244,20 @@ iii)Clear removes messages displayed in the message area.
 iv)Close closes the message window.  
 v)Memo allows you to leave a memo for the service engineer
 "
-    - image: (pg 14)
+    - image: http://localhost:7000/img/new_patient.png
 
   utter_emergency_patient:
     - text: "Click the Emergency Patient icon to enable emergency protocol options. It is divided into multiple areas:
 Area 1 = patient information area. The Patient ID is always Trauma. The Patient Name is Year/Month/Day/ Time and the CT name. Both fields can be modified.
 Area 2 = protocol selection area. Protocols are set and edited in Protocol Management.
 "
-    - image: (pg 15)
+    - image: http://localhost:7000/img/emergency_patient.png
 
   utter_protocol_selection:
-    - image: (pg 15 fig 2)
+    - image: http://localhost:7000/img/protocol_selection.png
 
   utter_scan_setup_screen:
-    - image: (pg 16)
+    - image: http://localhost:7000/img/scan_setup_screen.png
     - text: "The Scan Setup screen displays when an exam is in process. It is divided into multiple areas: "
     - buttons:
       - payload: Patient Position and Series Level Functions area 
@@ -294,18 +293,18 @@ Retro Scan
 "
 
   utter_recon_management:
-    - image: (pg 19)
+    - image: http://localhost:7000/img/recon_management
     - text: "Click ReconStatus to display the Recon Management screen(1), some options will open the second area (2)."
 
   utter_setting_imageworks:
-    - image: (pg 20)
+    - image: http://localhost:7000/img/setting_imageworks.png
     - text: "
 Click Image Works to open the browser. Select exam/series/images from the patient list (2) and select an application from the browser list of applications (1).
 "
 
   utter_multitask_bar:
     - text: "Click the Film icon to enter film."
-    - image: (pg 21)
+    - image: http://localhost:7000/img/multitask_bar.png
 
   utter_ui_conv:
     - text: "Please select any one of the following to know its conventions"
@@ -326,15 +325,17 @@ Multiple Non-contiguous: items Press Ctrl and simultaneously click each item."
 "
 
   utter_buttons:
-    - image: (pg 22,23)
+    - image: http://localhost:7000/img/buttons_grey.png
+    - image: http://localhost:7000/img/buttons_yellow.png
+    - image: http://localhost:7000/img/buttons_red.png
     - text: "Buttons that are gray are currently not available
 Buttons that are selected are yellow
 Buttons that are sensitive and invalid are red. 
 Buttons that are sensitive and the value appearing in the button is updated by the system are orange. 
 "
   utter_troubleshoot:
-    - buttons:
-      - payload: invalid text field
+    - buttod: invalid text fieldns:
+      - payloa
         title: invalid text field
       - payload: air caliberations
         title: air caliberations
@@ -459,7 +460,7 @@ Buttons that are sensitive and the value appearing in the button is updated by t
       \ mGy  The value must be lower than the Adult AV value. 5. Click save "
 
   utter_Building_protocols_using_protocol_change_control:
-    - image: (pg 70)
+    - image: http://localhost:7000/img/Building_protocols_using_protocol_change_control.png
     - text: "When PCC is enabled the system will require an authorized user to accept protocol parameter updates. Perform the Following steps.
 
 1. Click DoseCheck Management From Protocol Management. 
@@ -476,7 +477,7 @@ If HIPAA is not enabled, when Protocol Management is selected the user will be p
 "
 
   utter_Building_protocols_with_notification_values:
-    - image: (pg 72)
+    - image: http://localhost:7000/img/Building_protocols_with_notification_values.png
     - text: "NV values can only be set in Protocol Management. 
 1. From the scan monitor, click the Protocol Management Icon. 
 2. On the Auto Voice and Protocol Management screen, click Protocol Management. 
@@ -501,7 +502,7 @@ Once the maximum number of characters is reached the system will not accept any 
 "
 
   utter_Building_protocols_with_notification_values_by_factor:
-    - image: (pg 73)
+    - image: http://localhost:7000/img/Building_protocols_with_notification_values_by_factor.png
     - text: "If the NV value in a scan group were 5 and a factor of 1.5 was entered, the new NV value for the group would be 7.5
 
 Can by entered in increments of 0.1
@@ -524,12 +525,12 @@ Maximum value of 10
     - text: "
 The CTDIvol or DLP value will be highlighted when the estimated dose for the protocol exceeds the AV value set for the system.
 "
-    - image: (74)
+    - image: http://localhost:7000/img/scan_using_alert_value_checking_1.png
     - text: "Adjust the scan parameters for the series in which the AV value is exceeded to adjust the dose below the prescribed AV value. If the AV value is still exceeded when Confirm is selected a confirmation pop up will be posted. The scan cannot be confirmed until the AV value is no longer exceeded or a user with a Dose Check AV Exceeding user role has authorized the scan. 
 
 Performing a scan exceeding an AV value demands a high degree of consideration for appropriateness. Therefore, in most cases, you will click cancel to go back to adjust parameters. However, if there is a true diagnostic need to perform a scan exceeding an AV value.
 "
-    - image: (74)
+    - image: http://localhost:7000/img/Scan_using_alert_value_checking_2.png
     - text: "
 1. Click in the Logon Name text field. 
 2. Type the UserName. 
@@ -542,7 +543,7 @@ Performing a scan exceeding an AV value demands a high degree of consideration f
 7. Click Confirm to proceed to scanning.
 "
   utter_Scan_using_Notification_Value_nv_checking:
-    - image: (pg 76)
+    - image: http://localhost:7000/img/Scan_using_Notification_value_nv_checking.png
     - text: "The CTDIvol or DLP value will be highlighted when the estimated dose for a scan group exceeds the NV value set for each scan group
 
 Adjust the scan parameters for the scan group in which the NV value is exceeded to adjust the dose below the prescribed NV value. If the NV value is still exceeded when Confirm is selected a confirmation pop up will be posted. The scan cannot be confirmed until the NV value is no longer exceeded or the user has entered a Diagnostic Reason for continuing the scan exceeding the NV Value
@@ -570,7 +571,7 @@ If the log data approaches the maximum size, the system will post a message dire
 "
 
   utter_Protocol_Summary:
-    - image: (pg 77)
+    - image: http://localhost:7000/img/protocol_summary.png
     - text: "1. Click DoseCheck Management from Protocol Management. 
 2. On the Dose Check Management screen, click Audit Tool. 
 3. In the Protocol Summary area, click All Protocols or Invalid Protocols.
@@ -628,14 +629,14 @@ Society Of PediatricRadiology(SPR):http://www.pedrad.org/  NationalCancerInstitu
 "
 
   utter_pediatric_protocols:
-    - image: (pg 86)
+    - image: http://localhost:7000/img/prediatric_protocols.png
     - text: "The Pediatric Protocol area was designed to help facilitate protocol selection for pediatric patients by providing age based protocol areas for Head, Orbit, and Miscellaneous and color coding system forNeck, Upper Extremity, Chest, Abdomen, Spine, and Pelvis based on age, height and weight
 
 By entering the pediatric patient's weight in the Exam Rx screen, the system automatically selects the appropriate color code area for the anatomical area selected. 
 "
 
   utter_Color_Coding_for_Kids_Protocol:
-    - image: (pg 88)
+    - image: http://localhost:7000/img/color_coding_kids_protocol.png
     - text: "Based on the Broselow-Luten Pediatric System,theColorCodingforKids system was developed to help you select the correct pediatric CT protocol by dividing the protocols into nine color zones based on height and weight, and incrementally increases scan technique as the patient’s size increases. 
 
 Once the anatomical area is selected, the Pediatric Protocol Category screen displays
