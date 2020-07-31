@@ -6,6 +6,13 @@
 - good evening
 - hey there
 
+## intent:thanks
+- Thanks
+- thankyou
+- thank you so much
+- thanx
+- tq
+
 ## intent:goodbye
 - bye
 - goodbye
@@ -265,7 +272,7 @@
 - Scan progress
 - View edit area
 
-## intents:scan_dosage_info
+## intent:scan_dosage_info
 - know the scan dose information
 - I want to know the scan dose information
 - Where can I find scan dose information?

@@ -3,6 +3,7 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - greet
+- thanks
 - goodbye
 - affirm
 - deny
@@ -33,25 +34,26 @@ intents:
 - emergency_patient
 - protocol_selection
 - scan_setup_screen
-scan_patient_position
-scan_parameters
-scan_dosage_info
-patient_schedule
-retro_recon
-recon_management
-setting_imageworks
-multitask_bar
-ui_conv
-select_items
-cancel
-buttons
-textfield_invalid
-air_caliberations
-scan_aborts
-wrong_screen
-no_response
-lowdisk_space
-harddrive_failure
+- scan_patient_position
+- scan_parameters
+- scan_dosage_info
+- patient_schedule
+- retro_recon
+- recon_management
+- setting_imageworks
+- multitask_bar
+- ui_conv
+- select_items
+- cancel
+- buttons
+- troubleshoot
+- textfield_invalid
+- air_caliberations
+- scan_aborts
+- wrong_screen
+- no_response
+- lowdisk_space
+- harddrive_failure
 - regulation_information
 - system_uses
 - Dose_Check
@@ -81,14 +83,13 @@ harddrive_failure
 - Adjust_pediatric_and_small_patient_scan_parameters
 responses:
   utter_greet:
-  - text: Hey! How are you?
-  utter_cheer_up:
-  - image: https://i.imgur.com/nGF1K8f.jpg
-    text: 'Here is something to cheer you up:'
-  utter_did_that_help:
-  - text: Did that help you?
-  utter_happy:
-  - text: Great, carry on!
+  - text: Hey! How can I help you?
+  utter_welcome:
+  - text: Cool! You're welcome.
+  # utter_did_that_help:
+  # - text: Did that help you?
+  # utter_happy:
+  # - text: Great, carry on!
   utter_goodbye:
   - text: Bye
   utter_iamabot:
@@ -115,15 +116,15 @@ It is not intended to teach imaging or to make any type of clinical diagnosis. I
     "
   utter_warning_label:
     - image: http://localhost:7000/img/danger.png
-    - text: "DANGER:  Danger is used to identify conditions or actions for which a specific hazard is known to exist that will cause severe personal injury, death, or substantial property damage if the instructions are ignored.  (image)
+      text: "DANGER:  Danger is used to identify conditions or actions for which a specific hazard is known to exist that will cause severe personal injury, death, or substantial property damage if the instructions are ignored. 
 
-WARNING: Warning is used to identify conditions or actions for which a specific hazard is known to exist that may cause severe personal injury, death, or substantial property damage if the instructions are ignored.  (image)
+WARNING: Warning is used to identify conditions or actions for which a specific hazard is known to exist that may cause severe personal injury, death, or substantial property damage if the instructions are ignored.
 
-CAUTION: Caution is used to identify conditions or actions for which a potential hazard may exist that will or can cause minor personal injury or property damage if the instructions are ignored.   (image)
+CAUTION: Caution is used to identify conditions or actions for which a potential hazard may exist that will or can cause minor personal injury or property damage if the instructions are ignored.
 
 For more safety or warning symbols/icons, click here
 "
-    - button:
+      buttons:
       - payload: More warning labels
         title: More warning labels
         
@@ -164,7 +165,7 @@ Cancel/Close - Cancel/Close typically closes a screen without executing the chan
   utter_navigation_bar:
     - text: "The Navigation Bar can be considered as the switch for the work environment. When a desktop is open, all the functions related to that desktop are placed on the monitor. The Navigation Bar is divided into three sections
 "
-    - buttons:
+      buttons:
       - payload: Exam RX
         title: Exam RX
       - payload: ImageWorks 
@@ -184,7 +185,7 @@ Cancel/Close - Cancel/Close typically closes a screen without executing the chan
 1. Displays available disk space. 
 2. Current date and time display as per the selected format
 "
-    - buttons:
+      buttons:
       - payload: Daily Preparation
         title: Daily Preparation
       - payload: Scanner Utilities
@@ -196,18 +197,18 @@ Cancel/Close - Cancel/Close typically closes a screen without executing the chan
 
   utter_daily_preparation:
     - text: "Click the Daily Prep icon to start tube warm-up or quick calibration."
-    - image: http://localhost:7000/img/daily_preparation.png
+      image: http://localhost:7000/img/daily_preparation.png
 
   utter_scanner_utilities:
     - text: "Click the Scanner Utilities icon to view the Scanner Utilities screen. Utilities are used primarily by service representatives for system calibration activities."
-    - image: http://localhost:7000/img/scanner_utilities.png
+      image: http://localhost:7000/img/scanner_utilities.png
 
   utter_application_configuration:
     - text: "Click the icon, and then click Protocol Management to view the Protocol Management screen, or click Auto Voice Record to record new automated voice messages and click Dose check management to set dose check settings."
-    - image: http://localhost:7000/img/application_configuration.png
+      image: http://localhost:7000/img/application_configuration.png
   utter_service:
     - text: "Click Service icon to view study solutions, iLinq, service, and to shut down or restart the system "
-    - image: http://localhost:7000/img/service.png
+      image: http://localhost:7000/img/service.png
 
   utter_message_bar:
     - text: "The status area displays system messages and reconstruction, archive, network, film, and reconstruction status. It is divided into three areas
@@ -215,7 +216,7 @@ Cancel/Close - Cancel/Close typically closes a screen without executing the chan
 2.Function and Status Area
 3.System Status Message Area 
 "
-    - buttons:
+      buttons:
       - payload: Function and Status Area
         title: Function and Status Area
       - payload: System Status Message Area 
@@ -244,22 +245,23 @@ iii)Clear removes messages displayed in the message area.
 iv)Close closes the message window.  
 v)Memo allows you to leave a memo for the service engineer
 "
-    - image: http://localhost:7000/img/new_patient.png
+      image: http://localhost:7000/img/new_patient.png
 
   utter_emergency_patient:
     - text: "Click the Emergency Patient icon to enable emergency protocol options. It is divided into multiple areas:
 Area 1 = patient information area. The Patient ID is always Trauma. The Patient Name is Year/Month/Day/ Time and the CT name. Both fields can be modified.
 Area 2 = protocol selection area. Protocols are set and edited in Protocol Management.
 "
-    - image: http://localhost:7000/img/emergency_patient.png
+      image: http://localhost:7000/img/emergency_patient.png
 
   utter_protocol_selection:
-    - image: http://localhost:7000/img/protocol_selection.png
+    - text: "Find the image below"
+      image: http://localhost:7000/img/protocol_selection.png
 
   utter_scan_setup_screen:
     - image: http://localhost:7000/img/scan_setup_screen.png
-    - text: "The Scan Setup screen displays when an exam is in process. It is divided into multiple areas: "
-    - buttons:
+      text: "The Scan Setup screen displays when an exam is in process. It is divided into multiple areas: "
+      buttons:
       - payload: Patient Position and Series Level Functions area 
         title: Patient Position and Series Level Functions area 
       - payload: ViewEdit Area
@@ -294,21 +296,21 @@ Retro Scan
 
   utter_recon_management:
     - image: http://localhost:7000/img/recon_management
-    - text: "Click ReconStatus to display the Recon Management screen(1), some options will open the second area (2)."
+      text: "Click ReconStatus to display the Recon Management screen(1), some options will open the second area (2)."
 
   utter_setting_imageworks:
     - image: http://localhost:7000/img/setting_imageworks.png
-    - text: "
+      text: "
 Click Image Works to open the browser. Select exam/series/images from the patient list (2) and select an application from the browser list of applications (1).
 "
 
   utter_multitask_bar:
     - text: "Click the Film icon to enter film."
-    - image: http://localhost:7000/img/multitask_bar.png
+      image: http://localhost:7000/img/multitask_bar.png
 
   utter_ui_conv:
     - text: "Please select any one of the following to know its conventions"
-    - button:
+      buttons:
       - payload: Select items from a list
         title: Select items from a list
       - payload: cancel
@@ -326,16 +328,17 @@ Multiple Non-contiguous: items Press Ctrl and simultaneously click each item."
 
   utter_buttons:
     - image: http://localhost:7000/img/buttons_grey.png
-    - image: http://localhost:7000/img/buttons_yellow.png
-    - image: http://localhost:7000/img/buttons_red.png
-    - text: "Buttons that are gray are currently not available
+      # image: http://localhost:7000/img/buttons_yellow.png
+      # image: http://localhost:7000/img/buttons_red.png
+      text: "Buttons that are gray are currently not available
 Buttons that are selected are yellow
 Buttons that are sensitive and invalid are red. 
 Buttons that are sensitive and the value appearing in the button is updated by the system are orange. 
 "
   utter_troubleshoot:
-    - buttod: invalid text fieldns:
-      - payloa
+    - text: "please select an option below"
+      buttons:
+      - payload: invalid text field
         title: invalid text field
       - payload: air caliberations
         title: air caliberations
@@ -381,7 +384,7 @@ Buttons that are sensitive and the value appearing in the button is updated by t
 
   utter_Configure_the_system_for_protocol_change_control:
   - image: http://localhost:7000/img/config_system_for_protocol_change.png
-  - text: "Please note that You must have one user that is assigned to a group with\
+    text: "Please note that You must have one user that is assigned to a group with\
       \ the Dose Administrator role to enable Protocol Change Control.\n1. Click DoseCheck\
       \ Management from Protocol Management. 2. In the Protocol, Change Control section.\
       \ Click Off to enable PCC. 3. Click Save. "
@@ -405,9 +408,9 @@ Buttons that are sensitive and the value appearing in the button is updated by t
       \ threshold that should not be exceeded in the sites’ clinical practice. Using\
       \ this information, an appropriate starting pointfortheNotification Value for\
       \ each protocol and system Alert Value should be set\nThe various terminologies\
-      \ used are:\n1.Notification Value (NV) (button) 2.Alert Value (AV) (button)\
-      \ 3.DoseCheckAdministrator (button) 4.Dose Check AV Exceeding User (button)\
-      \ 5.ProtocolChangeControl (button) "
+      \ used are:\n1.Notification Value (NV)2.Alert Value (AV)\
+      \ 3.DoseCheckAdministrator  4.Dose Check AV Exceeding User\
+      \ 5.ProtocolChangeControl "
   utter_Dose_check_use:
   - text: '1.Checking against a Notification Value if the estimated dose for the scan
       is above your site typical dose value. Checking against an Alert Value where
@@ -416,7 +419,7 @@ Buttons that are sensitive and the value appearing in the button is updated by t
       and Pediatric with age threshold. 3.Audit logging and review 4.ProtocolChangeControl '
   utter_Setting_Dose_Administrator_Role:
   - image: http://localhost:7000/img/add_user.png
-  - text: "1.Click Dose Check Management from Protocol Management. 2. Click the User\
+    text: "1.Click Dose Check Management from Protocol Management. 2. Click the User\
       \ Admin Tool. 3. From the EA3 Administration screen, type your Username and\
       \ Password. Consult your service engineer or Application Representative for\
       \ user name and password. 4. From the Local Users tab, click Add Local User.\
@@ -430,9 +433,32 @@ Buttons that are sensitive and the value appearing in the button is updated by t
       \ a group's roles, select the Dose Admin Role option box, and click Apply Roles.\
       \ a. A green label confirms the applied roles. b. An error message box displays\
       \ if it is unsuccessful. "
+
+  utter_Setting_AV_Exceeding_User_Role:
+    - text: "1.Click Dose Check Management from Protocol Management.
+2. Click the User Admin Tool. 
+3. From the EA3 Administration screen, type your Username and Password.
+ Consult your service engineer or Application Representative for user name and password. 
+4. From the Local Users tab, click Add Local User.
+5. From the pop-up panel, type information for each of the following:
+A unique user ID
+FullName
+Password
+Confirm password
+
+6. Click Add User. 
+7. From the Groups tab, click Add Local Group. Alternately, the system can be configured for Enterprise groups if Enterprise authentication has been enabled.
+8. From the Add Local Group window, type and enter a unique group name
+9. Click Add Group  
+The group is highlighted in the Local Groups list box.  
+All information and buttons in the center panel refer to the highlighted group.
+10. To change a group's roles, select the Dose Admin Role option box, and click Apply Roles. 
+a. A green label confirms the applied roles. 
+b. An error message box displays if it is unsuccessful.
+"
   utter_Configure_the_system_for_dose_checking:
   - image: http://localhost:7000/img/config_system_for_protocol_change.png
-  - text: "Please note that you must have one user that is assigned to a group with\
+    text: "Please note that you must have one user that is assigned to a group with\
       \ Dose Administrator role to enable confirm DoseCheck settings\n1. Click DoseCheck\
       \ Management from Protocol Management 2. Set Checking for Notification Value\
       \ (NV). a. In the NV Checking section Click CTDIvol and/or DLP. b. Type a value\
@@ -448,7 +474,7 @@ Buttons that are sensitive and the value appearing in the button is updated by t
       \ Physicist at the site.\n4. Click Save "
   utter_Configure_the_system_for_alert_value_by_age_threshold:
   - image: http://localhost:7000/img/config_sys_for_alert_by_age_thershold.png
-  - text: "Please note that you must have one user that is assigned to a group with\
+    text: "Please note that you must have one user that is assigned to a group with\
       \ the Dose Administrator role to confirm Dose Check settings.\nAV value used\
       \ is based on the following criteria: Age value in New Patient. If no age value\
       \ present then the system will default to the higher age range.\n\n1. Click\
@@ -461,7 +487,7 @@ Buttons that are sensitive and the value appearing in the button is updated by t
 
   utter_Building_protocols_using_protocol_change_control:
     - image: http://localhost:7000/img/Building_protocols_using_protocol_change_control.png
-    - text: "When PCC is enabled the system will require an authorized user to accept protocol parameter updates. Perform the Following steps.
+      text: "When PCC is enabled the system will require an authorized user to accept protocol parameter updates. Perform the Following steps.
 
 1. Click DoseCheck Management From Protocol Management. 
 2. Click LogonName.
@@ -478,7 +504,7 @@ If HIPAA is not enabled, when Protocol Management is selected the user will be p
 
   utter_Building_protocols_with_notification_values:
     - image: http://localhost:7000/img/Building_protocols_with_notification_values.png
-    - text: "NV values can only be set in Protocol Management. 
+      text: "NV values can only be set in Protocol Management. 
 1. From the scan monitor, click the Protocol Management Icon. 
 2. On the Auto Voice and Protocol Management screen, click Protocol Management. 
 3. On the Protocol Selection screen, click User. 
@@ -503,7 +529,7 @@ Once the maximum number of characters is reached the system will not accept any 
 
   utter_Building_protocols_with_notification_values_by_factor:
     - image: http://localhost:7000/img/Building_protocols_with_notification_values_by_factor.png
-    - text: "If the NV value in a scan group were 5 and a factor of 1.5 was entered, the new NV value for the group would be 7.5
+      text: "If the NV value in a scan group were 5 and a factor of 1.5 was entered, the new NV value for the group would be 7.5
 
 Can by entered in increments of 0.1
 Must be greater than 0  
@@ -525,26 +551,26 @@ Maximum value of 10
     - text: "
 The CTDIvol or DLP value will be highlighted when the estimated dose for the protocol exceeds the AV value set for the system.
 "
-    - image: http://localhost:7000/img/scan_using_alert_value_checking_1.png
-    - text: "Adjust the scan parameters for the series in which the AV value is exceeded to adjust the dose below the prescribed AV value. If the AV value is still exceeded when Confirm is selected a confirmation pop up will be posted. The scan cannot be confirmed until the AV value is no longer exceeded or a user with a Dose Check AV Exceeding user role has authorized the scan. 
+      image: http://localhost:7000/img/scan_using_alert_value_checking_1.png
+#       text: "Adjust the scan parameters for the series in which the AV value is exceeded to adjust the dose below the prescribed AV value. If the AV value is still exceeded when Confirm is selected a confirmation pop up will be posted. The scan cannot be confirmed until the AV value is no longer exceeded or a user with a Dose Check AV Exceeding user role has authorized the scan. 
 
-Performing a scan exceeding an AV value demands a high degree of consideration for appropriateness. Therefore, in most cases, you will click cancel to go back to adjust parameters. However, if there is a true diagnostic need to perform a scan exceeding an AV value.
-"
-    - image: http://localhost:7000/img/Scan_using_alert_value_checking_2.png
-    - text: "
-1. Click in the Logon Name text field. 
-2. Type the UserName. 
-3. Click in the Password text field. 
-4. Type the user password. 
-5. Click in the Diagnostic Reason text field. 
-6. Type the reason for scanning exceeding the AV value. 
- The maximum number of characters is 64.  
- Once the maximum number of characters is reached the system will not accept any additional character input. 
-7. Click Confirm to proceed to scanning.
-"
+# Performing a scan exceeding an AV value demands a high degree of consideration for appropriateness. Therefore, in most cases, you will click cancel to go back to adjust parameters. However, if there is a true diagnostic need to perform a scan exceeding an AV value.
+# "
+#       image: http://localhost:7000/img/Scan_using_alert_value_checking_2.png
+#       text: "
+# 1. Click in the Logon Name text field. 
+# 2. Type the UserName. 
+# 3. Click in the Password text field. 
+# 4. Type the user password. 
+# 5. Click in the Diagnostic Reason text field. 
+# 6. Type the reason for scanning exceeding the AV value. 
+#  The maximum number of characters is 64.  
+#  Once the maximum number of characters is reached the system will not accept any additional character input. 
+# 7. Click Confirm to proceed to scanning.
+# "
   utter_Scan_using_Notification_Value_nv_checking:
     - image: http://localhost:7000/img/Scan_using_Notification_value_nv_checking.png
-    - text: "The CTDIvol or DLP value will be highlighted when the estimated dose for a scan group exceeds the NV value set for each scan group
+      text: "The CTDIvol or DLP value will be highlighted when the estimated dose for a scan group exceeds the NV value set for each scan group
 
 Adjust the scan parameters for the scan group in which the NV value is exceeded to adjust the dose below the prescribed NV value. If the NV value is still exceeded when Confirm is selected a confirmation pop up will be posted. The scan cannot be confirmed until the NV value is no longer exceeded or the user has entered a Diagnostic Reason for continuing the scan exceeding the NV Value
 
@@ -572,7 +598,7 @@ If the log data approaches the maximum size, the system will post a message dire
 
   utter_Protocol_Summary:
     - image: http://localhost:7000/img/protocol_summary.png
-    - text: "1. Click DoseCheck Management from Protocol Management. 
+      text: "1. Click DoseCheck Management from Protocol Management. 
 2. On the Dose Check Management screen, click Audit Tool. 
 3. In the Protocol Summary area, click All Protocols or Invalid Protocols.
 "
@@ -613,7 +639,7 @@ Make a kid friendly environment
   utter_Pediatric_and_small_patient_scans:
     - text: "Follow the following steps. Select one to know more information on it
 "
-    - button:
+      button:
       - payload: Optimize pediatric protocols for your facility 
         title: Optimize pediatric protocols for your facility 
       - payload: Follow Pediatric protocols
@@ -630,14 +656,14 @@ Society Of PediatricRadiology(SPR):http://www.pedrad.org/  NationalCancerInstitu
 
   utter_pediatric_protocols:
     - image: http://localhost:7000/img/prediatric_protocols.png
-    - text: "The Pediatric Protocol area was designed to help facilitate protocol selection for pediatric patients by providing age based protocol areas for Head, Orbit, and Miscellaneous and color coding system forNeck, Upper Extremity, Chest, Abdomen, Spine, and Pelvis based on age, height and weight
+      text: "The Pediatric Protocol area was designed to help facilitate protocol selection for pediatric patients by providing age based protocol areas for Head, Orbit, and Miscellaneous and color coding system forNeck, Upper Extremity, Chest, Abdomen, Spine, and Pelvis based on age, height and weight
 
 By entering the pediatric patient's weight in the Exam Rx screen, the system automatically selects the appropriate color code area for the anatomical area selected. 
 "
 
   utter_Color_Coding_for_Kids_Protocol:
     - image: http://localhost:7000/img/color_coding_kids_protocol.png
-    - text: "Based on the Broselow-Luten Pediatric System,theColorCodingforKids system was developed to help you select the correct pediatric CT protocol by dividing the protocols into nine color zones based on height and weight, and incrementally increases scan technique as the patient’s size increases. 
+      text: "Based on the Broselow-Luten Pediatric System,theColorCodingforKids system was developed to help you select the correct pediatric CT protocol by dividing the protocols into nine color zones based on height and weight, and incrementally increases scan technique as the patient’s size increases. 
 
 Once the anatomical area is selected, the Pediatric Protocol Category screen displays
 Selectors on the color/weight bar are labeled with the zone ranges for weight and length, with the word of the selected color and with the weight/color zone number.
@@ -677,20 +703,5 @@ Center the patient properly when using AutomA
 Increase the pitch
 Use Small SFOV Filters 
 "
-
 actions:
-- utter_greet
-- utter_cheer_up
-- utter_did_that_help
-- utter_happy
-- utter_goodbye
-- utter_iamabot
-- utter_Configure_the_system_for_protocol_change_control
-- utter_regulation_information
-- utter_system_uses
-- utter_Dose_Check
-- utter_Dose_check_use
-- utter_Setting_Dose_Administrator_Role
-- utter_Setting_AV_Exceeding_User_Role
-- utter_Configure_the_system_for_dose_checking
-- utter_Configure_the_system_for_alert_value_by_age_threshold
+- action_greet_user
