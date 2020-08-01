@@ -1,0 +1,636 @@
+[
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": null,
+    "followup_action": "action_listen",
+    "paused": false,
+    "events": [],
+    "latest_input_channel": null,
+    "active_form": {},
+    "latest_action_name": null
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": 1596255962.1087604,
+    "followup_action": "action_listen",
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596255959.6722167,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596255959.6722167
+      },
+      {
+        "event": "action",
+        "timestamp": 1596255959.6722167,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596255962.1087604,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596255962.1087604,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596255962.1087604
+      }
+    ],
+    "latest_input_channel": null,
+    "active_form": {},
+    "latest_action_name": null
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {
+        "name": "buttons",
+        "confidence": 0.9992526769638062
+      },
+      "entities": [],
+      "intent_ranking": [
+        {
+          "name": "buttons",
+          "confidence": 0.9992526769638062
+        },
+        {
+          "name": "affirm",
+          "confidence": 0.00038569248863495886
+        },
+        {
+          "name": "Dose_Check_Log",
+          "confidence": 0.00012042968592140824
+        },
+        {
+          "name": "Building_protocols_with_notification_values",
+          "confidence": 8.191400411305949e-05
+        },
+        {
+          "name": "Dose_Check",
+          "confidence": 4.3401636503404006e-05
+        },
+        {
+          "name": "Pediatric_and_small_patient_scans",
+          "confidence": 3.5091114114038646e-05
+        },
+        {
+          "name": "scan_setup_screen",
+          "confidence": 2.3063166736392304e-05
+        },
+        {
+          "name": "mood_great",
+          "confidence": 2.2448888557846658e-05
+        },
+        {
+          "name": "lowdisk_space",
+          "confidence": 2.06597542273812e-05
+        },
+        {
+          "name": "Using_the_dose_audit_tool",
+          "confidence": 1.4603258932766039e-05
+        }
+      ],
+      "response_selector": {
+        "default": {
+          "response": {
+            "name": null,
+            "confidence": 0.0
+          },
+          "ranking": [],
+          "full_retrieval_intent": null
+        }
+      },
+      "text": "buttons"
+    },
+    "latest_event_time": 1596256008.2897227,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596255959.6722167,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596255959.6722167
+      },
+      {
+        "event": "action",
+        "timestamp": 1596255959.6722167,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596255962.1087604,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596255962.1087604,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596255962.1087604
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256007.697924,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596256007.697924
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256007.697924,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1596256008.2440503,
+        "text": "buttons",
+        "parse_data": {
+          "intent": {
+            "name": "buttons",
+            "confidence": 0.9992526769638062
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "buttons",
+              "confidence": 0.9992526769638062
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.00038569248863495886
+            },
+            {
+              "name": "Dose_Check_Log",
+              "confidence": 0.00012042968592140824
+            },
+            {
+              "name": "Building_protocols_with_notification_values",
+              "confidence": 8.191400411305949e-05
+            },
+            {
+              "name": "Dose_Check",
+              "confidence": 4.3401636503404006e-05
+            },
+            {
+              "name": "Pediatric_and_small_patient_scans",
+              "confidence": 3.5091114114038646e-05
+            },
+            {
+              "name": "scan_setup_screen",
+              "confidence": 2.3063166736392304e-05
+            },
+            {
+              "name": "mood_great",
+              "confidence": 2.2448888557846658e-05
+            },
+            {
+              "name": "lowdisk_space",
+              "confidence": 2.06597542273812e-05
+            },
+            {
+              "name": "Using_the_dose_audit_tool",
+              "confidence": 1.4603258932766039e-05
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "buttons"
+        },
+        "input_channel": "rest",
+        "message_id": "012de613e4b541fd90d76815550a08b2",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256008.267457,
+        "name": "utter_buttons",
+        "policy": "policy_0_MemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596256008.267457,
+        "text": "Buttons that are gray are currently not available Buttons that are selected are yellow Buttons that are sensitive and invalid are red. Buttons that are sensitive and the value appearing in the button is updated by the system are orange. ",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": "http://localhost:7000/img/buttons_grey.png",
+          "image": "http://localhost:7000/img/buttons_grey.png",
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256008.2897227,
+        "name": "action_listen",
+        "policy": "policy_0_MemoizationPolicy",
+        "confidence": 1.0
+      }
+    ],
+    "latest_input_channel": "rest",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {
+        "name": "Configure_the_system_for_protocol_change_control",
+        "confidence": 0.8975092172622681
+      },
+      "entities": [],
+      "intent_ranking": [
+        {
+          "name": "Configure_the_system_for_protocol_change_control",
+          "confidence": 0.8975092172622681
+        },
+        {
+          "name": "Configure_the_system_for_dose_checking",
+          "confidence": 0.05568423494696617
+        },
+        {
+          "name": "pediatric_protocols",
+          "confidence": 0.023272890597581863
+        },
+        {
+          "name": "optimize_pediatric_protocol",
+          "confidence": 0.018308311700820923
+        },
+        {
+          "name": "troubleshoot",
+          "confidence": 0.0036497528199106455
+        },
+        {
+          "name": "Set_up_a_pediatric_or_small_patient_exam",
+          "confidence": 0.0006127544329501688
+        },
+        {
+          "name": "Protocol_Summary",
+          "confidence": 0.000295197096420452
+        },
+        {
+          "name": "Dose_Check",
+          "confidence": 0.00029029863071627915
+        },
+        {
+          "name": "Building_protocols_using_protocol_change_control",
+          "confidence": 0.0002066385350190103
+        },
+        {
+          "name": "thanks",
+          "confidence": 0.0001706720795482397
+        }
+      ],
+      "response_selector": {
+        "default": {
+          "response": {
+            "name": null,
+            "confidence": 0.0
+          },
+          "ranking": [],
+          "full_retrieval_intent": null
+        }
+      },
+      "text": "configure for protocol change"
+    },
+    "latest_event_time": 1596256039.4448576,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596255959.6722167,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596255959.6722167
+      },
+      {
+        "event": "action",
+        "timestamp": 1596255959.6722167,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596255962.1087604,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596255962.1087604,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596255962.1087604
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256007.697924,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596256007.697924
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256007.697924,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1596256008.2440503,
+        "text": "buttons",
+        "parse_data": {
+          "intent": {
+            "name": "buttons",
+            "confidence": 0.9992526769638062
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "buttons",
+              "confidence": 0.9992526769638062
+            },
+            {
+              "name": "affirm",
+              "confidence": 0.00038569248863495886
+            },
+            {
+              "name": "Dose_Check_Log",
+              "confidence": 0.00012042968592140824
+            },
+            {
+              "name": "Building_protocols_with_notification_values",
+              "confidence": 8.191400411305949e-05
+            },
+            {
+              "name": "Dose_Check",
+              "confidence": 4.3401636503404006e-05
+            },
+            {
+              "name": "Pediatric_and_small_patient_scans",
+              "confidence": 3.5091114114038646e-05
+            },
+            {
+              "name": "scan_setup_screen",
+              "confidence": 2.3063166736392304e-05
+            },
+            {
+              "name": "mood_great",
+              "confidence": 2.2448888557846658e-05
+            },
+            {
+              "name": "lowdisk_space",
+              "confidence": 2.06597542273812e-05
+            },
+            {
+              "name": "Using_the_dose_audit_tool",
+              "confidence": 1.4603258932766039e-05
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "buttons"
+        },
+        "input_channel": "rest",
+        "message_id": "012de613e4b541fd90d76815550a08b2",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256008.267457,
+        "name": "utter_buttons",
+        "policy": "policy_0_MemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596256008.267457,
+        "text": "Buttons that are gray are currently not available Buttons that are selected are yellow Buttons that are sensitive and invalid are red. Buttons that are sensitive and the value appearing in the button is updated by the system are orange. ",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": "http://localhost:7000/img/buttons_grey.png",
+          "image": "http://localhost:7000/img/buttons_grey.png",
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256008.2897227,
+        "name": "action_listen",
+        "policy": "policy_0_MemoizationPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596256039.4052572,
+        "text": "configure for protocol change",
+        "parse_data": {
+          "intent": {
+            "name": "Configure_the_system_for_protocol_change_control",
+            "confidence": 0.8975092172622681
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "Configure_the_system_for_protocol_change_control",
+              "confidence": 0.8975092172622681
+            },
+            {
+              "name": "Configure_the_system_for_dose_checking",
+              "confidence": 0.05568423494696617
+            },
+            {
+              "name": "pediatric_protocols",
+              "confidence": 0.023272890597581863
+            },
+            {
+              "name": "optimize_pediatric_protocol",
+              "confidence": 0.018308311700820923
+            },
+            {
+              "name": "troubleshoot",
+              "confidence": 0.0036497528199106455
+            },
+            {
+              "name": "Set_up_a_pediatric_or_small_patient_exam",
+              "confidence": 0.0006127544329501688
+            },
+            {
+              "name": "Protocol_Summary",
+              "confidence": 0.000295197096420452
+            },
+            {
+              "name": "Dose_Check",
+              "confidence": 0.00029029863071627915
+            },
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.0002066385350190103
+            },
+            {
+              "name": "thanks",
+              "confidence": 0.0001706720795482397
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "configure for protocol change"
+        },
+        "input_channel": "rest",
+        "message_id": "dd4f77c2a4ee4561aa89e51a5980f994",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256039.4234438,
+        "name": "utter_Configure_the_system_for_protocol_change_control",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.9385820031166077
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596256039.4234438,
+        "text": "Please note that You must have one user that is assigned to a group with the Dose Administrator role to enable Protocol Change Control.\n1. Click DoseCheck Management from Protocol Management. 2. In the Protocol, Change Control section. Click Off to enable PCC. 3. Click Save. ",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": "http://localhost:7000/img/config_system_for_protocol_change.png",
+          "image": "http://localhost:7000/img/config_system_for_protocol_change.png",
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596256039.4448576,
+        "name": "action_listen",
+        "policy": "policy_1_TEDPolicy",
+        "confidence": 0.9771691560745239
+      }
+    ],
+    "latest_input_channel": "rest",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  }
+]
