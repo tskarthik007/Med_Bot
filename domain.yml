@@ -662,7 +662,7 @@ By entering the pediatric patient's weight in the Exam Rx screen, the system aut
 "
 
   utter_Color_Coding_for_Kids_Protocol:
-    - image: http://localhost:7000/img/color_coding_kids_protocol.png
+    - image: http://localhost:7000/img/color_coding_for_kids_protocol.png
       text: "Based on the Broselow-Luten Pediatric System,theColorCodingforKids system was developed to help you select the correct pediatric CT protocol by dividing the protocols into nine color zones based on height and weight, and incrementally increases scan technique as the patient’s size increases. 
 
 Once the anatomical area is selected, the Pediatric Protocol Category screen displays
