@@ -215,9 +215,19 @@
 * Dose_check_use
   - utter_Dose_check_use
 
-## Setting_Dose_Administrator_Role
+## Setting_Dose_Administrator_Role_affirm
 * Setting_Dose_Administrator_Role
   - utter_Setting_Dose_Administrator_Role
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## Setting_Dose_Administrator_Role_deny
+* Setting_Dose_Administrator_Role
+  - utter_Setting_Dose_Administrator_Role
+  - utter_did_that_help
+* deny
+  - utter_canthelp
 
 ## Setting_AV_Exceeding_User_Role
 * Setting_AV_Exceeding_User_Role
@@ -281,9 +291,20 @@
 * Dose_reporting_considerations
   - utter_Dose_reporting_considerations
 
-## Minimize_pediatric_and_small_patient_doses
+## Minimize_pediatric_and_small_patient_doses_affirm
 * Minimize_pediatric_and_small_patient_doses
   - utter_Minimize_pediatric_and_small_patient_doses
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## Minimize_pediatric_and_small_patient_doses_deny
+* Minimize_pediatric_and_small_patient_doses
+  - utter_Minimize_pediatric_and_small_patient_doses
+  - utter_did_that_help
+* deny
+  - utter_canthelp
+
 
 ## Pediatric_and_small_patient_scans
 * Pediatric_and_small_patient_scans
@@ -305,8 +326,18 @@
 * Set_up_a_pediatric_or_small_patient_exam
   - utter_Set_up_a_pediatric_or_small_patient_exam
 
-## Adjust_pediatric_and_small_patient_scan_parameters
+## Adjust_pediatric_and_small_patient_scan_parameters_affirm
 * Adjust_pediatric_and_small_patient_scan_parameters
   - utter_Adjust_pediatric_and_small_patient_scan_parameters
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## Adjust_pediatric_and_small_patient_scan_parameters_affirm
+* Adjust_pediatric_and_small_patient_scan_parameters
+  - utter_Adjust_pediatric_and_small_patient_scan_parameters
+  - utter_did_that_help
+* deny
+  - utter_cant_help
 
 <!-------------------------------------------------------------- CHAPTER 6 -------------------------------------------------------->

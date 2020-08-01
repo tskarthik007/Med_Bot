@@ -83,13 +83,19 @@ intents:
 - Adjust_pediatric_and_small_patient_scan_parameters
 responses:
   utter_greet:
-  - text: Hey! How can I help you?
+  - text: Hey Buddy! How can I help you?
   utter_welcome:
   - text: Cool! You're welcome.
-  # utter_did_that_help:
-  # - text: Did that help you?
-  # utter_happy:
-  # - text: Great, carry on!
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_cant_help:
+  - text: I'm still learning. Refer the manual for more info!
+    custom:
+      payload: pdf_attachment
+      title: ACTS Manual
+      url: http://localhost:7000/img/manual.pdf
+  utter_happy:
+  - text: Great, carry on!
   utter_goodbye:
   - text: Bye
   utter_iamabot:
@@ -295,7 +301,7 @@ Retro Scan
 "
 
   utter_recon_management:
-    - image: http://localhost:7000/img/recon_management
+    - image: http://localhost:7000/img/recon_management.png
       text: "Click ReconStatus to display the Recon Management screen(1), some options will open the second area (2)."
 
   utter_setting_imageworks:
@@ -662,7 +668,7 @@ By entering the pediatric patient's weight in the Exam Rx screen, the system aut
 "
 
   utter_Color_Coding_for_Kids_Protocol:
-    - image: http://localhost:7000/img/color_coding_kids_protocol.png
+    - image: http://localhost:7000/img/color_coding_for_kids_protocol.png
       text: "Based on the Broselow-Luten Pediatric System,theColorCodingforKids system was developed to help you select the correct pediatric CT protocol by dividing the protocols into nine color zones based on height and weight, and incrementally increases scan technique as the patient’s size increases. 
 
 Once the anatomical area is selected, the Pediatric Protocol Category screen displays

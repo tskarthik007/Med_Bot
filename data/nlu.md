@@ -363,6 +363,7 @@
 - Why can’t I type text in the input?
 - My textfield not working
 - I can’t enter in the textfield
+- invalid text field
 
 ## intent:air_caliberations
 - How to ensure the validity of the generator calibrations.
@@ -371,23 +372,27 @@
 - Why should I complete all fast cal sections? 
 - Problem with system air calibrations
 - Problem with generator calibrations.
+- air caliberations
 
 ## intent:scan_aborts
 - Scan cancelled during Axial or Helical scanning
 - What to do when a scan is aborted?
 - Why does my scan get aborted?
 - My scan progress stopped in the middle of a scan.
+- scan abort
 
 ## intent:wrong_screen
 - Wrong displayed during desktop switch
 - I can’t get the intended screen on the desktop
 - Desktop screen error
+- wrong screen
 
 ## intent:no_response
 - My console is not working.
 - I can’t shutdown the console
 - When should I shutdown the system? 
 - No response on the console
+- no response
 
 ## intent:lowdisk_space
 - What does the pink color dialog box indicate?
@@ -396,6 +401,7 @@
 - Low disk space trouble. 
 - What to do if there is low disk space
 - I removed the images and still the pink warning appears.
+- low disk space
 
 ## intent:harddrive_failure
 - Attention – Scan disk array has encountered a hard drive failure 
@@ -405,6 +411,7 @@
 - When to call a service provider? 
 - Attention – Scan disk array has encountered a hard drive failure shown on screen
 - Scan disk array error.
+- hard drive failure
 
 
 <!-------------------------------------------------------------- CHAPTER 2 -------------------------------------------------------->
