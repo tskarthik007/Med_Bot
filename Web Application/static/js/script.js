@@ -225,7 +225,6 @@ function setBotResponse(response) {
                 if (response[i].hasOwnProperty("buttons")) {
                     addSuggestion(response[i].buttons);
                 }
-
                 //check if the response contains "attachment" 
                 if (response[i].hasOwnProperty("attachment")) {
 
@@ -234,6 +233,13 @@ function setBotResponse(response) {
                         video_url = response[i].attachment.payload.src;
 
                         var BotResponse = '<div class="video-container"> <iframe src="' + video_url + '" frameborder="0" allowfullscreen></iframe> </div>'
+                        $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
+                    }
+                    //check if the attachment type is "link"
+                    if (response[i].attachment.type == "link") {
+                        link_url = response[i].attachment.payload.link;
+
+                        var BotResponse= '<p class="botMsg"><a href=" '+link_url+'">Click</a></p><div class="clearfix"></div>';
                         $(BotResponse).appendTo(".chats").hide().fadeIn(1000);
                     }
 
