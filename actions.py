@@ -26,3 +26,18 @@ class ActionGreetUser(Action):
         dispatcher.utter_message("Hey there I am your MEDBOT 👨🏽‍⚕️, How may I help you today")
 
         return [UserUtteranceReverted()] 
+
+class ActionCustomFallback(Action):   
+
+    def name(self) -> Text:
+        return "action_custom_fallback"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        a=(tracker.latest_message)['text']
+        with open('input.txt','a+',encoding='utf-8') as f:
+            f.writelines(a+'\n')
+            print(f.read())
+        print(a)
+        dispatcher.utter_message(text='I am still learing please try again...')
+        return [UserUtteranceReverted()]

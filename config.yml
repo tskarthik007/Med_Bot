@@ -7,7 +7,6 @@ pipeline:
   - name: LexicalSyntacticFeaturizer
   - name: CountVectorsFeaturizer
   - name: CountVectorsFeaturizer
-  - name: supervised_embeddings
     analyzer: "char_wb"
     min_ngram: 1
     max_ngram: 4
@@ -20,8 +19,13 @@ pipeline:
 # https://rasa.com/docs/rasa/core/policies/
 policies:
   - name: MemoizationPolicy
-  - name: KerasPolicy
+  #- name: KerasPolicy
   - name: TEDPolicy
     max_history: 6
-    epochs: 50
+    epochs: 100
   - name: MappingPolicy
+  - name: "FallbackPolicy"
+    nlu_threshold: 0.1
+    ambiguity_threshold: 0.1
+    core_threshold: 0.1
+    fallback_action_name: 'action_custom_fallback'
