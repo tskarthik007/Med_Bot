@@ -2,6 +2,10 @@
 * greet
   - utter_greet
 
+## fallback story
+* out_of_scope
+  - action_custom_fallback
+
 ## thanks path
 * thanks
   - utter_welcome
@@ -338,6 +342,526 @@
   - utter_Adjust_pediatric_and_small_patient_scan_parameters
   - utter_did_that_help
 * deny
-  - utter_cant_help
+  - utter_canthelp
 
 <!-------------------------------------------------------------- CHAPTER 6 -------------------------------------------------------->
+## computer_console_parts affirm
+* computer_console_parts
+  - utter_computer_console_parts
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## computer_console_parts deny
+* computer_console_parts
+  - utter_computer_console_parts
+  - utter_did_that_help
+* deny
+  - utter_console_suggestions
+
+## Digital_video_disk_read_write_drive affirm
+* Digital_video_disk_read_write_drive 
+  - utter_Digital_video_disk_read_write_drive
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## Digital_video_disk_read_write_drive deny
+* Digital_video_disk_read_write_drive 
+  - utter_Digital_video_disk_read_write_drive
+  - utter_did_that_help
+* deny
+  - utter_console_suggestions
+
+## USB_connection affirm
+*  USB_connection
+  - utter_USB_connection
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## USB_connection deny
+*  USB_connection
+  - utter_USB_connection
+  - utter_did_that_help
+* deny
+  - utter_console_suggestions
+
+## Computer_power_switch affirm
+*  Computer_power_switch
+  - utter_Computer_power_switch
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## Computer_power_switch deny
+*  Computer_power_switch
+  - utter_Computer_power_switch
+  - utter_did_that_help
+* deny
+  - utter_console_suggestions
+
+## computer_function affirm
+* computer_function
+  - utter_computer_function
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## computer_function deny
+* computer_function
+  - utter_computer_function
+  - utter_did_that_help
+* deny
+  - utter_console_suggestions
+
+## reconstruction_engine affirm
+* reconstruction_engine
+  - utter_reconstruction_engine
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## reconstruction_engine deny
+* reconstruction_engine
+  - utter_reconstruction_engine
+  - utter_did_that_help
+* deny
+  - utter_console_suggestions
+
+## Monitor_stabilization affirm
+* Monitor_stabilization
+  - utter_Monitor_stabilization
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## Monitor_stabilization deny
+* Monitor_stabilization
+  - utter_Monitor_stabilization
+  - utter_did_that_help
+* deny
+  - utter_monitor_suggestions
+
+## monitor_burn affirm
+* monitor_burn
+  - utter_monitor_burn
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## monitor_burn deny
+* monitor_burn
+  - utter_monitor_burn
+  - utter_did_that_help
+* deny
+  - utter_monitor_suggestions
+
+## monitor_timeout affirm
+* monitor_timeout
+  - utter_monitor_timeout
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## monitor_timeout deny
+* monitor_timeout
+  - utter_monitor_timeout
+  - utter_did_that_help
+* deny
+  - utter_monitor_suggestions
+
+## SCBSV_keyboard affirm
+* SCBSV_keyboard
+  - utter_SCBSV_keyboard
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## SCBSV_keyboard deny
+* SCBSV_keyboard
+  - utter_SCBSV_keyboard
+  - utter_did_that_help
+* deny
+  - utter_keyboard_suggestions
+
+## SCBSV_keyboard_keys affirm
+* SCBSV_keyboard_keys
+  - utter_SCBSV_keyboard_keys
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## SCBSV_keyboard_keys deny
+* SCBSV_keyboard_keys
+  - utter_SCBSV_keyboard_keys
+  - utter_did_that_help
+* deny
+  - utter_keyboard_suggestions
+
+## SCBSV_keyboard_function_keys_f1_to_f3 affirm
+* SCBSV_keyboard_function_keys_f1_to_f3
+  - utter_SCBSV_keyboard_function_keys_f1_to_f3
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## SCBSV_keyboard_function_keys_f1_to_f3 deny
+* SCBSV_keyboard_function_keys_f1_to_f3
+  - utter_SCBSV_keyboard_function_keys_f1_to_f3
+  - utter_did_that_help
+* deny
+  - utter_keyboard_suggestions
+
+## SCBSV_keyboard_function_keys_f5_to_f11 affirm
+* SCBSV_keyboard_function_keys_f5_to_f11
+  - utter_SCBSV_keyboard_function_keys_f5_to_f11
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## SCBSV_keyboard_function_keys_f5_to_f11 deny
+* SCBSV_keyboard_function_keys_f5_to_f11
+  - utter_SCBSV_keyboard_function_keys_f5_to_f11
+  - utter_did_that_help
+* deny
+  - utter_keyboard_suggestions
+
+## SCBSV_keyboard_pageup_pagedown_keys affirm
+* SCBSV_keyboard_pageup_pagedown_keys
+  - utter_SCBSV_keyboard_pageup_pagedown_keys
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## SCBSV_keyboard_pageup_pagedown_keys deny
+* SCBSV_keyboard_pageup_pagedown_keys
+  - utter_SCBSV_keyboard_pageup_pagedown_keys
+  - utter_did_that_help
+* deny
+  - utter_keyboard_suggestions
+  
+## SCBSV_keyboard_WL_control_keys affirm
+* SCBSV_keyboard_WL_control_keys
+  - utter_SCBSV_keyboard_WL_control_keys
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## SCBSV_keyboard_WL_control_keys deny
+* SCBSV_keyboard_WL_control_keys
+  - utter_SCBSV_keyboard_WL_control_keys
+  - utter_did_that_help
+* deny
+  - utter_keyboard_suggestions
+
+## mouse_usage affirm
+* mouse_usage
+  - utter_mouse_usage
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## mouse_usage deny
+* mouse_usage
+  - utter_mouse_usage
+  - utter_did_that_help
+* deny
+  - utter_mouse_suggestions
+
+## mouse_operations affirm
+* mouse_operations
+  - utter_mouse_operations
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## mouse_operations deny
+* mouse_operations
+  - utter_mouse_operations
+  - utter_did_that_help
+* deny
+  - utter_mouse_suggestions
+
+## gantry_display_usage affirm
+* gantry_display_usage
+  - utter_gantry_display_usage
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## gantry_display_usage deny
+* gantry_display_usage
+  - utter_gantry_display_usage
+  - utter_did_that_help
+* affirm
+  - utter_gantry_suggestions
+
+## gantry_display_table_height affirm
+* gantry_display_table_height
+  - utter_gantry_display_table_height
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## gantry_display_table_height deny
+* gantry_display_table_height
+  - utter_gantry_display_table_height
+  - utter_did_that_help
+* deny
+  - utter_gantry_suggestions
+
+## error_message_in_gantry affirm
+* error_message_in_gantry
+  - utter_error_message_in_gantry
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## error_message_in_gantry deny
+* error_message_in_gantry
+  - utter_error_message_in_gantry
+  - utter_did_that_help
+* deny
+  - utter_gantry_suggestions
+
+## gantry_internal_components affirm
+* gantry_internal_components
+  - utter_gantry_internal_components
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## gantry_internal_components deny
+* gantry_internal_components
+  - utter_gantry_internal_components
+  - utter_did_that_help
+* deny
+  - utter_gantry_suggestions
+
+## table_max_weight affirm
+* table_max_weight
+  - utter_table_max_weight
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_max_weight deny
+* table_max_weight
+  - utter_table_max_weight
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_functions affirm
+* table_functions
+  - utter_table_functions
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_functions deny
+* table_functions
+  - utter_table_functions
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_hardware_components affirm
+* table_hardware_components
+  - utter_table_hardware_components
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_hardware_components deny
+* table_hardware_components
+  - utter_table_hardware_components
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+<!-- ## table_component_collimator affirm
+* table_component_collimator
+  - utter_table_component_collimator
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_component_collimator deny
+* table_component_collimator
+  - utter_table_component_collimator
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_component_gantry affirm
+* table_component_gantry
+  - utter_table_component_gantry
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_component_gantry deny
+* table_component_gantry
+  - utter_table_component_gantry
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_component_matrix_detector affirm
+* table_component_matrix_detector
+  - utter_table_component_matrix_detector
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_component_matrix_detector deny
+* table_component_matrix_detector
+  - utter_table_component_matrix_detector
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_component_other_changes affirm
+* table_component_other_changes
+  - utter_table_component_other_changes
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_component_other_changes deny
+* table_component_other_changes
+  - utter_table_component_other_changes
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_component_coverage affirm
+* table_component_coverage
+  - utter_table_component_coverage
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_component_coverage deny
+* table_component_coverage
+  - utter_table_component_coverage
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_component_axial_detector_signal_collection affirm
+* table_component_axial_detector_signal_collection
+  - utter_table_component_axial_detector_signal_collection
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_component_axial_detector_signal_collection deny
+* table_component_axial_detector_signal_collection
+  - utter_table_component_axial_detector_signal_collection
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_component_axial_interval affirm
+* table_component_axial_interval
+  - utter_table_component_axial_interval
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_component_axial_interval deny
+* table_component_axial_interval
+  - utter_table_component_axial_interval
+  - utter_did_that_help
+* deny
+  - utter_happy
+
+## table_component_helicalpitch_scanmode_collimation affirm
+* table_component_helicalpitch_scanmode_collimation
+  - utter_table_component_helicalpitch_scanmode_collimation
+  - utter_did_that_help
+* affirm
+  - utter_happy
+
+## table_component_helicalpitch_scanmode_collimation deny
+* table_component_helicalpitch_scanmode_collimation
+  - utter_table_component_helicalpitch_scanmode_collimation
+  - utter_did_that_help
+* deny
+  - utter_happy -->
+
+## scan_mode_pitches affirm
+* scan_mode_pitches
+  - utter_scan_mode_pitches
+
+## beam_collimation_conversion
+* beam_collimation_conversion
+  - utter_beam_collimation_conversion
+
+## reduce_helical_artifact
+* reduce_helical_artifact
+  - utter_reduce_helical_artifact
+
+## axial_detector_usage
+* axial_detector_usage
+  - utter_axial_detector_usage
+  - utter_axial_suggestions
+
+## axial_detector_colors
+* axial_detector_colors
+  - utter_axial_detector_colors
+  - utter_axial_suggestions
+
+## axial_detector_rotation_speed
+* axial_detector_rotation_speed
+  - utter_axial_detector_rotation_speed
+  - utter_axial_suggestions
+
+## axial_slice_range
+* axial_slice_range
+  - utter_axial_slice_range
+  - utter_axial_suggestions
+
+## axial_detector_images_per_rotation
+* axial_detector_images_per_rotation
+  - utter_axial_detector_images_per_rotation
+  - utter_axial_suggestions
+
+## axial_detector_coverage_selection
+* axial_detector_coverage_selection
+  - utter_axial_detector_coverage_selection
+  - utter_axial_suggestions
+
+## axial_detector_retro_recon_selection
+* axial_detector_retro_recon_selection
+  - utter_axial_detector_retro_recon_selection
+  - utter_axial_suggestions
+
+## helical_detector_parameters
+* axial_detector_colors
+  - utter_axial_detector_colors
+  - utter_axial_suggestions
+
+## helical_detector_colors
+* axial_detector_colors
+  - utter_axial_detector_colors
+  - utter_axial_suggestions
+
+## power_distributor_usage
+* power_distributor_usage
+  - utter_power_distributor_usage
+
+## power_distributor_buttons
+* power_distributor_buttons
+  - utter_power_distributor_buttons
+
+## Xray_tube_usage
+* Xray_tube_usage
+  - utter_Xray_tube_usage
+
+## high_freqeuncy_generator
+* high_freqeuncy_generator
+  - utter_high_freqeuncy_generator
