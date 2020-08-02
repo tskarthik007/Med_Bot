@@ -24,8 +24,7 @@ policies:
     max_history: 6
     epochs: 100
   - name: MappingPolicy
-  - name: "FallbackPolicy"
-    nlu_threshold: 0.3
-    ambiguity_threshold: 0.1
-    core_threshold: 0.3
-    fallback_action_name: 'action_custom_fallback'
+  # - name: "FallbackPolicy"
+  #   nlu_threshold: 0.1
+  #   core_threshold: 0.1
+  #   fallback_action_name: 'action_custom_fallback'

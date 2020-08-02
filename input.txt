@@ -10,3 +10,8 @@ yes
 monitor timeout
 monitor timeout
 no
+add patient to the schedule
+add patient
+performed procedure step
+dose check
+hi

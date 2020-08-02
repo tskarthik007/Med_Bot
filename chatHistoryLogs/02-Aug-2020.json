@@ -99955,5 +99955,1985 @@
     "latest_input_channel": "rest",
     "active_form": {},
     "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": null,
+    "followup_action": "action_listen",
+    "paused": false,
+    "events": [],
+    "latest_input_channel": null,
+    "active_form": {},
+    "latest_action_name": null
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": 1596389398.4112225,
+    "followup_action": "action_listen",
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389395.9308677
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389398.4112225,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389398.4112225,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389398.4112225
+      }
+    ],
+    "latest_input_channel": null,
+    "active_form": {},
+    "latest_action_name": null
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": 1596389418.9239898,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389395.9308677
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389398.4112225,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389398.4112225,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389398.4112225
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389416.2404194
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389416.6930754,
+        "text": "add patient to the schedule",
+        "parse_data": {
+          "intent": {
+            "name": "preferences_patients",
+            "confidence": 0.15889358520507812
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "preferences_patients",
+              "confidence": 0.15889358520507812
+            },
+            {
+              "name": "patient_schedule",
+              "confidence": 0.11892963945865631
+            },
+            {
+              "name": "service",
+              "confidence": 0.10045679658651352
+            },
+            {
+              "name": "Computer_power_switch",
+              "confidence": 0.09872466325759888
+            },
+            {
+              "name": "optimize_pediatric_protocol",
+              "confidence": 0.09705948084592819
+            },
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.09521038830280304
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08869586139917374
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.0823005959391594
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.08094295859336853
+            },
+            {
+              "name": "SCBSV_keyboard_keys",
+              "confidence": 0.0787859857082367
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient to the schedule"
+        },
+        "input_channel": "rest",
+        "message_id": "b15a8a1cd77f48549d4c25a398291ec2",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.915452,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389418.915452,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389418.915452
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.9239898,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      }
+    ],
+    "latest_input_channel": "rest",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": 1596389432.1042397,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389395.9308677
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389398.4112225,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389398.4112225,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389398.4112225
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389416.2404194
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389416.6930754,
+        "text": "add patient to the schedule",
+        "parse_data": {
+          "intent": {
+            "name": "preferences_patients",
+            "confidence": 0.15889358520507812
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "preferences_patients",
+              "confidence": 0.15889358520507812
+            },
+            {
+              "name": "patient_schedule",
+              "confidence": 0.11892963945865631
+            },
+            {
+              "name": "service",
+              "confidence": 0.10045679658651352
+            },
+            {
+              "name": "Computer_power_switch",
+              "confidence": 0.09872466325759888
+            },
+            {
+              "name": "optimize_pediatric_protocol",
+              "confidence": 0.09705948084592819
+            },
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.09521038830280304
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08869586139917374
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.0823005959391594
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.08094295859336853
+            },
+            {
+              "name": "SCBSV_keyboard_keys",
+              "confidence": 0.0787859857082367
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient to the schedule"
+        },
+        "input_channel": "rest",
+        "message_id": "b15a8a1cd77f48549d4c25a398291ec2",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.915452,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389418.915452,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389418.915452
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.9239898,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389429.8912232,
+        "text": "add patient",
+        "parse_data": {
+          "intent": {
+            "name": "Building_protocols_using_protocol_change_control",
+            "confidence": 0.14482411742210388
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.14482411742210388
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.11892438679933548
+            },
+            {
+              "name": "troubleshoot",
+              "confidence": 0.10870181769132614
+            },
+            {
+              "name": "add_patient",
+              "confidence": 0.10713101923465729
+            },
+            {
+              "name": "gantry_display_table_height",
+              "confidence": 0.10590646415948868
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.10423913598060608
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08374185860157013
+            },
+            {
+              "name": "performed_procedure_step",
+              "confidence": 0.07586371898651123
+            },
+            {
+              "name": "protocol_selection",
+              "confidence": 0.07558467239141464
+            },
+            {
+              "name": "login",
+              "confidence": 0.07508277893066406
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient"
+        },
+        "input_channel": "rest",
+        "message_id": "d47c4eec980742d1b9488188996fbe03",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389432.094813,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389432.094813,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389432.094813
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389432.1042397,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      }
+    ],
+    "latest_input_channel": "rest",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": 1596389540.9967375,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389395.9308677
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389398.4112225,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389398.4112225,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389398.4112225
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389416.2404194
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389416.6930754,
+        "text": "add patient to the schedule",
+        "parse_data": {
+          "intent": {
+            "name": "preferences_patients",
+            "confidence": 0.15889358520507812
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "preferences_patients",
+              "confidence": 0.15889358520507812
+            },
+            {
+              "name": "patient_schedule",
+              "confidence": 0.11892963945865631
+            },
+            {
+              "name": "service",
+              "confidence": 0.10045679658651352
+            },
+            {
+              "name": "Computer_power_switch",
+              "confidence": 0.09872466325759888
+            },
+            {
+              "name": "optimize_pediatric_protocol",
+              "confidence": 0.09705948084592819
+            },
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.09521038830280304
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08869586139917374
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.0823005959391594
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.08094295859336853
+            },
+            {
+              "name": "SCBSV_keyboard_keys",
+              "confidence": 0.0787859857082367
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient to the schedule"
+        },
+        "input_channel": "rest",
+        "message_id": "b15a8a1cd77f48549d4c25a398291ec2",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.915452,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389418.915452,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389418.915452
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.9239898,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389429.8912232,
+        "text": "add patient",
+        "parse_data": {
+          "intent": {
+            "name": "Building_protocols_using_protocol_change_control",
+            "confidence": 0.14482411742210388
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.14482411742210388
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.11892438679933548
+            },
+            {
+              "name": "troubleshoot",
+              "confidence": 0.10870181769132614
+            },
+            {
+              "name": "add_patient",
+              "confidence": 0.10713101923465729
+            },
+            {
+              "name": "gantry_display_table_height",
+              "confidence": 0.10590646415948868
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.10423913598060608
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08374185860157013
+            },
+            {
+              "name": "performed_procedure_step",
+              "confidence": 0.07586371898651123
+            },
+            {
+              "name": "protocol_selection",
+              "confidence": 0.07558467239141464
+            },
+            {
+              "name": "login",
+              "confidence": 0.07508277893066406
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient"
+        },
+        "input_channel": "rest",
+        "message_id": "d47c4eec980742d1b9488188996fbe03",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389432.094813,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389432.094813,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389432.094813
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389432.1042397,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389538.8248594,
+        "text": "performed procedure step",
+        "parse_data": {
+          "intent": {
+            "name": "Building_protocols_using_protocol_change_control",
+            "confidence": 0.18899649381637573
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.18899649381637573
+            },
+            {
+              "name": "performed_procedure_step",
+              "confidence": 0.17324118316173553
+            },
+            {
+              "name": "Using_the_dose_audit_tool",
+              "confidence": 0.12699410319328308
+            },
+            {
+              "name": "Configure_the_system_for_protocol_change_control",
+              "confidence": 0.08946916460990906
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.08791151642799377
+            },
+            {
+              "name": "power_distributor_usage",
+              "confidence": 0.07366961985826492
+            },
+            {
+              "name": "power_distributor_buttons",
+              "confidence": 0.06886552274227142
+            },
+            {
+              "name": "gantry_control",
+              "confidence": 0.0639212429523468
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.06374534964561462
+            },
+            {
+              "name": "monitor_burn",
+              "confidence": 0.06318579614162445
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "performed procedure step"
+        },
+        "input_channel": "rest",
+        "message_id": "0992c3852ca64ad7ba1910182ef1cceb",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389540.9895709,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389540.9895709,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389540.9895709
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389540.9967375,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      }
+    ],
+    "latest_input_channel": "rest",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": 1596389592.1513813,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389395.9308677
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389398.4112225,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389398.4112225,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389398.4112225
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389416.2404194
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389416.6930754,
+        "text": "add patient to the schedule",
+        "parse_data": {
+          "intent": {
+            "name": "preferences_patients",
+            "confidence": 0.15889358520507812
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "preferences_patients",
+              "confidence": 0.15889358520507812
+            },
+            {
+              "name": "patient_schedule",
+              "confidence": 0.11892963945865631
+            },
+            {
+              "name": "service",
+              "confidence": 0.10045679658651352
+            },
+            {
+              "name": "Computer_power_switch",
+              "confidence": 0.09872466325759888
+            },
+            {
+              "name": "optimize_pediatric_protocol",
+              "confidence": 0.09705948084592819
+            },
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.09521038830280304
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08869586139917374
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.0823005959391594
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.08094295859336853
+            },
+            {
+              "name": "SCBSV_keyboard_keys",
+              "confidence": 0.0787859857082367
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient to the schedule"
+        },
+        "input_channel": "rest",
+        "message_id": "b15a8a1cd77f48549d4c25a398291ec2",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.915452,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389418.915452,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389418.915452
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.9239898,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389429.8912232,
+        "text": "add patient",
+        "parse_data": {
+          "intent": {
+            "name": "Building_protocols_using_protocol_change_control",
+            "confidence": 0.14482411742210388
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.14482411742210388
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.11892438679933548
+            },
+            {
+              "name": "troubleshoot",
+              "confidence": 0.10870181769132614
+            },
+            {
+              "name": "add_patient",
+              "confidence": 0.10713101923465729
+            },
+            {
+              "name": "gantry_display_table_height",
+              "confidence": 0.10590646415948868
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.10423913598060608
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08374185860157013
+            },
+            {
+              "name": "performed_procedure_step",
+              "confidence": 0.07586371898651123
+            },
+            {
+              "name": "protocol_selection",
+              "confidence": 0.07558467239141464
+            },
+            {
+              "name": "login",
+              "confidence": 0.07508277893066406
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient"
+        },
+        "input_channel": "rest",
+        "message_id": "d47c4eec980742d1b9488188996fbe03",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389432.094813,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389432.094813,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389432.094813
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389432.1042397,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389538.8248594,
+        "text": "performed procedure step",
+        "parse_data": {
+          "intent": {
+            "name": "Building_protocols_using_protocol_change_control",
+            "confidence": 0.18899649381637573
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.18899649381637573
+            },
+            {
+              "name": "performed_procedure_step",
+              "confidence": 0.17324118316173553
+            },
+            {
+              "name": "Using_the_dose_audit_tool",
+              "confidence": 0.12699410319328308
+            },
+            {
+              "name": "Configure_the_system_for_protocol_change_control",
+              "confidence": 0.08946916460990906
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.08791151642799377
+            },
+            {
+              "name": "power_distributor_usage",
+              "confidence": 0.07366961985826492
+            },
+            {
+              "name": "power_distributor_buttons",
+              "confidence": 0.06886552274227142
+            },
+            {
+              "name": "gantry_control",
+              "confidence": 0.0639212429523468
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.06374534964561462
+            },
+            {
+              "name": "monitor_burn",
+              "confidence": 0.06318579614162445
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "performed procedure step"
+        },
+        "input_channel": "rest",
+        "message_id": "0992c3852ca64ad7ba1910182ef1cceb",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389540.9895709,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389540.9895709,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389540.9895709
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389540.9967375,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389589.9639232,
+        "text": "dose check",
+        "parse_data": {
+          "intent": {
+            "name": "lowdisk_space",
+            "confidence": 0.14365987479686737
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "lowdisk_space",
+              "confidence": 0.14365987479686737
+            },
+            {
+              "name": "precautionary_signs",
+              "confidence": 0.13578589260578156
+            },
+            {
+              "name": "check_patients_status",
+              "confidence": 0.11107274144887924
+            },
+            {
+              "name": "Dose_Check",
+              "confidence": 0.1063229888677597
+            },
+            {
+              "name": "axial_slice_range",
+              "confidence": 0.09576093405485153
+            },
+            {
+              "name": "table_functions",
+              "confidence": 0.09175008535385132
+            },
+            {
+              "name": "Dose_check_use",
+              "confidence": 0.08433536440134048
+            },
+            {
+              "name": "usage",
+              "confidence": 0.08037018775939941
+            },
+            {
+              "name": "greet",
+              "confidence": 0.08034276962280273
+            },
+            {
+              "name": "Dose_Check_Log",
+              "confidence": 0.07059913128614426
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "dose check"
+        },
+        "input_channel": "rest",
+        "message_id": "07767a11082647198e171bb298f5580d",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389592.1372342,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389592.1372342,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389592.1372342
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389592.1513813,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      }
+    ],
+    "latest_input_channel": "rest",
+    "active_form": {},
+    "latest_action_name": "action_listen"
+  },
+  {
+    "sender_id": "teambot_user",
+    "slots": {},
+    "latest_message": {
+      "intent": {},
+      "entities": [],
+      "text": null,
+      "message_id": null,
+      "metadata": {}
+    },
+    "latest_event_time": 1596389605.434872,
+    "followup_action": null,
+    "paused": false,
+    "events": [
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389395.9308677
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389395.9308677,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389398.4112225,
+        "name": "action_greet_user",
+        "policy": "MappingPolicy",
+        "confidence": "0.98"
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389398.4112225,
+        "text": "Hey there I am your MEDBOT \ud83d\udc68\ud83c\udffd\u200d\u2695\ufe0f, How may I help you today",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389398.4112225
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_session_start",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "session_started",
+        "timestamp": 1596389416.2404194
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389416.2404194,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": null
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389416.6930754,
+        "text": "add patient to the schedule",
+        "parse_data": {
+          "intent": {
+            "name": "preferences_patients",
+            "confidence": 0.15889358520507812
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "preferences_patients",
+              "confidence": 0.15889358520507812
+            },
+            {
+              "name": "patient_schedule",
+              "confidence": 0.11892963945865631
+            },
+            {
+              "name": "service",
+              "confidence": 0.10045679658651352
+            },
+            {
+              "name": "Computer_power_switch",
+              "confidence": 0.09872466325759888
+            },
+            {
+              "name": "optimize_pediatric_protocol",
+              "confidence": 0.09705948084592819
+            },
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.09521038830280304
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08869586139917374
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.0823005959391594
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.08094295859336853
+            },
+            {
+              "name": "SCBSV_keyboard_keys",
+              "confidence": 0.0787859857082367
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient to the schedule"
+        },
+        "input_channel": "rest",
+        "message_id": "b15a8a1cd77f48549d4c25a398291ec2",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.915452,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389418.915452,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389418.915452
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389418.9239898,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389429.8912232,
+        "text": "add patient",
+        "parse_data": {
+          "intent": {
+            "name": "Building_protocols_using_protocol_change_control",
+            "confidence": 0.14482411742210388
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.14482411742210388
+            },
+            {
+              "name": "select_items",
+              "confidence": 0.11892438679933548
+            },
+            {
+              "name": "troubleshoot",
+              "confidence": 0.10870181769132614
+            },
+            {
+              "name": "add_patient",
+              "confidence": 0.10713101923465729
+            },
+            {
+              "name": "gantry_display_table_height",
+              "confidence": 0.10590646415948868
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.10423913598060608
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.08374185860157013
+            },
+            {
+              "name": "performed_procedure_step",
+              "confidence": 0.07586371898651123
+            },
+            {
+              "name": "protocol_selection",
+              "confidence": 0.07558467239141464
+            },
+            {
+              "name": "login",
+              "confidence": 0.07508277893066406
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "add patient"
+        },
+        "input_channel": "rest",
+        "message_id": "d47c4eec980742d1b9488188996fbe03",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389432.094813,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389432.094813,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389432.094813
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389432.1042397,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389538.8248594,
+        "text": "performed procedure step",
+        "parse_data": {
+          "intent": {
+            "name": "Building_protocols_using_protocol_change_control",
+            "confidence": 0.18899649381637573
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "Building_protocols_using_protocol_change_control",
+              "confidence": 0.18899649381637573
+            },
+            {
+              "name": "performed_procedure_step",
+              "confidence": 0.17324118316173553
+            },
+            {
+              "name": "Using_the_dose_audit_tool",
+              "confidence": 0.12699410319328308
+            },
+            {
+              "name": "Configure_the_system_for_protocol_change_control",
+              "confidence": 0.08946916460990906
+            },
+            {
+              "name": "application_configuration",
+              "confidence": 0.08791151642799377
+            },
+            {
+              "name": "power_distributor_usage",
+              "confidence": 0.07366961985826492
+            },
+            {
+              "name": "power_distributor_buttons",
+              "confidence": 0.06886552274227142
+            },
+            {
+              "name": "gantry_control",
+              "confidence": 0.0639212429523468
+            },
+            {
+              "name": "edit_patient",
+              "confidence": 0.06374534964561462
+            },
+            {
+              "name": "monitor_burn",
+              "confidence": 0.06318579614162445
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "performed procedure step"
+        },
+        "input_channel": "rest",
+        "message_id": "0992c3852ca64ad7ba1910182ef1cceb",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389540.9895709,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389540.9895709,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389540.9895709
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389540.9967375,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389589.9639232,
+        "text": "dose check",
+        "parse_data": {
+          "intent": {
+            "name": "lowdisk_space",
+            "confidence": 0.14365987479686737
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "lowdisk_space",
+              "confidence": 0.14365987479686737
+            },
+            {
+              "name": "precautionary_signs",
+              "confidence": 0.13578589260578156
+            },
+            {
+              "name": "check_patients_status",
+              "confidence": 0.11107274144887924
+            },
+            {
+              "name": "Dose_Check",
+              "confidence": 0.1063229888677597
+            },
+            {
+              "name": "axial_slice_range",
+              "confidence": 0.09576093405485153
+            },
+            {
+              "name": "table_functions",
+              "confidence": 0.09175008535385132
+            },
+            {
+              "name": "Dose_check_use",
+              "confidence": 0.08433536440134048
+            },
+            {
+              "name": "usage",
+              "confidence": 0.08037018775939941
+            },
+            {
+              "name": "greet",
+              "confidence": 0.08034276962280273
+            },
+            {
+              "name": "Dose_Check_Log",
+              "confidence": 0.07059913128614426
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "dose check"
+        },
+        "input_channel": "rest",
+        "message_id": "07767a11082647198e171bb298f5580d",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389592.1372342,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389592.1372342,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389592.1372342
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389592.1513813,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      },
+      {
+        "event": "user",
+        "timestamp": 1596389603.2288833,
+        "text": "hi",
+        "parse_data": {
+          "intent": {
+            "name": "greet",
+            "confidence": 0.22552384436130524
+          },
+          "entities": [],
+          "intent_ranking": [
+            {
+              "name": "greet",
+              "confidence": 0.22552384436130524
+            },
+            {
+              "name": "error_message_in_gantry",
+              "confidence": 0.12432969361543655
+            },
+            {
+              "name": "lowdisk_space",
+              "confidence": 0.1236279085278511
+            },
+            {
+              "name": "goodbye",
+              "confidence": 0.10631396621465683
+            },
+            {
+              "name": "axial_slice_range",
+              "confidence": 0.09501855820417404
+            },
+            {
+              "name": "Dose_Check",
+              "confidence": 0.07715897262096405
+            },
+            {
+              "name": "warning_label",
+              "confidence": 0.06559335440397263
+            },
+            {
+              "name": "daily_calibration",
+              "confidence": 0.06555765122175217
+            },
+            {
+              "name": "table_functions",
+              "confidence": 0.05892610922455788
+            },
+            {
+              "name": "usage",
+              "confidence": 0.05794989690184593
+            }
+          ],
+          "response_selector": {
+            "default": {
+              "response": {
+                "name": null,
+                "confidence": 0.0
+              },
+              "ranking": [],
+              "full_retrieval_intent": null
+            }
+          },
+          "text": "hi"
+        },
+        "input_channel": "rest",
+        "message_id": "750a2b3a96d64bb89fd5caf99b75fb9c",
+        "metadata": {}
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389605.426759,
+        "name": "action_custom_fallback",
+        "policy": "policy_3_FallbackPolicy",
+        "confidence": 1.0
+      },
+      {
+        "event": "bot",
+        "timestamp": 1596389605.4284265,
+        "text": "I am still learing please try again...",
+        "data": {
+          "elements": null,
+          "quick_replies": null,
+          "buttons": null,
+          "attachment": null,
+          "image": null,
+          "custom": null
+        },
+        "metadata": {}
+      },
+      {
+        "event": "rewind",
+        "timestamp": 1596389605.4284265
+      },
+      {
+        "event": "action",
+        "timestamp": 1596389605.434872,
+        "name": "action_listen",
+        "policy": null,
+        "confidence": 1.0
+      }
+    ],
+    "latest_input_channel": "rest",
+    "active_form": {},
+    "latest_action_name": "action_listen"
   }
 ]
