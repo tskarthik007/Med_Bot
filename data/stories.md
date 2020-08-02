@@ -1294,3 +1294,93 @@
 ## prerequisites_data_scan_anonymously
 * prerequisites_data_scan_anonymously
   - utter_prerequisites_data_scan_anonymously
+
+  <!----------------------------------------CHAPTER 13------------------------------->
+
+## image_add_subtract
+* image_add_subtract
+  - utter_image_add_subtract
+
+## max_min_pixel_value
+* max_min_pixel_value
+  - utter_max_min_pixel_value
+
+## binding_series
+* binding_series
+  - utter_binding_series
+  - utter_bind_series_suggestions
+
+## perform_bind_series
+* perform_bind_series
+  - utter_perform_bind_series
+  - utter_bind_series_suggestions
+
+## procs_comb
+* procs_comb
+  - utter_procs_comb
+
+## accept_negative_pixels
+* accept_negative_pixels
+  - utter_accept_negative_pixels
+
+## procs_usage
+* procs_usage
+  - utter_procs_usage
+
+## comb_accuracy
+* comb_accuracy
+  - utter_comb_accuracy
+
+## ratio_slide
+* ratio_slide
+  - utter_ratio_slide
+
+## add_subtract_image_combination
+* add_subtract_image_combination
+  - utter_add_subtract_image_combination
+
+## add_subtract_image
+* add_subtract_image
+  - utter_add_subtract_image
+
+
+## select_more_than_one_set
+* select_more_than_one_set
+  - utter_select_more_than_one_set
+
+## max_min_ct_number
+* max_min_ct_number
+  - utter_max_min_ct_number
+
+## split_screen
+* split_screen
+  - utter_split_screen
+  - utter_split_screen_suggestions
+
+## components_split_screen
+* components_split_screen
+  - utter_components_split_screen
+  - utter_split_screen_suggestions
+
+## split_exam
+* split_exam
+  - utter_split_exam
+
+## image_sent_VES_HES
+* image_sent_VES_HES
+  - utter_image_sent_VES_HES
+
+## neuro_3d
+* neuro_3d
+  - utter_neuro_3d
+  - utter_neuro_3d_suggestions
+
+## neuro_3d_filter
+* neuro_3d_filter
+  - utter_neuro_3d_filter
+  - utter_neuro_3d_suggestions
+
+## rules_neuro3D_images
+* rules_neuro3D_images
+  - utter_rules_neuro3D_images
+  - utter_neuro_3d_suggestions

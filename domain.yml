@@ -252,6 +252,26 @@ intents:
 - anonymous_scan
 - save_restore
 - prerequisites_data_scan_anonymously
+- image_add_subtract
+- max_min_pixel_value
+- binding_series
+- perform_bind_series
+- procs_comb
+- accept_negative_pixels
+- procs_usage
+- comb_accuracy
+- ratio_slide
+- add_subtract_image_combination
+- add_subtract_image
+- select_more_than_one_set
+- max_min_ct_number
+- split_screen
+- components_split_screen
+- split_exam
+- image_sent_VES_HES
+- neuro_3d
+- neuro_3d_filter
+- rules_neuro3D_images
 
 
 responses:
@@ -2510,6 +2530,236 @@ utter_prerequisites_data_scan_anonymously:
   to save to DVD-RAM.
   Make sure the selected scan files do not exceed the space available on the DVD1 -RAM2 . 
   Only one scan file fits on one side of the DVD-RAM." 
+
+#--------------------------------------------CHAPTER 13----------------------------------------------
+utter_image_add_subtract:
+      - text: "Expand down to know about IMAGE ADDITION AND IMAGE SUBTRACTION"
+        custom: 
+            payload: "collapsible"
+            data: 
+            - title: Image addition
+              description: This adds image intensity values by pixel and is useful for adding thin slices together to get a thicker 
+              slice
+            - title: Image subtraction
+              description: This subtract image intensity values pixel by pixel and is useful to evaluate contrasted vessels.
+
+    utter_max_min_pixel_value:
+      - text: "Expand down to know about IMAGE ADDITION AND IMAGE SUBTRACTION"
+        custom: 
+            payload: "collapsible"
+            data: 
+            - title: Maximum pixel
+              description: The value extraction consists of finding minimum image intensity values pixel by pixel and 
+              is useful for contrasted vessels or calcifications. 
+            - title: Minimum pixel
+              description: value extraction consists of finding minimum image intensity values pixel by pixel. 
+              This could be useful to evaluate soft tissue.
+
+    utter_binding_series:
+      - text: "Binding Series creates a new series which consists of copies of selected images from one or more existing series. 
+      This could be useful if you had images in two separate series and wanted to have them in one series to perform 3D Reformat.
+      Save State information is not maintained in the new series generated with Binding Series."
+
+    utter_perform_bind_series:
+      - text: "Open ImageWorks
+      1. From the browser list of applications, click Add/Sub. 
+      2. Select the desired images. 
+      3. On the Image Combination menu, click Select Set on the left side of the menu. 
+      4. Click Select Set on the right side of the menu. 
+      5. ClickBind. 
+      6. Typically,use the system provided series number, ortype a new series description and number in the Save Series textfield. 
+      7. Click = (equal) to generate the images in the exam defined by the left Select Set button."
+
+    utter_bind_series_suggestions:
+            - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
+            buttons:
+            - payload: binding series
+              title: binding series
+            - payload: perform bind series
+              title: perform bind series
+
+    utter_procs_comb:
+      - text: "Click below to know about procs and comb"
+        custom: 
+            payload: "collapsible"
+            data: 
+            - title: Proc
+              description: Proc appears in the browser series list type column if the images in the series are the result of 
+              processing pairs of images that have identical locations in the patient’s body
+            - title: Comb
+              description: Comb appears in the browser series list type column if the images in the series are the result of a 
+              combination of images having different locations in the patient's body.
+
+    utter_accept_negative_pixels:
+      - text: "Accept negative pixels allows negative pixel values in the resulting image. If this function is not enabled, 
+      all negative pixel values are set to zero."
+
+    utter_procs_usage:
+      - text: "Proc series can be used like any other series of acquisition images, i.e., geometrical measurements,reformatting, 
+      3Dreconstructions, etc"
+
+    utter_comb_accuracy:
+      - text: " The absolute anatomical coordinates accompanying Comb series are not accurate.Only relative geometrical 
+      measurements (i.e., distance, angle, or area) made within a resulting image are accurate."
+
+    utter_ratio_slide:
+      - text: "When both Select Set buttons are used during addition or subtraction, equal weighting is applied to the two pixels 
+      in each pair. You can change it via the Ratio slider."
+
+    utter_add_subtract_image_combination:
+      - text: "On the right side of the browser, click Add/Subtract to open the Add/Subtract (ImageCombination) screen"
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Select Set 1 
+              description: Defines the first image set
+            - title: Select set 2
+              description: Defines the second image set
+            - title: Equal
+              description: Performs the selected operation and generate the new images.
+            - title: Ratio slider
+              description: Increases pixelweightingof the left(first) image when moced to the left and increases pixel weighting 
+              of the right(second) image when moved to the right. The slider is only available during addition and subtraction
+              when both Select Set buttons are selected.
+            - title: Save series
+              description: Displays the current series and starting image number of the saved series.By default, images 
+              resulting from subsequent operations are added onto the end of the same series unless you click New Save Series.
+            - title: New save series
+              description: Places images resulting from subsequent operations into a new series in the Patient List. If you do 
+              not select this option, the images are saved in the current saved series.
+            - title: Modes
+              description: 1. Max creats a new series that finds the highest corresponding signal intensity values in the selected 
+              set or sets of images.
+              2. Plus (+) creates a new series that adds the image intensity values of the selected image sets. 
+              3. Minus(-) creates a new series that subtracts the image intensity values of the selected image sets. 
+              4. Min creates a new series that finds the lowest corresponding signal intensity values in the selected set or sets 
+              of images. 
+              5. Bind creates a new series that consists of copies of the selected images from one or more existing series. 
+            - title: Accept negative pixels
+              description: Allows negative pixel values in the resulting images. If this function is not enabled, all negative 
+              pixel values are set to zero. This operation is useful on pre-and post- contrast studies of the same slice location. 
+            - title: Clear Selection
+              description: Erases the selections so that both Select Set buttons have no prior values associated with them.
+
+    utter_add_subtract_image:
+      - text: "Open ImageWorks
+      1. From the browser list of applications, click Add/Sub.
+      2. Select the desired images
+      3. On the Image Combination screen, click Select Set on the left.
+      4. If you are adding/subtracting two sets of images, select the second set of images, and click Select Set on the right.
+      By default, equal weighting is applied to the two pixels in each pair, but you can change the weighting via the Ratio slider
+      5. Click+(addition) or-(subtraction). 
+      6. For subtraction, click Accept Negative Pixels unless you want the negative pixel values set to 0 in the resulting image. 
+      7. Typically, use the system provided series number. 
+      8. Click = (equal) to generate the images in the exam defined by the left Select Set button."
+
+    utter_select_more_than_one_set:
+      - text: "If only one set is selected, each operation performed produces one resulting image. 
+      If two sets are selected, images in the two sets are paired according to physical location in the patient’s body. 
+      Unpaired images in either set are ignored. "
+
+    utter_max_min_ct_number:
+      - text: "Open ImageWorks
+      1. From the browser list of applications, click Add/Sub. 
+      2. Select the desired images. 
+      3. On the Image Combination menu, click Select Set on the left side of the menu. 
+      4. Click Min (minimum) or Max (maximum). 
+      5. Typically, use the system provided series number. 
+      6. Click =(equal). 
+      7. Optional:Click New Save Series to repeat the add/subtract procedure with a new series number and description."
+
+    utter_split_screen:
+      - text: "Click the ImageWorks icon . From the browser list of applications, click Exam Split to display the Exam Split 
+      screen."
+
+      #image: 
+
+    utter_components_split_screen:
+      - text: "Components of Exam Split screen"
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Screen format
+              description: Lists the Exam Split display options.
+            - title: Produre/Split/Exam
+              description: Displays a list of Trquested Procedure IDs or Accession Numbers for the same patient.
+            - title: W/L presets
+              description: Allows selection from a Preset menu and to Reset the W/L to the last selected values.
+            - title: Comments
+              description: An area in which you can add a comment that is attached to the file you hace selected to solit.
+            - title: Delete All/Delete/Add
+              description: After a range of images has been selected, click an option to define how you want your primary port
+              displayed.
+            - title: Procedure
+              description: A list Requested Procedure ID or Accession numbers.
+            - title: Send
+              description: Saves your selections sends the files to the selected host
+            - title: Browser
+              description: Cancels your selection, ends theSpilt Exam sessionm and returns you to the browser.
+
+    utter_split_screen_suggestions:
+            - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
+            buttons:
+            - payload: split screen
+              title: split screen
+            - payload: split screen components
+              title: split screen components
+
+    utter_split_exam:
+      - text: "1. Complete an exam where multiple Requested Procedure ID or Accession Numbers have been selected.
+2. Click the ImageWorks icon.
+3. From the browser, click the exam you wish to split.
+4. Select the series to split.
+5. Select the series to split.
+6. From the Exam Split screen, click firstimage, press Shift, and click the lastimage to select the desired range of images to 
+be grouped together per procedure code.
+7. From the Procedures list area, select the desired procedure from the available list,which reflects the procedures selected 
+from Patient Schedule.
+8. From the Exam Split control panel, click Add. 
+9. Adjust the W/L as needed in the exam area of the display. 
+10. From the Exam Split control panel, click Host Selection. 
+11. Select the receiving host and click Save.
+12. From The list of procedures on the Exam Split control panel, select the procedures you wish to send to the host and click 
+Send.
+13. Click Browser to exit from Exam Split
+NOTE : To select multiple procedures, simultaneously press Shift and click each procedure. "
+
+utter_image_sent_VES_HES:
+  - text: "For systems configured for VES, send exams prior to splitting and it sends GSPS objects.  
+For systems configured as HES, images are sent after splitting and send a new series."
+
+utter_neuro_3d:
+  - text: "Neuro 3D Filter removes noise from an image while preserving image resolution. Neuro 3D Filter is optimized for thin 
+  slice data that is intended for post processing in Reformat to create Average and MIP1 images, Volume Rendering and 3D models 
+  for Neurological studies such as Circle of Willis, carotids, sinuses, orbits, mandible, and helical brain.
+1. Click the ImageWorks icon. 
+2. Select the desired exam/series/images. 
+3. From the browser list of applications, click Neuro 3D Filter. 
+4. Click Low, Med, or High. 
+5. Click Go.
+6. Click the Close icon to close the screen when filtering is complete. "
+
+utter_neuro_3d_filter:
+  - text: "Low filter = series number plus 30 (for example, series 427 becomes 457).  
+  Medium filter = series number plus 40 (for example, series 427 becomes 467).  
+  High filter = series number plus 50 (for example, series 427 becomes 477).  
+  The series description is "3DFiltered". "
+
+utter_rules_neuro3D_images:
+  - text: "1. Must have at least three non-duplicate location images.
+  2. Must be less than 500 images.
+  3. Must be a single group or multiple groups if the following parameters are the same : slice thickness, interval, tilt, SFOV, 
+DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be contiguous. "  
+
+utter_neuro_3d_suggestions:
+            - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
+            buttons:
+            - payload: neuro 3D
+              title: neuro 3D
+            - payload: neuro 3D filter
+              title: neuro 3D filter
+            - payload: neuro 3D image constraints
+              title: neuro 3D image constraints
 
 actions:
 - action_greet_user
