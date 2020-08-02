@@ -1960,3 +1960,94 @@
 - what are the smooth, edge, lung values in an image filter?
 - what is image filter?
 - when can image filter be used
+
+<!---------------------------------------------CHAPTER 11----------------------------------------------->
+## intent:recon_screen
+- How to open retro recon screen
+- How to display retro recon screen
+- Where is retro recon screen
+- What are the step to open retro recon screen
+
+## intent:list_select
+- How to open retro recon list select screen
+- How to display exams with available scan data
+- How to display the exams available for reconstruction 
+- Steps to open the list select screen
+- List Select
+
+## intent:list_select_screen
+- What are displayed on list select screen
+- what is exams on list select screen
+- what is series
+- what is next prior
+- what is series select
+- what is update
+- options on list select screen
+- List Select Screen
+
+## intent:recon_management
+- How to open recon management screen
+- How to use recon management screen
+- Where can i find recon management screen
+- What is the use of recon management screen
+
+## intent:new_image_from_scan
+- How to create image retrospectively
+- Where is the select series option
+- How to create a new image from the scanned data
+- What are the steps to convert scanned data to image
+- What is recon type
+
+## intent:Graphically_prescribe
+- How to graphically prescribe retrospective reconstructions
+- How to display retrospective reconstructions data graphically
+- How to zoom in the graphical view
+- How to click and drag the reference image
+- What is graphically prescribe
+
+## intent:unreconstructed_image
+- How to find unreconstructed image
+- How to find the image that not been reconstructed
+- How to delete images which you don't want to reconstruct 
+- How to update list in retro recon
+- What are the steps involved in finding unreconstructed image
+
+## intent:pause_resume
+- How to pause the recon queue
+- How to resume the recon queue
+- How to restart queue
+- Where is the pause recon option
+- Where is the resume recon option
+- How to pause or resume the recon queue
+
+## intent:remove_data
+- How to remove data from the queue
+- How to delete data from the queue
+- How to delete all the data in the queue
+- How to edit the queue
+
+## intent:reserve_data
+- How to delete raw scanned data
+- How to release  data
+- How to reserve data
+- What are the steps to release data
+- What are the steps to reserve data
+
+## intent:anonymous_scan
+- How to save scan data anonymously
+- How to save scan data without saving the patient information
+- Where will i place the DVD-RAM
+- What is Save Selected Data?
+- How long it will take to store in DVD-RAM
+
+## intent:save_restore
+- What type of usb drive we can use
+- How to save the data in an external storage device
+- How to save data in a DVD or USB
+- How to cancel a save or restore process
+- How to save an exam in an external drive
+
+## intent:prerequisites_data_scan_anonymously
+- what are the conditions before scanning data anonymously?
+- points to be noted before scanning the data privately.
+- prerequisites before scanning data anonymously.

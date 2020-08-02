@@ -1238,3 +1238,59 @@
 ## Image_Filter
 *  Image_Filter
   - utter_Image_Filter
+
+<!----------------------------------CHAPTER 11 ------------------------------>
+
+## recon_screen
+* recon_screen
+  - utter_ recon_screen
+
+## list_select
+* list_select
+  - utter_list_select
+  - utter_list_select_suggestions
+
+## list_select_screen
+* list_select_screen
+   - utter_list_select_screen
+   - utter_list_select_suggestions
+
+## recon_management
+* recon_management
+  - utter_recon_management
+
+## new_image_from_scan
+* new_image_from_scan
+  - utter_new_image_from_scan
+
+## Graphically_prescribe
+* Graphically_prescribe
+  - utter_Graphically_prescribe
+
+## unreconstructed_image
+* unreconstructed_image
+  - utter_unreconstructed_image
+
+## pause_resume
+* pause_resume
+  - utter_pause_resume
+
+## remove_data
+* remove_data
+  - utter_remove_data
+
+## reserve_data
+* reserve_data
+  - utter_reserve_data
+
+## anonymous_scan
+* anonymous_scan
+  - utter_anonymous_scan
+
+## save_restore
+* save_restore
+  - utter_save_restore
+
+## prerequisites_data_scan_anonymously
+* prerequisites_data_scan_anonymously
+  - utter_prerequisites_data_scan_anonymously

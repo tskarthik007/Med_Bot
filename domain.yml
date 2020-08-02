@@ -239,6 +239,19 @@ intents:
 - Motion_Correction
 - Gray_Scale_Enhancement
 - Image_Filter
+- recon_screen
+- list_select
+- list_select_screen
+- recon_management
+- new_image_from_scan
+- Graphically_prescribe
+- unreconstructed_image
+- pause_resume
+- remove_data
+- reserve_data
+- anonymous_scan
+- save_restore
+- prerequisites_data_scan_anonymously
 
 
 responses:
@@ -2301,6 +2314,203 @@ Diagnostic Delay, (range 3 to 60 in 0.1 second increments) typically set to the 
     - text: "This feature is available for all Scan Modes. Available in Prospective and Retro Recon Modes Smooth (S1, S11, S2, S21, S3), Edge (E1, E2, E21, E22, E23, E3), Lung (Lu)"
       image:
       
+#-----------------------------------------------CHAPTER 11----------------------------------------------
+utter_recon_screen:
+    - text: "Click the Retro Recon icon, select patient, exam and series. Then, click Select Series to display the Retro Recon 
+    screen"
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Scan (raw) data
+              description: With each rotation of the gantry, X-rays are emitted that pass through a portion of anatomy and strike 
+              the detectors. It contains all of the information gathered during an exposure.
+
+            - title: Suspended entries
+              description: Sometimes the system for a variety of reasons may not be able to complete the reconstruction of a 
+              particular image. This data is then automatically placed in a queue, where you can attempt to reconstruct it 
+              again or delete it.
+
+            - title: Save scan data
+              description: The media scan data is saved to be dependent on your operator console type. Personal computer-based 
+              systems save scan data to DVD2 -RAM3 media.
+
+            - title: Restore scan data
+              description: Scan data that has been stored on a DVD-RAM or external USB hard drive can be placed back onto the 
+              system disk.Once On the system disk,the scan data can be reconstructed using any of the scan parameters
+
+            - title: Reserve scan data
+              description:  It is important that when the scan data files are reserved, the remaining number of available scan 
+              files for use are reduced by the number reserved. If you do reserve scan files, when you no longer need the scan 
+              data you should release the scan files.
+
+            - title: Release scan
+              description: Once scan data files that have been reserved are no longer needed, you can release them so they can 
+              be overwritten with new data. Releasing the files increases the available scan data files accordingly
+
+            - title: Graphic Retro
+              description: Graphic Retro provides the capability to graphically prescribe your retrospective reconstructions 
+              using an existing axial plane image as a reference image.
+
+            - title: New Series
+              description: New Series can be used to assign a new series number to a retro reconstruction. Normally 100 is added 
+              to the series number of the original scan. If multiple reconstructions are done, they will be all added to this 
+              series.
+
+            - title: Overlapped axial imaging mode (w/ Advanced Acquisition)
+              description: PMR 2-10 and RetroReconsupports the reconstruction of overlapped data from Axial scan type 10 mm 
+              detector coverage. The reconstruction of overlapped axial data can improve formatted data. The interval cannot be 
+              adjusted.
+
+  utter_list_select:
+     - text: "Click the Retro Recon icon to display the exams with available scan data on the Retro Recon List Select screen."
+
+  utter_list_select_screen:
+     - text: "Find the options below"
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Exams
+              description: Displays the list of exams available for reconstruction. 
+
+            - title: Series 
+              description: Displays a list of series associated with the selected exam. 
+
+            - title: Next /Prior 
+              description:  Use the arrows to scroll through the exams or series if more than one screen of data exists.
+
+            - title: Select Series
+              description: Adds the series to the retro reconstruction queue.
+
+            - title: Update
+              description:  Updates the list to include any exams added since entering the Retro Recon LIst Select screen
+
+    utter_list_select_suggestions:
+      - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
+            buttons:
+            - payload: List Select
+              title: List Select
+            - payload: List Select Screen
+              title: List Select Screen
+
+  utter_recon_management:
+     - text: "On the monitor, click Recon Status to display Recon Management"
+
+  utter_new_image_from_scan:
+     - text: "1. Click Retro Recon. 
+     2. From the Retro Recon List Select screen, select the appropriate patient, exam, and series.
+     3. Click Select Series.
+     4. On the Retro Recon screen, type a new series description in the Series Description area if desired. 
+     5. Click New Series Number To reconstruct images in a system-assigned new series number between 301 and 399
+     6. Click Retro to select all groups and click Yes or click Y for an individual group
+     7. Type in Retro Start and Retro End locations.
+     8. Click Thick and select an image thickness. Click 0.625Z to generate overlapped 0.625 mm thickness axial images
+     9. Click Time and type the Start and End times 
+     10.Click Interval and type in an image interval. 
+     11. Click DFOV and type in desired value. 
+     12. Click R/L Center and/or A/P Center to set image offset. 
+     13. Click Recon Option and select one of the options on the Recon Option screen
+     14. Click Recon Type and select one of the available algorithms
+     15. Click Graphic Retro Y to graphically prescribe the reconstructions, one group at a time
+     16. Click Confirm to generate images"
+
+ utter_Graphically_prescribe:
+  - text: "1. Select an exam and series from the Patient List. 
+  2. Click Retro Recon. 
+  3. Click Graphic Retro so that the button reads Y. 
+  4. Click and drag on the blue boxes (seen inside the red squares on the image below) to change the size of the circle which 
+  represents the DFOV for your reconstruction. 
+  5. Click on the + (seen inside the yellow square on the image below) to define the RL and AP centers for your reconstruction. 
+  6. Click Hide SFOV to hide the red circle which indicates the scan field of view. 
+  7. Click Roam so you can click and drag the reference image. 
+  8. Click Zoom to magnify the image.  
+  Display the image where you want the reconstruction to begin and click Set Retro Start.  
+  Display the image where you want the reconstruction to end and click Set Retro End."
+
+utter_unreconstructed_image:
+  - text: "1. Click Recon Status to display the Recon Management screen. 
+2. On The Recon Management screen, click Delete Suspended Entries if you do not want to reconstruct the images or 
+Unsuspend Entries. 
+Unsuspend Entries retries the reconstruction and places images in the correct exam and series if reconstruction was successful.  
+Delete Suspended Entries displays a window to confirm deletion. Click OK to remove the selected entry. 
+3. Click Update List to see images that may have been deleted or added. 
+4. Click Quit to exit."
+
+utter_pause_resume:
+  - text: "Click below"
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Pause the recon queue
+              description: Pause Images being prospectively reconstructed cannot be deleted from the queue. 
+              Images being produced retrospectively can be removed from the queue. 
+              1. Click Recon Status to display the Recon Management screen. 
+              2. On the Recon Management screen, click Pause Queue. The recon queue can always be paused or restarted. 
+              Only the entries listed in the Retro queue can be deleted. 
+              3. Click Quit To exit Recon Management screen.
+
+            - title: Resume the recon queue
+              description: The reconstruction queue is not automatically started, you mustresume the queue for reconstruction to 
+              restart.
+              1. Click Recon Status to display the Recon Management screen. 
+              2. On the Recon Management screen, click Restart Queue. 
+              3. Click Quit To exit Recon Management screen.
+
+utter_remove_data:
+  - text: "1. Click Recon Status to display the Recon Management screen. 
+  2. On the Recon Management screen, click Pause Queue. 
+  3. ClickDelete Retro Recon Entries. 
+  4. On the Delete Retrospective Entries screen, click on each job you want to remove and click Delete Selected.
+  5. Click Restart Queue. 
+  6. Click Quit to exit."
+
+utter_reserve_data:
+  - text: "1. Click Recon Status to display the Recon Management screen. 
+  2. On the Recon Management screen, click Reserve Scan data. 
+  3. To reserve exams, click Reserve All Scanfiles, Select All Exams Listed or select individual exams.
+  4. To reserve series, click Select All Series Listed or select individual series. 
+  5. To reserve scans, click Select All Scan Files Listed or select individual scans. 
+  6. ClickReserve SelectedScanfiles.
+  7. Click Quit to exit."
+
+utter_anonymous_scan:
+  - text: "Scan must be idle when you start this procedure. This procedure can take from 60 seconds (helical scan) to 1.5 hours 
+  to save to DVD-RAM. Make sure the selected scan files do not exceed the space available on the DVD1-RAM2. 
+  Only one scan file fits on one side of the DVD-RAM
+    1. Place a DVD-RAM media into the DVD-RAM drive or connect a USB3 device into the USB port on the front of the 
+    media tower. 
+    2. Click Recon Status to display the Recon Management screen. 
+    3. From the Recon Management screen, select USB orDVD. 
+    4. Click Save ScanData. 
+    5. Select The exam/series/scans you wish to save anonymously. 
+    6. Click Save Selected Annon.Data.
+    7. Click Quit to exit. 
+    8. Do not eject the device until the light is out on the DVD-RAM drive. 
+    9. Once the save is complete to the USB device, exit Recon Management and disconnect the USB device. 
+    Then, scanning can resume."
+
+utter_save_restore:
+  - text: "NOTE : The only validated USB drive is the Seagate 1 terabyte drive. If the device is not formatted correctly,
+  software asks if you want to format it. It takes about 1 minute per 100 GB, so a 1 terabyte device takes 10 minutes to 
+  format.Make sure the selected scan files do not exceed the space available on the DVD-RAM. 
+  Scan data can only be restored on the same system model that it was acquired on
+  STEPS: 
+  1. Verify that you have enough time to complete the save uninterrupted. You cannot scan while saving scan files.  
+  2. Connect the external USB device to the USB port or insert the DVD-RAM.
+  3. Click Recon Status to display the Recon Management screen. 
+  4. Select the USB or DVD. 
+  5. Click Save ScanData. 
+  6. Select the exam you wish to save in the exam screen. 
+  7. Select the individual scan files for the series in the series screen. 
+  8. Select individual scans or click the scans you want to save by clicking Select All Scan Files Listed. 
+  9. Optional, click Save Selected Anon. Data to save the data with no patient information in the image header. 
+  10. Click Quit when the save is complete."
+
+utter_prerequisites_data_scan_anonymously:
+  -text: "Scan must be idle when you start this procedure. This procedure can take from 60 seconds (helical scan) to 1.5 hours 
+  to save to DVD-RAM.
+  Make sure the selected scan files do not exceed the space available on the DVD1 -RAM2 . 
+  Only one scan file fits on one side of the DVD-RAM." 
+
 actions:
 - action_greet_user
 # - action_custom_fallback
