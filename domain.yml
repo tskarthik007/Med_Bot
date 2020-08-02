@@ -164,7 +164,7 @@ responses:
   utter_did_that_help:
   - text: Did that help you?
     buttons:
-    - buttpayload: YES
+    - payload: YES
       title: YES
     - payload: NO
       title: NO
