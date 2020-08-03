@@ -2111,13 +2111,6 @@
 - procs usage
 - how can I use procs?
 
-## intent:comb_accuracy
-- Is comb accurate? 
-- what measurements are not accurate in comb?
-- Is absolute anatomical coordinates accurate? 
-- Is relative geometrical measurements accurate?
-- comb accuracy
-
 ## intent:ratio_slide
 - what is the ratio slide?
 - ratio slide
