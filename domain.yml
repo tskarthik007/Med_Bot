@@ -301,6 +301,72 @@ intents:
 - AW_server_client_close
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- privacy_laws
+- privacy_using_ea3
+- rules_adding_users_to_local_database
+- user_groups_privileges
+- open_ea3_ui
+- buttons_disabled_center_panel
+- add_local_user
+- add_local_group
+- adding_member_to_group
+- add_enterprise_group
+- add_remove_user
+- change_user_name
+- change_user_password
+- rules_change_password
+- admin_change_password
+- lock_user_privilege
+- unlock_user_privilege
+- remove_user
+- remove_group
+- remove_membership
+- config_ea3_application_properties
+- options_config_ea3_application_properties
+- config_enterprise_tab
+- auto_config
+- connection_problem
+- authentication_type
+- config_properties_manual_select
+- save_changes_configuration
+- system_management_imageworks_tool_chest_location
+- system_management_imageworks_tool_chest_option
+- system_management_service_tool_chest_location
+- system_management_control_the_autovoice_volume
+- system_management_open_unix_shell
+- system_management_turn_on_turn_off_extended_ct_range
+- system_management_collect_data_troubleshooting_system_issues
+- system_management_collect_data_troubleshooting_image_quality
+- system_management_anonymize_patient_annotation_level
+- system_management_set_annotation_level_patient_anonymize
+- system_management_export_user_protocol_on_cd
+- system_management_set_screensaver_timeout
+- system_management_iLinq
+- system_management_uses_of_iLinq
+- system_management_terminate_iLinq
+- system_management_use_of_product_network_filter
+- system_management_use_of_software_download_feature
+- system_management_how_to_update_software
+- system_management_how_to_leave_a_memo_for_service_engineer
+
 responses:
   utter_greet:
   - text: Hey Buddy! How can I help you?
@@ -3102,9 +3168,482 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
 
 
 #<!----------------------------------------------------------chapter 19------------------------------------------------------------->
+  utter_privacy_laws:
+    - text: "a. Health Insurance Portability and Accountability Act (HIPAA)
+b. Directive 95/46/EC on Data Protection (the Data Protection Directive)
+c. Personal Information Protection and Electronic Documents Act (PIPEDA)
 
+"
+      
+  utter_privacy_using_ea3:
+    - text: "
+Data Privacy using EA3 requires you to log on to the scanner and log off when you are done scanning for a period of time. If you do not log off, the system will log you off and you will have to log back on. Data Privacy using EA3 contains the following permissions. You can have Administrative, GE Service, Standard User or Limited User. Standard User can perform scanning functions and modify protocols. Administrator can setup and delete users. Limited users can perform all scanning functions. You must have Administrative permission to add or delete users. 
+ 
+The Standard User permission can scan and modify protocols in Protocol Management. 
+The Limited User can only scan. 
+Emergency User login has Limited User permission
+"
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: The Administrator permission can add users.
+              description:  
+            - title: The Standard User permission can scan and modify protocols in Protocol Management.
+              description: 
+            - title: The Limited User can only scan.
+              description: 
+            - title: Emergency User login has Limited User permission
+              description:  
+  utter_rules_adding_users_to_local_database:
+    - text: "a. Users/Groups – Lower case letters and numbers only
+b. Users/ Groups – Cannot start with a number
+c. Users/Groups – No limit on length
+d. Passwords – Must be at least on character long, no Null characters
+e. Passwords – Can contain uppercase letters, numbers and special characters
+
+"
+      
+  utter_user_groups_privileges:
+    - custom: 
+            payload: "collapsible"
+            data: 
+            - title: Users and groups
+              description: Every person who has permission to use the system is a user. Users are set up by system administrators. These administrators may be IT personnel in an enterprise environment, or a site manager or lead tech in stand-alone environments. The administrator adds new users and assigns the users to a group, which dictates the level of privileges a person will have. For example, a person named Sue Smith could belong to a group called technologists, radiologists, administrators,or any combination. 
+
+            - title: Groups and privileges
+              description: The Group To which a person belongs has privileges. If you don't have an enterprise system,the assignment of group privileges is probably limited to those who have administrator privileges and those who do not. Additionally, permission for protocol edit may be assigned to groups. If your system is set up for enterprise login, your IT person or administrator uses more of the features.
+
+
+      
+  utter_open_ea3_ui:
+    - text: "Use this procedure to open the EA3 user interface.
+1. Click the Service icon.
+2. From the Service desktop, click Utilities icon.
+3. From the Utilities screen, click EA3 Admin Browser.
+4. From the EA3 Administration screen, type your Username and Password.
+    a. Consult your service engineer or application representative for username and login
+5. Click Login.
+6. From the Local Users or Group tab, select a group or user.
+"
+      
+  utter_buttons_disabled_center_panel:
+    - text: "If there are no users or groups, then there is no items in context. All of the buttons in the center panel are disabled until a user or group is added.
+
+"
+      
+  utter_add_local_user:
+    - text: "1. From the Local Users tab, click Add Local User.
+2. From the pop-up panel, type information for each of the following:
+    a. A unique user ID
+    b. Full Name
+    c. Password
+    d. Confirm Password
+    e. If an error occurs, a message box displays, and your changes are not committed to the database. Correct your errors and try again. Common errors include:
+    f. User name and password cannot be the same.
+    g. Password does not meet the minimum length requirements. Choose a longer password.
+    h. Password and Confirm Password box do not match. Make sure the passwords match.
+3. Click Add User.
+"
+      
+  utter_add_local_group:
+    - text: "Open EA3.
+1. From the Group tab, click Add Local Group.
+2. From the Add Local Group window, type and Enter a unique group name.
+      a. If an error occurs, a message box displays, and your changes are not committed to the database. Correct your errors and try again. Common errors include:
+      b. Group name already exists in the database
+      c. Application session timeout
+3. Click Add Group.
+      a. The group is highlighted in the Local Groups list box. All information and buttons in the center panel refer to the highlighted group.
+4. To change a group's roles, select the Roles option boxes and click Apply Roles.
+     a. A green label confirms the applied roles.
+     b. An error message box displays if it is unsuccessful
+"
+      
+  utter_adding_member_to_group:
+    - text: "Open EA3. 
+1. From the Groups tab, select a group in the Local Groups area. 
+2. In the Group Members area, click Add Membership. 
+     a. A panel lists all the users that are eligible to be added to the selected group. 
+3. Select the users you want to add to the group. 
+     b. If no users are eligible to be added to this group, an error message displays. 
+4. Click Add To Group. 
+"
+      
+  utter_add_enterprise_group:
+    - text: "Open EA3. 
+1. From the Group tab, click Add Enterprise Group. 
+2. From the Add Enterprise Group pop-up window, type and Enter a unique group name. 
+     a. If an error occurs, a message box displays, and your changes are not committed to the database. Correct your errors and try again. Common errors include: 
+     b. Group name already exists in the database 
+     c. Application session timeout 
+
+3. Click Add Group. 
+"
+      
+  utter_add_remove_user:
+    - text: "Open EA3. 
+1. Select the Local Users tab. 
+2. In the Local Users area, select the user you want to modify. 
+     a. The groups that this user is currently a member are listed in the Groups area. 
+3. In the Groups area, click Add to Groups or Remove from Groups. 
+4. Select the group you wish to add remove for this user. 
+5. Click Add Membership or Remove Membership. 
+"
+      
+  utter_change_user_name:
+    - text: "Open EA3. 
+1. From the Local Users tab, select a user. 
+2. Click Change Name. 
+3. From the Change Name window, type a new name. 
+4. Click Confirm Change. 
+
+"
+      
+  utter_change_user_password:
+    - text: "Open EA3. 
+1. From the Local Users tab, select a user. 
+2. Click Change Password. 
+3. From the Change Password window, enter a password and confirm the password. 
+a.	A password can contain uppercase letters, numbers, and special characters. 
+b.	An error message displays if the password does not meet the minimum length requirements. The minimum requirement are displayed in the Minimum Password Length field located in the top area of the Local Users tab. Change the password to an acceptable length. 
+4. Click Confirm Change to accept the new password or Cancel to exit without changing your password. 
+"
+      
+  utter_rules_change_password:
+    - text: "a.	A password can contain uppercase letters, numbers, and special characters. 
+b.	An error message displays if the password does not meet the minimum length requirements. The minimum requirement are displayed in the Minimum Password Length field located in the top area of the Local Users tab. Change the password to an acceptable length. 
+
+"
+      
+  utter_admin_change_password:
+    - text: "1. From the Local Users tab, select a user. 
+2. From the bottom of the Local Users tab, select the Change Password on Next Login option. 
+3. Click Apply Configuration. 
+a.	The next time the user logs in, he will be required to enter a new password. 
+b.	 Once the new password is entered, the Change Password on Next Login option is de-selected 
+
+"
+      
+  utter_lock_user_privilege:
+    - text: "Open EA3. 
+1. From the Local Users tab, select a user. 
+2. From the bottom of the Local Users tab, select the Locked toggle option. 
+
+   a. When the Locked box is checked the user is locked from login even if he has a valid password. 
+   b. If Emergency User is enabled on your system, the locked user can login as an Emergency User. 
+
+3. Click Apply Configuration. 
+
+"
+      
+  utter_unlock_user_privilege:
+    - text: "Open EA3. 
+1. From the Local Users tab, select a user. 
+2. From the bottom of the Local Users tab, select the Locked toggle option. 
+
+        a. When the Locked box is checked the user is locked from login even if he has a valid password. 
+        b. If Emergency User is enabled on your system, the locked user can login as an Emergency User. 
+
+3. Click Apply Configuration. 
+
+"
+      
+  utter_remove_user:
+    - text: "Open EA3. 
+1. From the Local Users tab, select a user. 
+2. Click Remove User. 
+3. From the Confirm Removal window, click Confirm Removal. 
+
+"
+      
+  utter_remove_group:
+    - text: "Open EA3. 
+1. From the Group tab, select a group. 
+2. Click Remove Group. 
+3. From the Confirm Removal window, click Confirm Removal
+"
+      
+  utter_remove_membership:
+    - text: "Open EA3. 
+1. From the Group tab, select a group 
+
+2. Click Remove Membership. 
+
+       a. A panel lists all users that are eligible to be removed from the highlighted group. Select users you want to remove from the group. 
+       b. If no users are eligible to be removed from this group, an error message box displays. 
+
+3. Click Remove From Group. 
+"
+      
+  utter_config_ea3_application_properties:
+    - text: "Open EA3. 
+1. From the Applications screen, enter the desired selections. 
+2. Click Apply Configuration to accept your configuration changes. Alternatively, click Restore Configuration to undo any changes made that have not yet been saved. 
+"
+      
+  utter_options_config_ea3_application_properties:
+    - custom: 
+            payload: "collapsible"
+            data: 
+            - title: Enable Authorization
+              description: enable or disable authorization. If authorization is enabled, anyone logging in through EA3 (both local and enterprise users) must have a role. Anyone without a role is denied access, if authorization is turned on. The User role does not matter for logging into EA3, however, other EA3 client applications may restrict which roles can login. 
+                 Logon Allowed - enable or disable emergency access. If EA3 is used in GUI mode, this entry decides whether or not to display the Emergency login button. If this is disabled, emergency user access is prevented. 
+ 
+            - title: Configurable delay after authentication failure (second)
+              description: is delay defined by administrator for number of seconds delay after system failed to authenticate logon. 
+            - title: Emergency Roles
+              description: the roles assigned to the emergency user. The defaults allow an admin to assign a Standard user role, Limited User role, or both roles. 
+            - title: Inactivity Timeout (minutes)
+              description:  The minutes that must elapse without any mouse/keyboard, etc. activity before a timeout is generated. When a timeout is generated, the EA3 logon screen is displayed. This value can be any positive integer, or it can be 0. If the value is 0, this indicates NO inactivity timeout; regardless of how much time has elapsed the system does not timeout. 
+            - title: Display Last Logon Name
+              description:  enable or disable to display the username of the last user that has logged in on the EA3 logon screen. 
+            - title: Administrator Message
+              description:  under certain circumstances / error conditions, the user of EA3 is asked to contact an administrator. This field allows the administrator to specify contact details for himself / herself and a custom message. 
+            - title: Emergency Prompt
+              description:  the text that is displayed to any user logging in as emergency. The user is asked to enter information (usually their actual user name). This text appears in that prompt for information. 
+      
+  utter_config_enterprise_tab:
+    - text: "Open EA3. 
+1. From the Enterprise tab, enter desired selections. 
+
+2. Modify properties in the lower two boxes of the Enterprise tab to make the Enterprise directory server connection. 
+3. Click Apply Configuration to accept your configuration changes. Alternatively, click Restore Configuration to undo any changes made that have not yet been saved.
+"
+      
+  utter_auto_config:
+    - custom: 
+            payload: "collapsible"
+            data: 
+            - title: Enable Enterprise Authentication.
+              description: login authorization. If it is unchecked, only local EA3 users can log in. If it is checked, both local users and enterprise EA3 users can log in and local EA3 user database is tried first 
+            - title: Cache Enterprise Users
+              description: enables Enterprise users to be cached once they successfully login. If the Enterprise directory server is not available due to network or other issues the following scenarios occur
+               a.	If it is checked, a local record of an Enterprise user is kep and the you can login.  
+               b. If it is unchecked, an Enterprise user is denied access. 
+               c. Hashed passwords are cached, the actual password is not cached. 
+
+            - title: Enterprise Authentication Latency (Seconds).
+              description: the time the EA3 login process wait for a response from the Enterprise directory server. Often times, there is a network latency when connecting to servers, which is dependent on your network configuration. If the amount of time is reached without a response from the directory server, the EA3 login process returns a failed login. A value of 5 seconds is typically enough time to allow a properly configured directory server to respond, without causing undue user annoyance. 
+      
+  utter_connection_problem:
+    - text: "If the connection is bad, then there is a problem connecting to the directory server. Check the following: 
+a.	IP/server name 
+b.	 if system has DNS running 
+c.	if the system can resolve the IP address / server name 
+
+"
+      
+  utter_authentication_type:
+    - text: "a.	If it is a Microsoft Active Directory Server, typically select Kerberos. If it is a Novell eDirectory Server, typically select LDAP. If you do not know, check with the owner of the directory server for information. 
+b.	If the enterprise server supports SSL connections, select the 'Use SSL' option. 
+c.	 If you use LDAP authentication without SSL, passwords are sent in the clear. This is not recommended. An alert is posted for this configuration. With kerberos and non-SSL, the authentication is encrypted, but the LDAP traffic is not. 
+
+
+"
+      
+  utter_config_properties_manual_select:
+    - text: ""
+      
+  utter_save_changes_configuration:
+    - text: "No changes are saved to EA3 on a tab unless you click Apply Configuration before you navigate to another tab or click Confirmation on a popup panel. If there is more than one Apply Configuration button on a tab, click the one associated with the data you changed (the buttons are grouped with the data they manage in a bordered panel).
+"
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Format.
+              description:  set to domain or dn. 
+                a.	 domain is the 'MSAD' way of doing LDAP authentication (i.e <userId>@<realm name>). 
+                b.	 dn is the eDirectory, and most other directory servers use (i.e. loginAttribute=<userId>,<ldap base dn>) way of doing LDAP authentication. If you are connecting to a non-MSAD directory server, more than likely use dn. 
+            - title: DN
+              description: is the LDAP base DN of the LDAP server to which you are connecting. Typically this is the fully qualified domain name separated by a bunch of 'DC='. For example, if the fully qualified domain name of the directory server is 'example.com', it is likely that the DN is 'DC=example,DC=com'. 
+            - title: Login Attribute
+              description: is the LDAP attribute to be used for the unique user identifier, that is the user id to login. Set it to the unique identifier your server uses. 
+               a.	 On MSAD it is sAMAccountName 
+               b.	 On eDirectory, it is typically cn 
+
+            - title: First Name Attribute
+              description:  is the LDAP attribute that is used for the user's first name.
+            - title: last Name Attribute
+              description: is the LDAP attribute that is used for the user's first name.
+            - title: Group Attribute
+              description:  is the LDAp attribute that is used to find group memberships for the user. On MSAD, it is memberOf.
+      
 #<!---------------------------------------------------------chapter 20------------------------------------------------------------->
+  utter_system_management_imageworks_tool_chest_location:
+    - text: "The ImageWorks Tool Chest is located on the ImageWorks desktop.
+"
+      
+  utter_system_management_imageworks_tool_chest_option:
+    - custom: 
+            payload: "collapsible"
+            data: 
+            - title: AutoVoice Volume
+              description: AutoVoice Volume displays a screen with volume sliders that allow you to adjust the left and right audio volume levels for AutoVoice in the scan room. See Control the Auto Voice volume.
 
+            - title: Check Security
+              description: Check Security is used by service personnel.
+            - title: Unix Shell
+              description: Displays a Unix Shell on the monitor. This area is used by service personnel. See Open a Unix shell. 
+            - title: Turn On Extend HU
+              description:  Displays the extended Houndsfield Units. See Turn on/off extended CT numbers.
+            - title: Quick Snap
+              description: Quick Snap takes a snapshot of all the parameters you have prescribed and information for processes touched by the prescription. This is useful when you are having system issues for service personnel to recall the system issues. See Collect data with Quick Snap.
+            - title: Export Protocols
+              description: User protocols for adult and pediatric categories can be copied to CD-R in an Excel format with the Export Protocols feature.
+                The file can be edited once it is saved to a PC with Excel software. See Export protocols.
+      
+  utter_system_management_service_tool_chest_location:
+    - text: "The Service Tool Chest is located on the Service browser. It contains several of the same features that are in the ImageWorks 
+Tool Chest
+"
+      
+  utter_system_management_control_the_autovoice_volume:
+    - text: "1. Click the ImageWorks icon.
+2. On the Tool Chest, click Auto Voice Volume.
+3. Click and drag the right or left slider to adjust the Auto Voice volume levels in the scan room.
+4. Make a selection:
+   a. Click Accept to accept the values but not save the values.
+   b. Click Save to save the values.
+   c. Click Default to reset the values to the system default values.
+5. Click Quit to exit.
+
+If Auto Voice cannot be heard, check the settings for the Auto Voice Volume listed in the Tool Chest on the Image Works desktop. Click Auto Voice Volume on ImageWorks desktop in the toolbar. Use the sliders to set the value between 50 to 85%, click Save, and then Default to set the new saved value as the new default. Click Reset to reset the system default values. 
+AutoVoice may fail to function, especially during system simultaneity.Make sure that you can hear the Auto Voice to recognize if Auto Voice has quit. Manually breathe the patient when this occurs.
+"
+      
+  utter_system_management_open_unix_shell:
+    - text: "
+1. Click the ImageWorks icon.
+2. From the Tool Chest screen, click Unix Shell - Left or Unix Shell-Right to open a Command Line window on the monitor.
+3. Click File > Close Window or type exit to close the Unix shell window
+"
+      
+  utter_system_management_turn_on_turn_off_extended_ct_range:
+    - text: "1. Verify that the system is idle and that all reconstructions are complete.
+2. Click the ImageWorks icon.
+3. From the Tool Chest, click Turn On Extend HU or Turn Off Extend HU.
+       a.The action that occurs is described on the button and does not reflect the state of the sytem.
+4. Click OK on the message prompt.
+       b.The system automatically shuts down and reboots as part of the extended CT numbers procedure.
+"
+      
+  utter_system_management_collect_data_troubleshooting_system_issues:
+    - text: "1. Click the ImageWorks icon.
+2. From the Tool Chest, click Quick Snap.
+3. Click OK to the message prompt located on the left monitor. The pop-up screen closes when the snap is complete.
+4. Record the time and date of the QuickSnap for debugging by the service engineer
+
+"
+      
+  utter_system_management_collect_data_troubleshooting_image_quality:
+    - text: "1. Click the ImageWorks icon.
+2. From the browser, select all the images for the investigation.
+3. Click Utilities
+4. Select the anonymous exam.
+  a.Maximum of 500 images.
+5. From the Tool Chest, click IQ Snap.
+  a.If you did not make the images anonymous or did not select the anonymous exam, a pop-up displays instructing
+    you to make the images anonymous. You cannot proceed until the selected images are anonymous.
+6. Click OK to the warning and the message prompts located on the left monitor.
+  a.If you get a message at the end of IQ Snap that indicates it failed, contact service.
+  b.This message closes once the IQ Snap is complete
+
+"
+      
+  utter_system_management_anonymize_patient_annotation_level:
+    - text: "Patient de-identification or anonymizing an exam electronically removes certain exam information and replaces it with anonymous information. There are two levels to anonymizing patient information: Full and Partial. 
+
+CLICK HERE TO KNOW ABOUT THE PROCEDURE TO SET ANNOTATE LEVEL FOR PATIENT ANONYMIZE
+"
+      buttons:
+        - payload: set the annotation level for patient anonymize
+          title: set the annotation level for patient anonymize
+      
+  utter_system_management_set_annotation_level_patient_anonymize:
+    - text: "1. Click the ImageWorks icon.
+2. From the Tool Chest, click Anon. Pat. Level.
+3. Respond to the message prompt that defines the currently active anonymous state.
+  a.Click OK to change the patient anonymous annotation level.
+  b.Click Cancel to keep the current patient anonymous annotation level.
+4. Set the desired level: Full or Partial.
+  a.Full mode is the most HIPAA compliant mode.
+  b.ANON and the exam number are added to the Patient List
+
+"
+      
+  utter_system_management_export_user_protocol_on_cd:
+    - text: "Use this procedure to export user protocols to aCDso that you can load CD on a PC and print. The format is excel. The system must be idle when exporting protocols.
+1. Click the ImageWorks icon.
+2. From the Tool Chest screen, click Export Protocols.
+3. The CD/DVD tray opens and the system prompts you to place a blank CD media in the CD/DVD drive.
+4. Place a CD inserted in the tray.
+5. Click OK to close the drive and initiate the save process.
+The User adult and pediatric protocols are saved.
+6. The CD tray opens automatically when the save is complete. Remove the CD and click OK to the message prompt, which
+closes the tray.
+
+"
+      
+  utter_system_management_set_screensaver_timeout:
+    - text: "1. Click Service.
+2. From the Service browser, click the Service browser title bar to move it so you can see the service Tool Chest.
+3. From the Tool Chest, click Screensaver Time.
+4. From the Set Screensaver Timeout screen, click and drag the slider to adjust the time that the screensaver mode starts
+to between 5 to 60 minutes.
+   a. Click on either side of the slider grab bar to increment in steps of 1 minute.
+   b. The default is 30 minutes.
+5. Click Save.
+"
+      
+  utter_system_management_iLinq:
+    - text: "The iLinq tools are designed so you can get information yourself, rather than having to always rely on a FE or an Online Center Engineer. The Applications Self Help feature provides automated expert advice from a database of application problems and solutions
+
+"
+      
+  utter_system_management_uses_of_iLinq:
+    - text: "a. Answer questions - Top 10 FAQs.
+b. Search the Knowledge Database.
+c. Share the knowledge with co-workers by saving the results
+
+"
+      
+  utter_system_management_terminate_iLinq:
+    - text: "1. Click Exam Rx .
+  a.A message is posted that the scan hardware resource is not available.
+2. Wait three minutes and click Exam Rx again to begin scanning
+"
+      
+  utter_system_management_use_of_product_network_filter:
+    - text: "Product Network filters allow you to place a site firewall in front of the CT scanner. Filters may be configured
+to restrict which computers may access the system and which system services are allowed to be controlled by other 
+devices trying to access the operator console such as ftp, telnet and rlogin. This access is determined by configuring 
+IP addresses allowed to access the system. DICOM1 access to the system can also be configured. The system default is for 
+no services enabled, no IP addresses authorized and DICOM port 4006 enabled.
+"
+      
+  utter_system_management_use_of_software_download_feature:
+    - text: "The Software Download feature allows systems that have a service contract with Broadband connected to automatically 
+download software updates. These updates can be configured to Auto Install or Manual install. A pop up indicating that 
+this capability is installed on the system is displayed at every reboot for the first 3 weeks after a software load from cold.
+
+"
+      
+  utter_system_management_how_to_update_software:
+    - text: "1.From the Automatic Software Updates screen, click Continue.
+2.As updates become available, from the Automatic Software Updates screen, click Install Later or
+Install Now.
+3.If Install Now is selected, view the progress bar, which indicates the install progress. If Install 
+Later ischosen, you will be asked again on the next reboot to install the software update
+"
+      
+  utter_system_management_how_to_leave_a_memo_for_service_engineer:
+    - text: "1. From the Feature Status area, click message area.
+2. From the message screen, click Memo.
+3. Place the cursor in the menu area and type and Enter a message.
+4. Click Save.
+   a. The message displays in the log file.
+- "
+      
 actions:
 - action_greet_user
 # - action_custom_fallback

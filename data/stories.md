@@ -1530,6 +1530,240 @@
 
 <!----------------------------------------------------------chapter 19------------------------------------------------------------->
 
+## privacy_laws
+* privacy_laws
+  - utter_privacy_laws
+  - utter_did_that_help
+
+## privacy_using_ea3
+* privacy_using_ea3
+  - utter_privacy_using_ea3
+  - utter_did_that_help
+  
+## rules_adding_users_to_local_database
+* rules_adding_users_to_local_database
+  - utter_rules_adding_users_to_local_database
+  - utter_did_that_help
+  
+## user_groups_privileges
+* user_groups_privileges
+  - utter_user_groups_privileges
+  - utter_did_that_help
+  
+## open_ea3_ui
+* open_ea3_ui
+  - utter_open_ea3_ui
+  - utter_did_that_help
+  
+## buttons_disabled_center_panel
+* buttons_disabled_center_panel
+  - utter_buttons_disabled_center_panel
+  - utter_did_that_help
+  
+## add_local_user
+* add_local_user
+  - utter_add_local_user
+  - utter_did_that_help
+  
+## add_local_group
+* add_local_group
+  - utter_add_local_group
+  - utter_did_that_help
+  
+## adding_member_to_group
+* adding_member_to_group
+  - utter_adding_member_to_group
+  - utter_did_that_help
+  
+## add_enterprise_group
+* add_enterprise_group
+  - utter_add_enterprise_group
+  - utter_did_that_help
+  
+## add_remove_user
+* add_remove_user
+  - utter_add_remove_user
+  - utter_did_that_help
+  
+## change_user_name
+* change_user_name
+  - utter_change_user_name
+  - utter_did_that_help
+  
+## change_user_password
+* change_user_password
+  - utter_change_user_password
+  - utter_did_that_help
+  
+## rules_change_password
+* rules_change_password
+  - utter_rules_change_password
+  - utter_did_that_help
+  
+## admin_change_password
+* admin_change_password
+  - utter_admin_change_password
+  - utter_did_that_help
+  
+## lock_user_privilege
+* lock_user_privilege
+  - utter_lock_user_privilege
+  - utter_did_that_help
+  
+## unlock_user_privilege
+* unlock_user_privilege
+  - utter_unlock_user_privilege
+  - utter_did_that_help
+  
+## remove_user
+* remove_user
+  - utter_remove_user
+  - utter_did_that_help
+  
+## remove_group
+* remove_group
+  - utter_remove_group
+  - utter_did_that_help
+  
+## remove_membership
+* remove_membership
+  - utter_remove_membership
+  - utter_did_that_help
+  
+## config_ea3_application_properties
+* config_ea3_application_properties
+  - utter_config_ea3_application_properties
+  - utter_did_that_help
+  
+## options_config_ea3_application_properties
+* options_config_ea3_application_properties
+  - utter_options_config_ea3_application_properties
+  - utter_did_that_help
+  
+## config_enterprise_tab
+* config_enterprise_tab
+  - utter_config_enterprise_tab
+  - utter_did_that_help
+  
+## auto_config
+* auto_config
+  - utter_auto_config
+  - utter_did_that_help
+  
+## connection_problem
+* connection_problem
+  - utter_connection_problem
+  - utter_did_that_help
+  
+## authentication_type
+* authentication_type
+  - utter_authentication_type
+  - utter_did_that_help
+  
+## config_properties_manual_select
+* config_properties_manual_select
+  - utter_config_properties_manual_select
+  - utter_did_that_help
+  
+## save_changes_configuration
+* save_changes_configuration
+  - utter_save_changes_configuration
+  - utter_did_that_help
+  
 <!---------------------------------------------------------chapter 20------------------------------------------------------------->
 
+## system_management_imageworks_tool_chest_location
+* system_management_imageworks_tool_chest_location
+  - utter_system_management_imageworks_tool_chest_location
+  - utter_did_that_help
+
+## system_management_imageworks_tool_chest_option
+* system_management_imageworks_tool_chest_option
+  - utter_system_management_imageworks_tool_chest_option
+  - utter_did_that_help
+
+## system_management_service_tool_chest_location
+* system_management_service_tool_chest_location
+  - utter_system_management_service_tool_chest_location
+  - utter_did_that_help
+
+## system_management_control_the_autovoice_volume
+* system_management_control_the_autovoice_volume
+  - utter_system_management_control_the_autovoice_volume
+  - utter_did_that_help
+
+## system_management_open_unix_shell
+* system_management_open_unix_shell
+  - utter_system_management_open_unix_shell
+  - utter_did_that_help
+
+## system_management_turn_on_turn_off_extended_ct_range
+* system_management_turn_on_turn_off_extended_ct_range
+  - utter_system_management_turn_on_turn_off_extended_ct_range
+  - utter_did_that_help
+
+## system_management_collect_data_troubleshooting_system_issues
+* system_management_collect_data_troubleshooting_system_issues
+  - utter_system_management_collect_data_troubleshooting_system_issues
+  - utter_did_that_help
+
+## system_management_collect_data_troubleshooting_image_quality
+* system_management_collect_data_troubleshooting_image_quality
+  - utter_system_management_collect_data_troubleshooting_image_quality
+  - utter_did_that_help
+
+## system_management_anonymize_patient_annotation_level
+* system_management_anonymize_patient_annotation_level
+  - utter_system_management_anonymize_patient_annotation_level
+  - utter_did_that_help
+
+## system_management_set_annotation_level_patient_anonymize
+* system_management_set_annotation_level_patient_anonymize
+  - utter_system_management_set_annotation_level_patient_anonymize
+  - utter_did_that_help
+
+## system_management_export_user_protocol_on_cd
+* system_management_export_user_protocol_on_cd
+  - utter_system_management_export_user_protocol_on_cd
+  - utter_did_that_help
+
+## system_management_set_screensaver_timeout
+* system_management_set_screensaver_timeout
+  - utter_system_management_set_screensaver_timeout
+  - utter_did_that_help
+
+## system_management_iLinq
+* system_management_iLinq
+  - utter_system_management_iLinq
+  - utter_did_that_help
+
+## system_management_uses_of_iLinq
+* system_management_uses_of_iLinq
+  - utter_system_management_uses_of_iLinq
+  - utter_did_that_help
+
+## system_management_terminate_iLinq
+* system_management_terminate_iLinq
+  - utter_system_management_terminate_iLinq
+  - utter_did_that_help
+
+## system_management_use_of_product_network_filter
+* system_management_use_of_product_network_filter
+  - utter_system_management_use_of_product_network_filter
+  - utter_did_that_help
+
+## system_management_use_of_software_download_feature
+* system_management_use_of_software_download_feature
+  - utter_system_management_use_of_software_download_feature
+  - utter_did_that_help
+
+## system_management_how_to_update_software
+* system_management_how_to_update_software
+  - utter_system_management_how_to_update_software
+  - utter_did_that_help
+
+## system_management_how_to_leave_a_memo_for_service_engineer
+* system_management_how_to_leave_a_memo_for_service_engineer
+  - utter_system_management_how_to_leave_a_memo_for_service_engineer
+  - utter_did_that_help
 
