@@ -1589,6 +1589,107 @@
   
 <!----------------------------------------------------------chapter 17----------------------------------------------------------------------->
 
+## ImageWorks_desktop
+* ImageWorks_desktop
+  - utter_ImageWorks_desktop
+  - utter_did_that_help
+
+## ImageWorks_source_menu
+* ImageWorks_source_menu
+  - utter_ImageWorks_source_menu
+  - utter_did_that_help
+
+## ImageWorks_filter_menu_and_refresh
+* ImageWorks_filter_menu_and_refresh
+  - utter_ImageWorks_filter_menu_and_refresh
+  - utter_did_that_help
+
+## ImageWorks_patient_list
+* ImageWorks_patient_list
+  - utter_ImageWorks_patient_list
+  - utter_did_that_help
+
+## destinations_options
+* destinations_options
+  - utter_destinations_options
+  - utter_did_that_help
+
+## job_management
+* job_management
+  - utter_job_management
+  - utter_did_that_help
+
+## job_management_screen
+* job_management_screen
+  - utter_job_management_screen
+  - utter_did_that_help
+
+## patient_list
+* patient_list
+  - utter_patient_list
+  - utter_did_that_help
+
+## filter_data_screen
+* filter_data_screen
+  - utter_filter_data_screen
+  - utter_did_that_help
+
+## add_filter
+* add_filter
+  - utter_add_filter
+  - utter_did_that_help
+
+## filter_the_list
+* filter_the_list
+  - utter_filter_the_list
+  - utter_did_that_help
+
+## remove_a_filter
+* remove_a_filter
+  - utter_remove_a_filter
+  - utter_did_that_help
+
+## refresh_database
+* refresh_database
+  - utter_refresh_database
+  - utter_did_that_help
+
+## find_an_exam
+* find_an_exam
+  - utter_find_an_exam
+  - utter_did_that_help
+
+## remove_exam_or_series
+* remove_exam_or_series
+  - utter_remove_exam_or_series
+  - utter_did_that_help
+
+## sort_patient_list
+* sort_patient_list
+  - utter_sort_patient_list
+  - utter_did_that_help
+
+## sort_series_numerically
+* sort_series_numerically
+  - utter_sort_series_numerically
+  - utter_did_that_help
+
+## resize_exam
+* resize_exam
+  - utter_resize_exam
+  - utter_did_that_help
+
+## adjust_images
+* adjust_images
+  - utter_adjust_images
+  - utter_did_that_help
+
+## keyboard_patient_list
+* keyboard_patient_list
+  - utter_keyboard_patient_list
+  - utter_did_that_help
+
+
 <!---------------------------------------------------------chapter 18------------------------------------------------------------->
 
 ## protocol_usage
