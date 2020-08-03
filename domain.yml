@@ -393,6 +393,23 @@ intents:
 - system_management_how_to_leave_a_memo_for_service_engineer
 
 responses:
+  utter_pediatric_suggestions:
+    - text: "please select any one"
+      buttons:
+        - payload: Minimize pediatric and small patient dose
+          title: Minimize pediatric and small patient doses
+        - payload: Pediatric and small patient scans
+          title: Pediatric and small patient scans
+        - payload: optimize pediatric protocol
+          title: optimize pediatric protocol
+        - payload: pediatric protocols
+          title: pediatric protocols
+        - payload: Color Coding for Kids Protocol
+          title: Color Coding for Kids Protocol
+        - payload: Set up a pediatric or small patient exam
+          title: Set up a pediatric or small patient exam
+        - payload: Adjust pediatric and small patient scan parameters
+          title: Adjust pediatric and small patient scan parameters
   utter_greet:
   - text: Hey Buddy! How can I help you?
   utter_welcome:
@@ -586,9 +603,9 @@ Area 2 = protocol selection area. Protocols are set and edited in Protocol Manag
 "
       image: http://localhost:7000/img/emergency_patient.png
 
-  utter_protocol_selection:
-    - text: "Find the image below"
-      image: http://localhost:7000/img/protocol_selection.png
+  # utter_protocol_selection:
+  #   - text: "Find the image below"
+  #     image: http://localhost:7000/img/protocol_selection.png
 
   utter_scan_setup_screen:
     - image: http://localhost:7000/img/scan_setup_screen.png
@@ -1024,6 +1041,30 @@ Use pediatric positioning accessories
 Make a kid friendly environment
 
 "
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Perform only necessary CT examinations
+              description: This important communication between the patient's physician and the radiologist is essential in determining the need for the CT examination. The indications and the appropriate technique to be used should be reviewed by the radiologist prior to every scan including the patient’s number of previous scans, reasons for the scan, and consideration of other effective lower dose modalities.
+            - title: Scan only the organ or anatomical region indicated
+              description: Limits can coverage to cover only the organ or anatomical region of the body indicated to avoid unnecessary exposure.
+            - title:  Minimize multi-phase contrast CT examinations
+              description: 1. CT studies with and without contrast material are not always needed.  
+                2. Multiphase imaging may double or triple the dose and may not add diagnostic information to the study
+            - title: Properly center all patients in the gantry
+              description: Center all patients in the gantry to allow the bow tie filters to deliver dose where it is needed and filter more where it is not
+            - title: Lower mA settings for chest and bone imaging
+              description: Consider using a lower mA setting and higher Noise Indexes if AutomA is used for chest and bone imaging. Higher Resolution/dose imaging is typically unnecessary for these types of studies where there is high inherent contrast between the structures being imaged.
+            - title: Scan signal-to-noise
+              description: Limit the highest quality images requiring the highest radiation dose to very specific indications such as angiography or visualizing small subtle lesions. Studies with higher noise may be just as diagnostic and require lower dose. 
+            - title: Use pediatric positioning accessories
+              description: Use papoose boards and neonatal immobilizers, as needed, with certain patients.
+            - title: Make a kid friendly environment
+              description: Help pediatric patients feel less scared.
+      attachment:
+       payload:
+         src: https://www.youtube.com/embed/ThYjLN-auuo
+       type: video
 
   utter_Pediatric_and_small_patient_scans:
     - text: "Follow the following steps. Select one to know more information on it
@@ -3340,15 +3381,15 @@ Click [Close] to close. "
     - text: "A protocol must be selected in order to initiate the scanning sequence. Protocols are used
 as a basis for routine or established procedures. They save time by using preset established
 factors. "
-       custom: 
+      custom: 
              payload: "collapsible"
              data: 
              - title: Use protocols
                description: After entering the patient information in the Exam Rx area, you choose a protocol from one of the four protocol locations (User, GE, Service, or Most Recent).
-               Once you choose the area you wish to get the protocol from, then you select an anatomical area and the protocol you wish to use. Once the protocol is chosen,the scanning sequence is activated. All parameters for scanning a patient can be set up in a protocol. This saves you time when prescribing scan parameters for each patient.
+                Once you choose the area you wish to get the protocol from, then you select an anatomical area and the protocol you wish to use. Once the protocol is chosen,the scanning sequence is activated. All parameters for scanning a patient can be set up in a protocol. This saves you time when prescribing scan parameters for each patient.
              - title: Edit protocol.
                description: Once a protocol is chosen, any factor in the individual exam may be adjusted without affecting the established protocol. 
-               If an established protocol has a factor or factors you wish to permanently change, this can be done through the Protocol Management feature. If your system has been configured for EA3 Login, you must have permission to accept any changes in Protocol Management.
+                If an established protocol has a factor or factors you wish to permanently change, this can be done through the Protocol Management feature. If your system has been configured for EA3 Login, you must have permission to accept any changes in Protocol Management.
              - title: View Protocols
                description: Protocols can be viewed with the Protocol Management feature. Each series can be viewed and scan values may be changed to see the effect on other values or other available options.
 
@@ -3361,12 +3402,12 @@ factors. "
                description:  location where protocols can be built in either adult or pediatric models. These protocols are custom protocols that your radiologist or physician likes to use.
              - title: GE
                description:  location for a set of predefined protocols that cannot be modified but can be copied and used. 
-               These protocols are factory installed. They have been developed in collaboration with clinical partners to provide users with a convenient and clinical relevant starting point for tailoring your departmental protocols.
+                These protocols are factory installed. They have been developed in collaboration with clinical partners to provide users with a convenient and clinical relevant starting point for tailoring your departmental protocols.
              - title: Service
                description:  location for protocols used by a service representative.
              - title: Most Recent
                description:  location where a copy of the last 90 protocols reside exactly as they were used. 
-               These protocols can be copied and used but cannot be modified or deleted.
+                These protocols can be copied and used but cannot be modified or deleted.
 
   utter_protocol_selection_screen:
     - text: "Click Protocol Management, to view the Protocol Selection screen. See Applications Configuration.

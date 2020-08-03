@@ -252,6 +252,13 @@
 - What are the protocols available in the protocol selection area
 - protocols available in the protocol management
 - List of protocols available.
+- protocol selection
+- what is user in protocol selection
+- GE in protocol selection
+- what are the four protocol selection
+- what is displayed in most recent in protocol selection
+- what does service have in it in protocol selection
+- what are the protocol selection
 
 ## intent:scan_setup_screen
 - What is the scan setup screen?
@@ -673,6 +680,12 @@
 - list down the steps for the parameters to be adjusted for small patients
 - How to change the pediatric parameters
 
+## intent:pediatrics
+- pediatrics
+- small patients
+- young patient
+- kids
+- children
 
 <!-------------------------------------------------------------- CHAPTER 6 -------------------------------------------------------->
 ## intent:computer_console_parts
@@ -2602,14 +2615,7 @@
 - can i change a protocol
 - using a protocol
 
-## intent:protocol_selection
-- protocol selection
-- what is user in protocol selection
-- GE in protocol selection
-- what are the four protocol selection
-- what is displayed in most recent in protocol selection
-- what does service have in it in protocol selection
-- what are the protocol selection
+
 
 ## intent:protocol_selection_screen
 - protocol selection screen
