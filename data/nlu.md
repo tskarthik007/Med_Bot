@@ -2446,6 +2446,142 @@
 - logout of AW server
 <!----------------------------------------------------------chapter 16----------------------------------------------------------------------->
 
+## intent:manual_filming_usage
+- manual filming
+- What is the use of film composer
+- use of film composer
+- what is film composer
+- what lets me film images
+- how can the manual filming composer be 
+- List the functions in manual filming
+- function keys in manual filming
+- How can we open film composer
+- steps to open film composer
+
+## intent:manual_filming_function_keys
+- manual filming function keys
+- What are the uses of function keys in manual filming
+- What are all the keys supported by the film composer?
+- functions keys in manual filming
+- what does f1 function key do?
+- what is performed by the f5 key?
+- what can f8 do?
+- function of f2 key?
+- what happens when i press f4
+
+
+## intent:manual_film_composer_screen
+- manual film composer screen
+- What are the options available in film composer screen
+- How to use film composer screen
+- How to change to full screen
+- How to hide the manual film scream
+- What is routine operation
+- What are the options available in film composer screen
+- description for Layout preset in manual film composer 
+- What is routine operation?
+- What is the shortcut to open print series screen?
+
+
+## intent:print_series
+- print series
+- What is the shortcut to open print series screen
+- How to open print series screen
+- What does the current print jobs displays
+- What is use the interval option
+- what is print series screen
+- what are the components of print series screen
+- what does image selection do
+
+
+## intent:print_series_parameters
+- What is the use of print series parameter
+- How to cancel the print series request
+- Where is the lower view port
+- How to set series parameter
+- set up of set series parameter
+- what should sizes of images be in the print series parameter 
+
+
+
+##intent:manually_film_image
+- manual film image
+- What is film screen
+- What is film MID
+- How to set print settings
+- What is film single image
+- How to set print settings?
+- setting print settings
+- procedure to set print settings
+
+
+
+## intent:semi_automatic_filming
+- semi automatic filming
+- How to set up semi automatic filming
+- steps in semi automatic filming
+- how to display semi automatic filming
+- procedure for semi automatic filming
+- How to edit the image in the film composer?
+
+
+## intent:manual_filming_set_print_parameter
+- manual filming set print parameter
+- How to open print settings
+- How to automatically clear the printed page
+- What are all the options available in print settings
+- How to print different patient information in same film 
+- What is the use of expose order
+- what are the components of Set Print parameters 
+- what does Show Page Index do
+- what will Operation Panel Alignment perform
+
+
+## intent:manual_filming_export
+- manual filming export
+- How to export the image 
+- What is the use of cancel option
+- Step involved in exporting
+- What is the use of refresh 
+- components in export in manual filming
+- what does export do?
+
+
+## intent:right_click_function
+- How to open on-view menu
+- What are the options available in the on-view display
+- How to adjust the filter
+- How to display cross reference lines
+- list of items displayed when right clicked
+- what are shown when right click is performed
+- what are the Gray scale enhancement
+
+
+##intent:edit_annotation
+- How to open the edit annotation window
+- How to edit annotation
+- How to edit the font name and font size in edit annotation
+- How to cancel the edit annotation 
+
+
+
+## intent:film_history
+- What is film history
+- How to open film history
+- What is auto deletion job
+- How to use auto deletion job
+- how to view film history
+- i want to see the film history
+
+
+## intent:film_queue
+- What are the options available in the film queue dialog box
+- How to refresh the print job list 
+- How to clear the print job list 
+- How to open film queue dialog box
+- components of the film queue
+- various options in the film queue of manual filming
+
 <!----------------------------------------------------------chapter 17----------------------------------------------------------------------->
 
 <!---------------------------------------------------------chapter 18------------------------------------------------------------->

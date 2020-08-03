@@ -299,6 +299,19 @@ intents:
 - AW_server_client_slow
 - AW_server_upgrade
 - AW_server_client_close
+- manual_filming_usage
+- manual_filming_function_keys
+- manual_film_composer_screen
+- print_series
+- print_series_parameters
+- manually_film_image
+- semi_automatic_filming
+- manual_filming_set_print_parameter
+- manual_filming_export
+- right_click_function
+- edit_annotation
+- film_history
+- film_queue
 
 
 
@@ -3161,7 +3174,155 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
 
 
  # <!----------------------------------------------------------chapter 16----------------------------------------------------------------------->
+  utter_manual_filming_usage:
+    - text: "The Film Composer is the interface with your camera that allows you to film images.
+             The Film Composer can be opened from the browser,the Viewer, the Mini Viewer, Exam Rx, and Reformat
+             The manual film composer supports following functions:
+              1.Select the images from image browser by exam, series or image level.
+              2.Organize the multiple patients’ filming jobs at the film interface.
+              3.Setup the film layout easily.
+              4.Copy/cut/paste/insert/delete the images on the composer.
+              5.Review the film job from the film history.
+              6.Edit the image annotation "
 
+  utter_manual_filming_function_keys:
+    - text: "F1- Film image
+    F2- Film screen
+    F3- Film MID
+    F4- Print series
+    The manual film composer features support existing F keys (F5-F11) for Setting Window Width and Level. "
+
+  utter_manual_film_composer_screen:
+    - text: "The Film Composer can be opened from the browser, the Viewer, the Mini Viewer, Exam Rx, and Reformat "
+
+      image:
+
+      image:
+
+  utter_print_series:
+    - text: "Press F4 to open the Print Series screen."
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Format
+              description: Select the format of the printed series, using either the same format as the Film Composer or the Viewer.
+            - title:  ImageSelection
+              description: Move the Image Selection slider to include the number of images to be printed.
+            - title:  Interval
+              description: Select an Interval to print the images or choose to print all images in the series. 
+            - title: Current Print Jobs
+              description: The Current Print Jobs area displays messages about the job currently being executed and gives you the option to cancel the print job
+            - title:  Print Last Sheet
+              description:  Yes automatically prints the last sheet of film. Select No to manually click the Print button on the Film Composer. 
+            - title:  Print Series
+              description: Prints the series with the chosen selections. 
+            - title:  Close
+              description: Closes the Print Series screen without printing the series
+
+  utter_print_series_parameters:
+    - text: "Any portion of a series may be filmed using the Print Series (F4) key. All images need to 
+    be filmed in the same window width and level. If multiple window widths and levels are needed (i.e., soft tissue and bone) the Print Series can be used for each window width and level.
+    1. On the display monitor, click in one of the lower viewports.
+    2. Click List Select.
+    3. Select an exam, series, and image.
+    4. Click the Manual Film Composericon.
+    5. Place the cursor in the image/series to be used for Print Series.
+    6. Press F4.
+    7. Set The Print Series parameters.
+    8. Click Print Series."
+
+  utter_manually_film_image:
+    - text: "Select layout.
+    Place the cursor over the image you want to film and use one of the following film methods:
+              a.Film single image: press F1 and the currently active image is placed in the next available film frame.
+              b.Film Screen: Set the image display format to the number of views you want displayed according to the layout you have opened, then press F2.
+              c.Film MID: set the image display format to the number of views you want displayed within each film frame, then press F3."
+  
+  utter_semi_automatic_filming:
+    - text: "1.Click the ImageWorks icon. 
+    2.From the browser patient list, select the desired images. 
+    3.Click [Filming] button from theData Apps area. Film composer will display and the selected images will be loaded to film composer. 
+    4.Edit the images in the film composer. 
+    5.When the Film Composer screen is ready for print, click Print."
+
+  utter_manual_filming_set_print_parameter:
+    - text: "The system retains the changes until next change is made. Settings may be changed prior to actual printing of the images in the composer.Click [Print Settings] button. A dialog window opens allowing you to set up the print preferences. "
+
+      image:
+
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Print PatientID Name
+              description: Print the Patient Name and Patient ID
+            - title:  AutoClear
+              description: Automatically clears the printed pages of the Film Composer after printing. When off, you must click Delete to manually clear the film composer.
+            - title:  ShowBorder
+              description:  Show border lines for each image frame 
+            - title: Show Page Index
+              description: Show age index
+            - title: MixPatients
+              description:  Allow to print different patients on a film
+            - title: No. Of Copies
+              description: Adjust the number of copies to be printed.
+            - title: Spacing
+              description:  Adjust The vertical and horizontal blank space between images.
+            - title: Expose Order
+              description: 
+                Left to right / Top to bottom - Images fill in the pages from left to right, row by row and top to bottom.
+                Top to bottom / Left to right - Images fill in the pages from up to down, column by column and left to right.
+            - title: Operation Panel Alignment
+              description: Set the operation panel on left side or right side.
+            - title: Tick Marks
+              description: Horizontal, image show horizontal
+              Vertical, image show vertical.
+
+  utter_manual_filming_export:
+    - text: "To export images in the film composer to jpeg format and copy to USB device, click [Export] button. A dialog window opens, allowing the export of each film to 1 jpeg file. If you wish to export each images as a jpeg file set the film format to 1 X1."
+  
+      image:
+
+  utter_right_click_function:
+    - text: "Place the cursor over the viewport and right-click to display the on-view menu."
+       custom: 
+            payload: "collapsible"
+            data: 
+            - title: Cut
+              description: Removes the image you select.  
+            - title: Copy
+              description: Copies one image
+            - title: Paste
+              description: Pastes one image to the desired location, covering any image already there.
+            - title: Insert empty
+              description: Inserts an empty image allowing the desired image to be pasted.
+            - title: Insert patient info
+              description: Inserts one blank image containing only patient information.
+            - title: Gray scale enhancement
+              description: Select g1, g2, g3 scale levels or a scale level of none to adjust the gray scale within the image.
+            - title: Filter
+              description: Adjust the images by selecting a smooth filter (s1, s2, s3) and edge enhancement level (e1, e2, e3)
+            - title: Cross Reference
+              description: Displays the cross reference lines for different series.
+            - title: Editor
+              description: Edit the image.
+
+  utter_edit_annotation:
+    - text: "Right click on the mouse and then select the Edit Annotation. A window with image and editing function will open. 
+The Font Name and Font Size can be edited from the drop down menu. The annotation location can be changed by dragging
+the annotation to the location with the red frame; Desired image annotations can be selected from the drop down menu too.
+When finished, click the [Apply] button again. Click [Cancel] to exit. "
+
+  utter_film_history:
+    - text: "Click [Film History] button to display a history of what jobs have been printed, the history window opens. 
+View the list jobs you have printed, or remove jobs by Patient Name or ID from the history list which have finished printing. 
+Click [Setting] button, to set up the auto delete period in days. For example, if you set 30, the system will delete jobs from the history list after 30 days. "
+  
+  utter_film_queue:
+    - text: "Click [Film Queue] button, the printing queue window opens. Click [Pause] to pause the selected printing jobs.
+Click [Resume] to resume the jobs which be paused. Click [Refresh] to refresh the printing job list.
+Click [Clear] to delete the selected printing jobs.
+Click [Close] to close. "
+            
 #<!----------------------------------------------------------chapter 17----------------------------------------------------------------------->
 
 #<!---------------------------------------------------------chapter 18------------------------------------------------------------->
