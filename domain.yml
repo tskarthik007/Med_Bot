@@ -603,9 +603,9 @@ Area 2 = protocol selection area. Protocols are set and edited in Protocol Manag
 "
       image: http://localhost:7000/img/emergency_patient.png
 
-  utter_protocol_selection:
-    - text: "Find the image below"
-      image: http://localhost:7000/img/protocol_selection.png
+  # utter_protocol_selection:
+  #   - text: "Find the image below"
+  #     image: http://localhost:7000/img/protocol_selection.png
 
   utter_scan_setup_screen:
     - image: http://localhost:7000/img/scan_setup_screen.png
@@ -3381,15 +3381,15 @@ Click [Close] to close. "
     - text: "A protocol must be selected in order to initiate the scanning sequence. Protocols are used
 as a basis for routine or established procedures. They save time by using preset established
 factors. "
-       custom: 
+      custom: 
              payload: "collapsible"
              data: 
              - title: Use protocols
                description: After entering the patient information in the Exam Rx area, you choose a protocol from one of the four protocol locations (User, GE, Service, or Most Recent).
-               Once you choose the area you wish to get the protocol from, then you select an anatomical area and the protocol you wish to use. Once the protocol is chosen,the scanning sequence is activated. All parameters for scanning a patient can be set up in a protocol. This saves you time when prescribing scan parameters for each patient.
+                Once you choose the area you wish to get the protocol from, then you select an anatomical area and the protocol you wish to use. Once the protocol is chosen,the scanning sequence is activated. All parameters for scanning a patient can be set up in a protocol. This saves you time when prescribing scan parameters for each patient.
              - title: Edit protocol.
                description: Once a protocol is chosen, any factor in the individual exam may be adjusted without affecting the established protocol. 
-               If an established protocol has a factor or factors you wish to permanently change, this can be done through the Protocol Management feature. If your system has been configured for EA3 Login, you must have permission to accept any changes in Protocol Management.
+                If an established protocol has a factor or factors you wish to permanently change, this can be done through the Protocol Management feature. If your system has been configured for EA3 Login, you must have permission to accept any changes in Protocol Management.
              - title: View Protocols
                description: Protocols can be viewed with the Protocol Management feature. Each series can be viewed and scan values may be changed to see the effect on other values or other available options.
 
@@ -3402,12 +3402,12 @@ factors. "
                description:  location where protocols can be built in either adult or pediatric models. These protocols are custom protocols that your radiologist or physician likes to use.
              - title: GE
                description:  location for a set of predefined protocols that cannot be modified but can be copied and used. 
-               These protocols are factory installed. They have been developed in collaboration with clinical partners to provide users with a convenient and clinical relevant starting point for tailoring your departmental protocols.
+                These protocols are factory installed. They have been developed in collaboration with clinical partners to provide users with a convenient and clinical relevant starting point for tailoring your departmental protocols.
              - title: Service
                description:  location for protocols used by a service representative.
              - title: Most Recent
                description:  location where a copy of the last 90 protocols reside exactly as they were used. 
-               These protocols can be copied and used but cannot be modified or deleted.
+                These protocols can be copied and used but cannot be modified or deleted.
 
   utter_protocol_selection_screen:
     - text: "Click Protocol Management, to view the Protocol Selection screen. See Applications Configuration.

@@ -123,10 +123,6 @@
   - utter_emergency_patient
   - utter_did_that_help
 
-## protocol_selection
-* protocol_selection
-  - utter_protocol_selection
-  - utter_did_that_help
 
 ## scan_setup_screen
 * scan_setup_screen
