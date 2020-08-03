@@ -1591,6 +1591,66 @@
 
 <!---------------------------------------------------------chapter 18------------------------------------------------------------->
 
+## protocol_usage
+* protocol_usage
+  - utter_protocol_usage
+  - utter_did_that_help
+
+## protocol_selection
+* protocol_selection
+  - utter_protocol_selection
+  - utter_did_that_help
+
+## protocol_selection_screen
+* protocol_selection_screen
+  - utter_protocol_selection_screen
+  - utter_did_that_help
+
+## protocol_built_and_edit
+* protocol_built_and_edit
+  - utter_protocol_built_and_edit
+  - utter_did_that_help
+
+## protocol_scout_parameter
+* protocol_scout_parameter
+  - utter_protocol_scout_parameter
+  - utter_did_that_help
+
+## protocol_set_scan_parameters
+* protocol_set_scan_parameters
+  - utter_protocol_set_scan_parameters
+  - utter_did_that_help
+
+## protocol_set_up_auto_voice
+* protocol_set_up_auto_voice
+  - utter_protocol_set_up_auto_voice
+  - utter_did_that_help
+
+## protocol_emergency_patients
+* protocol_emergency_patients
+  - utter_protocol_emergency_patients
+  - utter_did_that_help
+
+## protocol_default
+* protocol_default
+  - utter_protocol_default
+  - utter_did_that_help
+
+## protocol_copy_ paste
+* protocol_copy_ paste
+  - utter_protocol_copy_ paste
+  - utter_did_that_help
+
+## protocol_delete
+* protocol_delete
+  - utter_protocol_delete
+  - utter_did_that_help
+
+## protocol_delete_emergency_patients
+* protocol_delete_emergency_patients 
+  - utter_protocol_delete_emergency_patients
+  - utter_did_that_help
+  
 
 <!----------------------------------------------------------chapter 19------------------------------------------------------------->
 

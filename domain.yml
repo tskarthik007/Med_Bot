@@ -312,6 +312,18 @@ intents:
 - edit_annotation
 - film_history
 - film_queue
+- protocol_usage
+- protocol_selection
+- protocol_selection_screen
+- protocol_built_and_edit
+- protocol_scout_parameter
+- protocol_set_scan_parameters
+- protocol_set_up_auto_voice
+- protocol_emergency_patients
+- protocol_default
+- protocol_copy_ paste
+- protocol_delete
+- protocol_delete_emergency_patients
 
 
 responses:
@@ -3260,7 +3272,151 @@ Click [Close] to close. "
 #<!----------------------------------------------------------chapter 17----------------------------------------------------------------------->
 
 #<!---------------------------------------------------------chapter 18------------------------------------------------------------->
+  
+  utter_protocol_usage:
+    - text: "A protocol must be selected in order to initiate the scanning sequence. Protocols are used
+as a basis for routine or established procedures. They save time by using preset established
+factors. "
+       custom: 
+             payload: "collapsible"
+             data: 
+             - title: Use protocols
+               description: After entering the patient information in the Exam Rx area, you choose a protocol from one of the four protocol locations (User, GE, Service, or Most Recent).
+               Once you choose the area you wish to get the protocol from, then you select an anatomical area and the protocol you wish to use. Once the protocol is chosen,the scanning sequence is activated. All parameters for scanning a patient can be set up in a protocol. This saves you time when prescribing scan parameters for each patient.
+             - title: Edit protocol.
+               description: Once a protocol is chosen, any factor in the individual exam may be adjusted without affecting the established protocol. 
+               If an established protocol has a factor or factors you wish to permanently change, this can be done through the Protocol Management feature. If your system has been configured for EA3 Login, you must have permission to accept any changes in Protocol Management.
+             - title: View Protocols
+               description: Protocols can be viewed with the Protocol Management feature. Each series can be viewed and scan values may be changed to see the effect on other values or other available options.
 
+  utter_protocol_selection:
+    - text: "There are different Protocol selections available"
+      custom: 
+             payload: "collapsible"
+             data: 
+             - title: User
+               description:  location where protocols can be built in either adult or pediatric models. These protocols are custom protocols that your radiologist or physician likes to use.
+             - title: GE
+               description:  location for a set of predefined protocols that cannot be modified but can be copied and used. 
+               These protocols are factory installed. They have been developed in collaboration with clinical partners to provide users with a convenient and clinical relevant starting point for tailoring your departmental protocols.
+             - title: Service
+               description:  location for protocols used by a service representative.
+             - title: Most Recent
+               description:  location where a copy of the last 90 protocols reside exactly as they were used. 
+               These protocols can be copied and used but cannot be modified or deleted.
+
+  utter_protocol_selection_screen:
+    - text: "Click Protocol Management, to view the Protocol Selection screen. See Applications Configuration.
+      The protocol area has 10 adult and 10 pediatric protocol categories. Protocols 1 to 10 are adult protocol areas and 11 to 20 are pediatric protocol areas. Each protocol area allows up to 90 different protocols."
+      
+      image: 
+
+  utter_protocol_built_and_edit:
+    - text: "1. Click Protocol Management.
+2. On the Protocol Selection screen, click User.
+3. Select an anatomical region.
+4. Click Edit if you are making changes to an existing protocol.
+5. Select a blank protocol space, click New type the name of protocol and press Enter.
+6. The system defaults to Scout series the first time you are building/editing a protocol. For subsequent series, click Create New Series and select the type of series to be built.
+In most cases, a scout series is built first because this allows for more precise scanning. A scout must be programmed first if it is to be displayed automatically with Show Localizer.
+AutomA and SmartmA require a scout to be acquired in order to generate a mA table.
+7. Click OK.
+8. Set the patient position.
+9. Click Anatomical Reference and assign a two letter abbreviation for the zero point (landmark). Click
+OK to confirm your change or click Cancel to exit the Anatomical Reference screen with no change.
+10. Select series parameters: archive, network, filming options, if desired.
+11. Set the Scout parameters. Set the technique factors low
+12. Click Create New Series.
+13. Click Axial and Create After.
+14. Prescribe the parameters for the series. "
+
+  utter_protocol_scout_parameter:
+    - text: "Scout Parameters include Scout Image number, Start and End Locations to set the length of the scout, technique factors of kVp and mA, scout plane, Auto Voice and use of the Window Width/Level feature. Selecting an individual cell under a parameter column allows you to adjust only the factor in that group. Selecting the parameter the column from the top row highlights all of the factors directly below the selected column and allows you to adjust that factor in all of the images.
+a.Define the Start/End locations.
+b.Select the kV.
+c.Select the mA.
+The Scout Plane designates what type of scout is being acquired. Only 0, 90, 180, and 270 can be used with Show Localizer.
+d.Choose an Auto Voice message.
+e. The language is set by the service engineer.
+f. Multiple languages are available for Auto Voice messages 1, 2, or 3.
+g. Set the W/L. "
+ 
+  utter_protocol_set_scan_parameters:
+    - text: "Set the scan parameters.
+   a. Adjust the Graphic Rx.
+   b. Set the timing parameters.
+   If any of the values in Start/End Location, Number 
+   of Images, Slice Thickness, or Image Interval are changed from the original value, 
+   the system automatically adjusts any necessary values to maintain the signal to noise. 
+
+   For example, if the number of images is decreased, the system automatically adjusts the end location. 
+   The system highlights any adjusted value in orange and changes any necessary graphic representations on the scout. "
+ 
+  utter_protocol_set_up_auto_voice:
+    - text: "Set up Auto Voice.
+c. Set the recon parameters.
+d. Set the film parameters.
+e. Apply any additional scan features.
+The data acquired for all other series is different than data acquired for scout images. This means that features such as Patient
+ Position and Auto Voice must be set or activated again for this series.
+If the patient orientation does not match the scout for the current series, AutomA/SmartmA are not enabled.
+Click Copy Orientation, Patient Position, Anatomical Reference, to copy the patient orientation from the previously scanned series, 
+regardless of what is in the protocol.
+If Auto Store/AutoTransfer were set for the exam scout image, they are automatically set for this series. "
+ 
+  utter_protocol_emergency_patients:
+    - text: "1. Click Protocol Management.
+2. On the Protocol Selection screen, click Emergency Patient Protocol.
+If you wish to build or edit adult or pediatric protocols, refer to Build or edit a protocol section.
+3. On the Emergency Protocol screen, click one Protocol title button from the nine icon selections.
+4. Click Link.
+5. On the Protocol Selection screen, select an anatomical region.
+Click the arrow up or down to view a list of 15 protocols at a time.
+Click and drag the scroll bar to move quickly through all 90 protocols.
+Only the protocols in User tab are available.
+6. Select an existing protocol, then click OK.
+Click Cancel to cancel the protocol link.
+7. On the icon selection screen, select the desired icon.
+Displays Adult icon selection popup when the linked protocol is in 1.x to 10.xx.
+Displays Pediatric icon selection popup when the linked protocol is in 11.x to 20.xx.
+Please select an appropriate icon according to the Protocol patient position and entry selection.
+8. Click Quit. "
+
+  utter_protocol_default:
+    - text: "1. Click Protocol Management.
+2. On the Protocol Selection screen, click GE or User.
+3. Click the desired anatomical body part to view the protocols.
+4. From the Anatomical Protocol list, click a protocol and then click Set as Default.
+a. Only one protocol in each list can be set as the default.
+b. Default protocols can not be set in the Pediatric color coded areas.
+c. The default protocol is highlighted in yellow. "
+
+  utter_protocol_copy_ paste:
+    - text: "1. Click Protocol Management.
+2. From the Protocol Selection screen, click the anatomical selector you want to copy from (GE, User, or Most Recent).
+3. Select the protocol you want to copy.
+4. Click Copy.
+5. Click the anatomical selector to where you want to paste the protocol.
+6. Click on an empty protocol list number and then click Paste.
+7. Rename the protocol, if necessary.
+a. Click the protocol.
+b. Highlight the text and type and Enter a new name.
+8. Click Done. "
+ 
+  utter_protocol_delete:
+    - text: "1. Click Protocol Management.
+2. From the Protocol Selection screen, click the anatomical selector from where you want to delete a protocol.
+You can only delete from the User or Service protocol selectors.
+3. Select the protocol you want to delete.
+4. Click Delete.
+5. Click OK to the confirmation prompt.
+6. Click Done. "
+ 
+  utter_protocol_delete_emergency_patients:
+    - text: "1. Click Protocol Management.
+2. On the Protocol Selection screen, click Emergency Patient Protocol.
+3. On the Emergency Protocol screen, click one Protocol title button of nine selections.
+4. Click Delete Link. "
 
 #<!----------------------------------------------------------chapter 19------------------------------------------------------------->
 
