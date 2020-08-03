@@ -2592,6 +2592,127 @@
 
 <!---------------------------------------------------------chapter 18------------------------------------------------------------->
 
+## intent:protocol_usage
+- protocol usage
+- what is a protocol?
+- why should i use protocol?
+- what is the protocol concept
+- i want to know about protocols
+- why are protocols used
+- advantage of protocols usage
+- how to view a protocol
+- edit a protocol
+- how to use a protocol
+- i want to change a protocol
+- where can i see the protocol
+- can i change a protocol
+- using a protocol
+
+## intent:protocol_selection
+- protocol selection
+- what is user in protocol selection
+- GE in protocol selection
+- what are the four protocol selection
+- what is displayed in most recent in protocol selection
+- what does service have in it in protocol selection
+- what are the protocol selection
+
+## intent:protocol_selection_screen
+- protocol selection screen
+- How to open the protocol selection screen?
+- What are the categories in the protocol screen?
+- open protocol selection screen
+- i want to open protocol selection screen
+- what should i do to open protocol selection screen
+
+
+## intent:protocol_built_and_edit
+- protocol built and edit
+- What is the procedure to complete a new protocol or change the established user protocols on the system?
+- i want to build a protocol
+- edit protocol
+- steps to edit an existing protocol
+- procedure to create a new protocol
+- how can i edit a protocol
+- building a new protocol
+
+## intent:protocol_scout_parameter
+- protocol scout parameter
+- How to set up scout parameter
+- What is scout parameter?
+- set up for scout parameter 
+- protocol scout parameter setting up
+- steps to set up scout parameter
+- i want to set up scout parameter
+
+## intent:protocol_set_scan_parameters
+- protocol set scan parameters
+- How to set scan parameters?
+- set up for scan parameters in protocols
+- scan parameters protocol set up
+- setting up a scan parameter
+- how should i set up a scan parameter 
+- steps for setting up scan parameters
+
+## intent:protocol_set_up_auto_voice
+- protocol set up auto voice
+- How to setup auto voice?
+- i want to set up auto voice
+- bring up auto voice
+- steps to set a auto voice
+- procedure to set up auto voice
+- tell me the steps to bring auto voice
+
+## intent:protocol_emergency_patients
+- protocol emergency patients
+- How to link protocol to emergency patients?
+- linking protocols to emergency patients
+- how to form protocol for emergency patient
+- emergency patient protocol set up
+- set up a protocol for emergency patient
+- procedure to be followed to set up protocol for emergency patients
+- what protocol linking should i follow for emergency patients
+- define protocol for emergency patients
+
+
+## intent:protocol_default
+- How to set protocol as default?
+- want to set protocol as default
+- how to set default protocol
+- define a single protocol 
+- default protocol for all scans
+- what should i follow as default protocol
+- default protocol for a single scan
+
+
+## intent:protocol_copy_ paste
+- protocol copy paste
+- How to copy paste a protocol?
+- how to copy protocol from Most Recent selector into the User anatomical selection area
+- GE anatomical selector to user anatomical selection protocol copy
+- how to copy and page a protocol
+- paste an existing protocol
+- copying a protocol to another area
+
+## intent:protocol_delete
+- protocol delete
+- What are the steps to delete a protocol
+- how to delete a protocol
+- i want to delete a protocol
+- deleting an existing protocol 
+- procedure to delete a protocol
+- steps to remove a protocol
+- protocol deletion
+
+## intent:protocol_delete_emergency_patients
+- protocol delete emergency patients
+- How to delete a protocol link from an emergency patient?
+- delete emergency patient link to protocol
+- delete a protocol for emergency patients 
+- steps to delete a protocol for emergency patients
+- removal of protocol of emergency patients
+- emergency patients protocol deletion
+
 
 <!----------------------------------------------------------chapter 19------------------------------------------------------------->
 ## intent:privacy_laws
