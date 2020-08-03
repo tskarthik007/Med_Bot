@@ -81,6 +81,7 @@ intents:
 - Color_Coding_for_Kids_Protocol
 - Set_up_a_pediatric_or_small_patient_exam
 - Adjust_pediatric_and_small_patient_scan_parameters
+- pediatrics
 - computer_console_parts
 - Digital_video_disk_read_write_drive
 - USB_connection
@@ -259,7 +260,6 @@ intents:
 - procs_comb
 - accept_negative_pixels
 - procs_usage
-- comb_accuracy
 - ratio_slide
 - add_subtract_image_combination
 - add_subtract_image
@@ -333,7 +333,6 @@ intents:
 - adjust_images
 - keyboard_patient_list
 - protocol_usage
-- protocol_selection
 - protocol_selection_screen
 - protocol_built_and_edit
 - protocol_scout_parameter
@@ -1063,7 +1062,7 @@ Make a kid friendly environment
               description: Help pediatric patients feel less scared.
       attachment:
        payload:
-         src: https://www.youtube.com/embed/ThYjLN-auuo
+         src: https://www.youtube.com/embed/Hy8VDsCUtHc?t=260
        type: video
 
   utter_Pediatric_and_small_patient_scans:
@@ -1141,7 +1140,7 @@ Use Small SFOV Filters
        - payload: pedeatric scans
          title: pedeatric scans
 
-#-------------------------------------------Chapter 6---------------------------------------------------------------------
+#-------------------------------------------Chapter6---------------------------------------------------------------------
   utter_computer_console_parts:
     - text: "computer console comprise of"
       buttons:
@@ -1153,7 +1152,7 @@ Use Small SFOV Filters
          title: The Keyboard  Mouse
        - payload: Computer
          title: Computer
-      image: http://localhost:7000/img/Images/Chapter 6/computer_console_parts.png
+      image: http://localhost:7000/img/Images/Chapter6/computer_console_parts.png
   utter_Digital_video_disk_read_write_drive:
     - text: "The CD/DVD option uses the DVD-R drive to write to or restore from CD-R or DVD-R.
 \n The Data Export option can save information to CD-R.  
@@ -1227,7 +1226,7 @@ Tab moves across the areas on the current screen
       
   utter_SCBSV_keyboard_keys:
     - text: "find the image below"
-      image: http://localhost:7000/img/Images/Chapter 6/SCBSV_keyboard_keys_1.png
+      image: http://localhost:7000/img/Images/Chapter6/SCBSV_keyboard_keys_1.png
   utter_SCBSV_keyboard_function_keys_f1_to_f3:
     - text: "The F1, F3 and F4 function keys can be used for filming to the Manual Film Composer. 
 
@@ -1308,7 +1307,7 @@ Middle-click and drag: Click and hold the middle mouse button down while draggin
 "
   utter_gantry_internal_components:
     - text: "find the image below"
-      image: http://localhost:7000/img/Images/Chapter 6/gantry_internal_components.png
+      image: http://localhost:7000/img/Images/Chapter6/gantry_internal_components.png
   
   utter_gantry_suggestions:
     - text: "find the suggestions below"
@@ -1399,7 +1398,7 @@ Scanning range (including axial head holder) is no less than 1200mm. The maximum
         
   utter_beam_collimation_conversion:
     - text: "find the table below"
-      image: http://localhost:7000/img/Images/Chapter 6/high_freqeuncy_generator.png
+      image: http://localhost:7000/img/Images/Chapter6/high_freqeuncy_generator.png
       
   utter_reduce_helical_artifact:
     - text: "Interleaved helices minimizes helical artifact, and gives the best detail. Interspaced helices has more interpolation of data and increase helical artifact when compared to interleaved mode.Using interspaced helices compared to interleaved helices will provide lower dose
@@ -1472,7 +1471,7 @@ Light gray with gray text indicates that it is not available.
 "
   utter_power_distributor_usage:
     - text: "The PDU supplies power to various parts of the system which includes components in the gantry, table and operator console. On the front of the PDU are controls to indicate that power is on to the unit, a push button to turn power on/off to the gantry and table, and an Emergency Stop button"
-      image: http://localhost:7000/img/Images/Chapter 6/power_distributor_usage.png
+      image: http://localhost:7000/img/Images/Chapter6/power_distributor_usage.png
       
   utter_power_distributor_buttons:
     - text: ""
@@ -1575,7 +1574,7 @@ Click OK and follow the Attention instructions
       
   utter_tubeID_verification_fails:
     - text: "SmartID verifies the tube ID at start up. If the tube ID verification fails, attention screens display indicatingtheX-ray tube installedonthe systemisnotrecognized. Youcan continue scanning;however, you need to contact your service representative. ASiR is disabled when a non-GE tube is installed."
-      image: http://localhost:7000/img/Images/Chapter 7/tubeID_verification_fails_1.png
+      image: http://localhost:7000/img/Images/Chapter7/tubeID_verification_fails_1.png
       
   utter_turnon_suggestions:
     - text: "find the suggestions below"
@@ -1596,7 +1595,7 @@ Click OK and follow the Attention instructions
           title: restart the system
   utter_daily_prep_screen:
     - text: "From the monitor, click the Daily Prep icon, to display the Daily Preparation screen"
-      image: http://localhost:7000/img/Images/Chapter 7/daily_prep_screen.png  
+      image: http://localhost:7000/img/Images/Chapter7/daily_prep_screen.png  
   utter_tube_warm_up:
     - text: "The system operates most efficiently within certain parameters. These parameters are established by warming up the tube using a preset group of exposures. When you perform a tube warm-up at least once per24 hour period and at any system prompt,the tube warm-up reduces the possibility of artifacts and may aid in prolonging the life of the tube."
       
@@ -1638,7 +1637,7 @@ The system finishes the Fast Cal procedure by performing the actual Fast Cal air
       
   utter_non_ge_xray_tube:
     - text: "When the system is configured as a non-GE tube or if the tube is unrecognized by the system, one of the following messages may alert you during system start-up,tube warmup,and fast calibrations that a non-GE X-ray tube is detected in the system configuration. System configurations with non-GE X-ray tubes will also be notified on the Dose Report and in protocol selection and management. "
-      image: http://localhost:7000/img/Images/Chapter 7/non_ge_xray_tube.png     
+      image: http://localhost:7000/img/Images/Chapter7/non_ge_xray_tube.png     
       
   utter_daily_qa_workflow:
     - text: "Execute this workflow every day before patients are scanned.
@@ -1769,7 +1768,7 @@ C indicates the record is completed. These patient studies were scheduled and ha
   utter_schedule_screen_display:
     - text: "Click the Patient Schedule icon to display the Schedule screen
 "
-      image: http://localhost:7000/img/Images/Chapter 8/schedule_screen_display.png
+      image: http://localhost:7000/img/Images/Chapter8/schedule_screen_display.png
   utter_add_patient:
     - text: "Opens the Patient Schedule information screen, where you can enter the patient’s information and add the number of a specific protocol.
 CLICK HERE TO KNOW HOW TO ADD PATIENT MANUALLY"
@@ -1830,7 +1829,7 @@ Close the Preferences screen before switching between Patient Schedule and Exam.
               description: If you have Connect Pro, click Yes to be able to edit any patient informationfromHIS/RIS.
             - title: Default update parameters
               description: Choose a location and date range
-      image: http://localhost:7000/img/Images/Chapter 8/preferences_patients.png
+      image: http://localhost:7000/img/Images/Chapter8/preferences_patients.png
   utter_add_patient_to_schedule_manually:
     - text: "1.Click the Patient Schedule icon. 
 2. From the Schedule screen, click Add Patient. 
@@ -1854,7 +1853,7 @@ Select All Systems to pull the patient schedule for all the systems on the HIS/R
 5. Enter a Requested Procedure ID, accession number, patient name or ID to narrow the search. These are optional fields. 
 6. Click Continue Update to continue or click Cancel Update to exit and make no changes.
 "
-      image: http://localhost:7000/img/Images/Chapter 8/update_patient_screen.png
+      image: http://localhost:7000/img/Images/Chapter8/update_patient_screen.png
   
   utter_view_more_patients_info_on_schedule:
     - text: "Use this feature with the Connect Pro option to view other valuable information about a patient such as allergies, pregnancy status, and medical alerts. This information is pulled from the HIS/RIS using a DICOM connection. 
@@ -1898,7 +1897,7 @@ If more than one record with the same Patient ID is found in the Patient schedul
 
 ANRT is located in the Recon Option area, appearing as XNR 
 "
-      image: http://localhost:7000/img/Images/Chapter 10/anrt_reconstruction.png
+      image: http://localhost:7000/img/Images/Chapter10/anrt_reconstruction.png
       
   utter_anrt_constraints:
     - text: "There are several constraints that apply to the acquisition of data where ASiR will be applied:  
@@ -1913,7 +1912,7 @@ ANRT cannot be used when the actual scanning current is less than 50mA
   utter_anrt_image_annotate:
     - text: "Use ANRT character string annotation on the bottom left corner of images
 "
-      image: http://localhost:7000/img/Images/Chapter 10/anrt_image_annotate.png
+      image: http://localhost:7000/img/Images/Chapter10/anrt_image_annotate.png
   utter_enable_anrt_scanning:
     - text: "1. Set up a scanning plan. 
 2. In the ViewEdit area, press Recon. 
@@ -1940,7 +1939,7 @@ When [mAReduction] is pressed, if the actual mA value and the necessary mA value
 
 When [mAReduction] is pressed,the [ANRT] button located in the ReconOption area will be enabled automatically.
 "
-      image: http://localhost:7000/img/Images/Chapter 10/constraints_anrtscan_ma_reduction_guidence.png
+      image: http://localhost:7000/img/Images/Chapter10/constraints_anrtscan_ma_reduction_guidence.png
   utter_conduct_arntscan_ma_reduction_guidance:
     - text: "1. Set up a scanning plan. 
 2. Press mA in the ViewEdit area. 
@@ -1963,18 +1962,18 @@ When [mAReduction] is pressed,the [ANRT] button located in the ReconOption area 
     - text: "Signal to Noise Ratio (SNR) is equal when no ASiR is applied compared to 40% ASiR at a 40% mA reduction.
 
 "
-      image: http://localhost:7000/img/Images/Chapter 10/snr.png
+      image: http://localhost:7000/img/Images/Chapter10/snr.png
       
   utter_snr_formula:
     - text: " "
   utter_roi_measurements_snr:
     - text: "find the image below"
-      image: http://localhost:7000/img/Images/Chapter 10/roi_measurements_snr.png
+      image: http://localhost:7000/img/Images/Chapter10/roi_measurements_snr.png
       
   utter_mtf:
     - text: "MTF remains constant as the ASiR level is increased.
 "
-      image: http://localhost:7000/img/Images/Chapter 10/mtf_1.png 
+      image: http://localhost:7000/img/Images/Chapter10/mtf_1.png 
   utter_asir_recon_mode:
     - text: "A warning is posted when ASiR is set to None reminding the user to check the mA and Noise Index prior to scanning without ASiR enabled.
 
@@ -2002,12 +2001,12 @@ WhenASiR is used for dose reduction or image quality improvement,parameter setti
   utter_dose_adjustment_factors_noise_index_adjustment_method:
     - text: "When usingSoft, Standard,Detail, Lung,Bone or BonePlus reconstruction algorithm use the following chart to calculate dose reduction for Noise Index (NI) based on the ASiR level selected.
 The factors were derived based on calculating the relative difference in measured noise standard deviation (SD) with Filtered Back Projection (FBP) and ASiR on a 20cm water phantom"
-      image: "http://localhost:7000/img/Images/Chapter 10/dose adjustment factors_noise index adjustment method_1.png"
+      image: "http://localhost:7000/img/Images/Chapter10/dose_adjustment_factors_noise_index_adjustment_method_1.png"
   utter_dose_adjustment_factors_ma_adjustment_method:
     - text: "When using Soft, Standard,Detail, Lung,Bone or BonePlus reconstruction algorithms use the following chart to calculate dose reduction for mA based on the ASiR level selected.
 
 "
-      image: http://localhost:7000/img/Images/Chapter 10/dose_adjustment factors_ma_adjustment method_1.png
+      image: http://localhost:7000/img/Images/Chapter10/dose_adjustment_factors_noise_index_adjustment_method_1.png
       buttons:
         - payload: calculate dose reduction for Noise Index based on the ASiR level selected for auto mA
           title: calculate dose reduction for Noise Index based on the ASiR level selected for auto mA
@@ -2221,7 +2220,7 @@ ASiR Level
               description: Starts a DMPR session, which allows you to prospectively prescribe reformat protocols in a scan protocol.
             - title: Neuro 3D
               description: Starts a Neuro 3D Filter session,which removes noise from the image while preserving image resolution
-      image: http://localhost:7000/img/Images/Chapter 10/session_setup_dmpr.png
+      image: http://localhost:7000/img/Images/Chapter10/session_setup_dmpr.png
   utter_filter_strength_dmpr:
     - text: "find the details below"
       custom: 
@@ -2296,7 +2295,7 @@ Please refer the manual for all consideration
 "
   utter_dmpr_interactive_review_screen:
     - text: "After a DMPR scan with Batch Reformat on is completed, click DMPR to display the Direct MPR Interactive Review screen"
-      image: http://localhost:7000/img/Images/Chapter 10/session_setup_dmpr.png
+      image: http://localhost:7000/img/Images/Chapter10/session_setup_dmpr.png
       custom: 
             payload: "collapsible"
             data: 
@@ -2668,7 +2667,7 @@ Delete Suspended Entries displays a window to confirm deletion. Click OK to remo
   software asks if you want to format it. It takes about 1 minute per 100 GB, so a 1 terabyte device takes 10 minutes to 
   format.Make sure the selected scan files do not exceed the space available on the DVD-RAM. 
   Scan data can only be restored on the same system model that it was acquired on
-  STEPS: 
+  STEPS:
   1. Verify that you have enough time to complete the save uninterrupted. You cannot scan while saving scan files.  
   2. Connect the external USB device to the USB port or insert the DVD-RAM.
   3. Click Recon Status to display the Recon Management screen. 
@@ -2753,10 +2752,6 @@ Delete Suspended Entries displays a window to confirm deletion. Click OK to remo
       - text: "Proc series can be used like any other series of acquisition images, i.e., geometrical measurements,reformatting, 
          3Dreconstructions, etc"
 
-  utter_comb_accuracy:
-      - text: " The absolute anatomical coordinates accompanying Comb series are not accurate.Only relative geometrical 
-          measurements (i.e., distance, angle, or area) made within a resulting image are accurate."
-
   utter_ratio_slide:
       - text: "When both Select Set buttons are used during addition or subtraction, equal weighting is applied to the two pixels 
           in each pair. You can change it via the Ratio slider."
@@ -2827,7 +2822,7 @@ Delete Suspended Entries displays a window to confirm deletion. Click OK to remo
       - text: "Click the ImageWorks icon . From the browser list of applications, click Exam Split to display the Exam Split 
       screen."
 
-        image: http://localhost:7000/img/Images/Chapter 13/split_exam.png
+        image: http://localhost:7000/img/Images/Chapter13/split_exam.png
 
   utter_components_split_screen:
       - text: "Components of Exam Split screen"
@@ -2932,7 +2927,7 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
     5. W/L images 
     6. Change the image orientation 
     7. Activate the Oblique mode"
-      image: http://localhost:7000/img/Images/Chapter 14/reformat_image_controls.png
+      image: http://localhost:7000/img/Images/Chapter14/reformat_image_controls.png
       custom: 
             payload: "collapsible"
             data: 
@@ -3247,7 +3242,7 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
 
   utter_manual_film_composer_screen:
     - text: "The Film Composer can be opened from the browser, the Viewer, the Mini Viewer, Exam Rx, and Reformat "
-      image:
+      image: http://localhost:7000/img/Images/Chapter16/manual_film_composer_screen_1.png
 
   utter_print_series:
     - text: "Press F4 to open the Print Series screen."
@@ -3298,7 +3293,7 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
   utter_manual_filming_set_print_parameter:
     - text: "The system retains the changes until next change is made. Settings may be changed prior to actual printing of the images in the composer.Click [Print Settings] button. A dialog window opens allowing you to set up the print preferences. "
 
-      image:
+      image: http://localhost:7000/img/Images/Chapter16/manual_filming_set_print_parameter.png
 
       custom: 
             payload: "collapsible"
@@ -3330,7 +3325,7 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
   utter_manual_filming_export:
     - text: "To export images in the film composer to jpeg format and copy to USB device, click [Export] button. A dialog window opens, allowing the export of each film to 1 jpeg file. If you wish to export each images as a jpeg file set the film format to 1 X1."
   
-      image:
+      image: http://localhost:7000/img/Images/Chapter16/manual_filming_export.png
 
   utter_right_click_function:
     - text: "Place the cursor over the viewport and right-click to display the on-view menu."

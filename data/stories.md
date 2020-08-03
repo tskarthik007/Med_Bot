@@ -342,7 +342,7 @@
 
 ## demo story
 * pediatrics
-  - utter_pediatric _suggestions
+  - utter_pediatric_suggestions
 
 ## Radiation_exposure_sensitivity
 * Radiation_exposure_sensitivity
@@ -409,7 +409,7 @@
   * affirm
   - utter_happy
 
-## Adjust_pediatric_and_small_patient_scan_parameters_affirm
+## Adjust_pediatric_and_small_patient_scan_parameters_deny
 * Adjust_pediatric_and_small_patient_scan_parameters
   - utter_Adjust_pediatric_and_small_patient_scan_parameters
   - utter_did_that_help
@@ -962,7 +962,9 @@
 ## performed_procedure_step
 * performed_procedure_step
   - utter_performed_procedure_step
-  - utter_did_that_help## disc
+  - utter_did_that_help
+  
+## disc
 * disc
   - utter_disc
   - utter_did_that_help
@@ -1458,11 +1460,6 @@
 ## procs_usage
 * procs_usage
   - utter_procs_usage
-  - utter_did_that_help
-
-## comb_accuracy
-* comb_accuracy
-  - utter_comb_accuracy
   - utter_did_that_help
 
 ## ratio_slide
