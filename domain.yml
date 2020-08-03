@@ -3194,9 +3194,6 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
 
   utter_manual_film_composer_screen:
     - text: "The Film Composer can be opened from the browser, the Viewer, the Mini Viewer, Exam Rx, and Reformat "
-
-      image:
-
       image:
 
   utter_print_series:
@@ -3275,7 +3272,7 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
               description: Set the operation panel on left side or right side.
             - title: Tick Marks
               description: Horizontal, image show horizontal
-              Vertical, image show vertical.
+               Vertical, image show vertical.
 
   utter_manual_filming_export:
     - text: "To export images in the film composer to jpeg format and copy to USB device, click [Export] button. A dialog window opens, allowing the export of each film to 1 jpeg file. If you wish to export each images as a jpeg file set the film format to 1 X1."
@@ -3284,7 +3281,7 @@ DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be
 
   utter_right_click_function:
     - text: "Place the cursor over the viewport and right-click to display the on-view menu."
-       custom: 
+      custom: 
             payload: "collapsible"
             data: 
             - title: Cut
