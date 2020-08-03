@@ -16,7 +16,7 @@ $(document).ready(function ()
 		'<div class="bounce2"></div>' +
 		'<div class="bounce3"></div>' +
 		'</div>' +
-		'<input type="text" id="chatinput" autocomplete="off" placeholder="Start Typing here..."' + 'class="form-control bot-txt"/>' + '<i id="button" onclick="toggleStartStop()" class="fa fa-microphone fa-3x">'+'</i>'+
+		'<input type="text" id="chatinput" autocomplete="off" placeholder="Start Typing here..."' + 'class="form-control bot-txt"/>' +
 		'</div>' +
 		'</div><!--chatCont end-->' +
 		'<div class="profile_div">' +
@@ -107,7 +107,7 @@ $(document).ready(function ()
 		setTimeout(function () {
 
 			if ($.trim(val) == '' || val == 'error') { //if there is no response from bot or there is some error
-				val = 'Sorry I wasn\'t able to understand your Query. Let\' try something else!'
+				val = 'Hey there, I\'m just a demo bot. To know more \t'+'<a href=login.html>'+'Click here</a>'
 				var BotResponse = '<p class="botResult">' + val + '</p><div class="clearfix"></div>';
 				$(BotResponse).appendTo('#result_div');
 			} else {
