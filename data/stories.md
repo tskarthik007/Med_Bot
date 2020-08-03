@@ -1243,7 +1243,7 @@
 
 ## recon_screen
 * recon_screen
-  - utter_ recon_screen
+  - utter_recon_screen
 
 ## list_select
 * list_select
@@ -1384,3 +1384,152 @@
 * rules_neuro3D_images
   - utter_rules_neuro3D_images
   - utter_neuro_3d_suggestions
+
+<!-----------------------------------------------chapter 14------------------------------------------------------------------------->
+
+## reformat
+* reformat
+ - utter_reformat
+ - utter_reformat_suggestions
+
+## open_reformat
+* open_reformat
+ - utter_open_reformat
+ - utter_reformat_suggestions
+
+## reformat_image_controls
+* reformat_image_controls
+ - utter_reformat_image_controls
+ - utter_reformat_suggestions
+
+## keyboard_shortcuts
+* keyboard_shortcuts
+ - utter_keyboard_shortcuts
+ 
+## display
+* display
+ - utter_display
+ 
+## modify_red_annotation
+* modify_red_annotation
+ - utter_modify_red_annotation
+ - utter_annotation_suggestions
+
+## Review_controller_screen
+* Review_controller_screen
+ - utter_Review_controller_screen
+
+## color_map_table
+* color_map_table
+ - utter_color_map_table
+
+## ROI_preferences_screen
+* ROI_preferences_screen
+ - utter_ROI_preferences_screen
+ - utter_ROI_suggestions
+
+## annotate_image
+* annotate_image
+ - utter_annotate_image
+ - utter_annotation_suggestions
+
+## Save_preset_annotation
+* Save_preset_annotation
+ - utter_Save_preset_annotation
+ - utter_annotation_suggestions
+
+## measure_distance
+*  measure_distance
+ - utter_measure_distance
+ - utter_measure_suggestions
+
+## measure_angle
+*  measure_angle
+ - utter_measure_angle
+ - utter_measure_suggestions
+
+## measure_area
+*  measure_area
+ - utter_measure_area
+ - utter_measure_suggestions
+
+## measure_volume
+*  measure_volume
+ - utter_measure_volume
+ - utter_measure_suggestions
+
+## display_add_an_ROI
+* display_add_an_ROI
+ - utter_display_add_an_ROI
+ - utter_ROI_suggestions
+
+## Set_ROI_preferences
+* Set_ROI_preferences
+ - utter_Set_ROI_preferences
+ - utter_ROI_suggestions
+
+## view_types
+* view_types
+ - utter_view_types
+ - utter_view_suggestions
+
+## curved_view
+* curved_view
+ - utter_curved_view
+ - utter_view_suggestions
+
+## Create_an_XSection_Histogram_view
+* Create_an_XSection_Histogram_view
+ - utter_Create_an_XSection_Histogram_view
+ - utter_view_suggestions
+
+
+## Create_MPVR_view
+* Create_MPVR_view
+ - utter_Create_MPVR_view
+ - utter_view_suggestions
+
+## Create_Profile_view
+* Create_Profile_view
+ - utter_Create_Profile_view
+ - utter_view_suggestions
+
+<!-------------------------------------------------chapter 15---------------------------------------------------------------------->
+
+## AW_server_client_usage
+* AW_server_client_usage
+  - utter_AW_server_client_usage
+  - utter_AW_server_client_suggestions
+
+## AW_server_client_start
+* AW_server_client_start
+  - utter_AW_server_client_start
+  - utter_AW_server_client_suggestions
+
+## AW_server_client_slow
+* AW_server_client_slow
+  - utter_AW_server_client_slow
+  - utter_AW_server_client_suggestions
+
+## AW_server_upgrade
+* AW_server_upgrade
+  - utter_AW_server_upgrade
+  - utter_AW_server_client_suggestions
+
+## AW_server_client_close
+* AW_server_client_close
+  - utter_AW_server_client_close
+  - utter_AW_server_client_suggestions
+
+<!----------------------------------------------------------chapter 16----------------------------------------------------------------------->
+
+<!----------------------------------------------------------chapter 17----------------------------------------------------------------------->
+
+<!---------------------------------------------------------chapter 18------------------------------------------------------------->
+
+
+<!----------------------------------------------------------chapter 19------------------------------------------------------------->
+
+<!---------------------------------------------------------chapter 20------------------------------------------------------------->
+
+

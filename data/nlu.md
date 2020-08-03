@@ -305,11 +305,7 @@
 - How to edit Retro Scan?
 - Where can I access retro scan?
 
-## intent:recon_management
-- Display reconstruction status.
-- I want to know the recon queue management.
-- How to get the reconstruction status of the patients?
-- How to access the recon management status?
+
 
 ## intent:setting_imageworks
 - How can I access the imageworks?
@@ -1990,6 +1986,10 @@
 - How to use recon management screen
 - Where can i find recon management screen
 - What is the use of recon management screen
+- Display reconstruction status.
+- I want to know the recon queue management.
+- How to get the reconstruction status of the patients?
+- How to access the recon management status?
 
 ## intent:new_image_from_scan
 - How to create image retrospectively
@@ -2162,7 +2162,7 @@
 - How to display exam split screen
 - split screen
 
-## intents:components_split_screen
+## intent:components_split_screen
 - what are the components of split screen
 - options in split screen
 - Screen format
@@ -2211,3 +2211,246 @@
 - What must be kept in mind to select series in Neuro 3D image.
 - points noted for selected series  in neuro 3d images.
 - neuro 3D image constraints
+
+## intent:reformat
+- What is reformat
+- Info about reformat
+- How to reformat
+- reformat
+
+## intent:open_reformat
+- open reformat
+- how to open reformat
+- show the reformat
+- how does reformat open
+
+## intent:reformat_image_controls
+- reformat image controls
+- how to rotate freehand or page images
+- rotate freehand or page images
+- how can I zoom images
+- how to zoom the image
+- how to select the image
+- how to pan any image
+- select image
+- how to activate w/l mode
+- how to move the images
+- how to change image orientation
+- change the image orientation
+- how to activate oblique mode
+
+## intent:keyboard_shortcuts
+- display keyboard shortcuts
+- show keyboard shortcuts
+- what are the keyboard shortcuts
+- list all the keyboard shortcuts
+- keyboard shortcuts
+
+## intent:display
+- how to display 3d view
+- display 3d view
+- what is annotation
+- types of annotation
+- what is text annotation
+- what is preset annotation
+- what is measurement annotation
+- information about ROI
+- what is ROI
+
+## intent:modify_red_annotation
+- modify red annotation
+- what is red annotation
+- list red annotations
+- what is plane or view type annotation
+- image location annotation
+- DFOV annotation
+- image filter annotation
+- image room annotation
+- slice thickness annotation
+- window width and window level annotation
+- patient name annotation
+
+## intent:Review_controller_screen
+- show paging and thickening
+- how to enlarge
+- show movie controls
+- how to link/unlink
+- bookmark scrolling
+- controller control
+- report cursor
+
+## intent:olor_map_table
+- show color map table
+- how to change color or name or values
+- change the color
+- display the percentages
+- how to display the percentage
+- what are min / max values
+- what is the color
+- how to change or display range name
+- show continuous ramp
+- what are color map presets
+- show color map presets
+- how to save
+- how to remove
+- how to delete the user
+
+## intent:ROI_preferences_screen
+- how to display ROI preferences screen
+- display ROI preferences screen
+- display VOI
+- how to display VOI
+- what are statistics
+- how to adjust size
+- can we adjust size
+
+
+## intent:annotate_image
+- how to annotate an image
+- annotate image
+- steps to annotate image
+- how can I annotate images
+- what to do to annotate images
+
+
+## intent:Save_preset_annotation
+- how to Save preset annotation
+- Save preset annotation
+- steps to Save preset annotation
+- how can I Save preset annotation
+- what to do to Save preset annotation
+
+
+## intent:measure_distance
+- how to Measure distance
+- Measure distance
+- steps to Measure distance
+- how can I Measure distance
+- what to do to Measure distance
+
+
+## intent:measure_angle
+- how to Measure angle
+- Measure angle
+- steps to Measure angle
+- how can I Measure angle
+- what to do to Measure angle
+
+
+## intent:measure_area
+- how to Measure area
+- Measure area
+- steps to Measure area
+- how can I Measure area
+- what to do to Measure area
+
+
+## intent:measure_volume
+- how to Measure volume
+- Measure volume
+- steps to Measure  volume
+- how can I Measure  volume
+- what to do to Measure  volume
+
+
+## intent:display_add_an_ROI
+- display add an ROI
+- how to add an ROI on an image
+- add an ROI on an image
+- steps to add an ROI on an image
+- how can I add an ROI on an image
+- what to do to add an ROI on an image
+
+## intent:Set_ROI_preferences
+- how to Set ROI preferences
+- Set ROI preferences
+- steps to Set ROI preferences
+- how can I Set ROI preferences
+- what to do to Set ROI preferences
+
+## intent:view_types
+- what are the available view types
+- display all the view types
+- what are the view types
+- view types
+- display view types in reformat and their function
+
+
+## intent:curved_view
+- curved view
+- how to create a curved view
+- create a curved view
+- display curved view
+- steps create curved views
+
+
+## intent:Create_an_XSection_Histogram_view
+- how to create an X Section Histogram view
+- create an X Section Histogram view
+- display how to create an X Section Histogram view
+- steps create an X Section Histogram view
+
+
+## intent:Create_MPVR_view
+- how to create an MPV Review
+- create an MPV Review
+- display how to MPV Review
+- steps create an MPV Review
+
+
+## intent:Create_Profile_view
+- how to create Profile view
+- create a Profile view
+- display how to create Profile view
+- steps create a Profile view
+
+<!----------------------------------------------------chapter 15-------------------------------------------------->
+
+## intent:AW_server_client_usage
+- AW server client usage
+- what is AW server client
+- describe about AW server client
+- explain AW server client
+- brief AW server client
+- tell me about AW server client
+
+
+## intent:AW_server_client_start
+- AW server client start
+- how to start AW server client
+- start AW server client
+- activate AW server client
+- steps to activate AW server client
+- activate AW server client
+
+## intent:AW_server_client_slow
+- AW server client slow
+- What to do when the console in an AW server client is slow?
+- why does the console slow down?
+- slow aw server client
+- reason for aw server client slow 
+- resolve AW server slow 
+
+## intent:AW_server_upgrade
+- AW server client upgrade
+- how to update the AW server 
+- updation of AW server software
+- what should i do to upgrade the AW server
+- who should i contact to upgrade AW server 
+
+## intent:AW_server_client_close
+- AW server client close
+- how to close AW server client?
+- steps to close AW server client
+- procedure to close AW server
+- logout of AW server
+<!----------------------------------------------------------chapter 16----------------------------------------------------------------------->
+
+<!----------------------------------------------------------chapter 17----------------------------------------------------------------------->
+
+<!---------------------------------------------------------chapter 18------------------------------------------------------------->
+
+
+<!----------------------------------------------------------chapter 19------------------------------------------------------------->
+
+<!---------------------------------------------------------chapter 20------------------------------------------------------------->

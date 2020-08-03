@@ -242,7 +242,7 @@ intents:
 - recon_screen
 - list_select
 - list_select_screen
-- recon_management
+# - recon_management
 - new_image_from_scan
 - Graphically_prescribe
 - unreconstructed_image
@@ -272,6 +272,33 @@ intents:
 - neuro_3d
 - neuro_3d_filter
 - rules_neuro3D_images
+- reformat
+- open_reformat
+- reformat_image_controls
+- keyboard_shortcuts
+- display
+- modify_red_annotation
+- Review_controller_screen
+- color_map_table
+- ROI_preferences_screen
+- annotate_image
+- Save_preset_annotation
+- measure_distance
+- measure_angle
+- measure_area
+- measure_volume
+- display_add_an_ROI
+- Set_ROI_preferences
+- view_types
+- curved_view
+- Create_an_XSection_Histogram_view
+- Create_MPVR_view
+- Create_Profile_view
+- AW_server_client_usage
+- AW_server_client_start
+- AW_server_client_slow
+- AW_server_upgrade
+- AW_server_client_close
 
 
 responses:
@@ -994,7 +1021,7 @@ Use Small SFOV Filters
          title: The Keyboard  Mouse
        - payload: Computer
          title: Computer
-      image: (pg 143 pdf pg not manual)
+      image: http://localhost:7000/img/Images/Chapter 6/computer_console_parts.png
   utter_Digital_video_disk_read_write_drive:
     - text: "The CD/DVD option uses the DVD-R drive to write to or restore from CD-R or DVD-R.
 \n The Data Export option can save information to CD-R.  
@@ -1068,7 +1095,7 @@ Tab moves across the areas on the current screen
       
   utter_SCBSV_keyboard_keys:
     - text: "find the image below"
-      image: (pg 146 table)
+      image: http://localhost:7000/img/Images/Chapter 6/SCBSV_keyboard_keys_1.png
   utter_SCBSV_keyboard_function_keys_f1_to_f3:
     - text: "The F1, F3 and F4 function keys can be used for filming to the Manual Film Composer. 
 
@@ -1149,7 +1176,7 @@ Middle-click and drag: Click and hold the middle mouse button down while draggin
 "
   utter_gantry_internal_components:
     - text: "find the image below"
-      image: (pg 152 table)
+      image: http://localhost:7000/img/Images/Chapter 6/gantry_internal_components.png
   
   utter_gantry_suggestions:
     - text: "find the suggestions below"
@@ -1240,7 +1267,7 @@ Scanning range (including axial head holder) is no less than 1200mm. The maximum
         
   utter_beam_collimation_conversion:
     - text: "find the table below"
-      image: (pg 161)
+      image: http://localhost:7000/img/Images/Chapter 6/high_freqeuncy_generator.png
       
   utter_reduce_helical_artifact:
     - text: "Interleaved helices minimizes helical artifact, and gives the best detail. Interspaced helices has more interpolation of data and increase helical artifact when compared to interleaved mode.Using interspaced helices compared to interleaved helices will provide lower dose
@@ -1313,7 +1340,7 @@ Light gray with gray text indicates that it is not available.
 "
   utter_power_distributor_usage:
     - text: "The PDU supplies power to various parts of the system which includes components in the gantry, table and operator console. On the front of the PDU are controls to indicate that power is on to the unit, a push button to turn power on/off to the gantry and table, and an Emergency Stop button"
-      image: (pg 164)
+      image: http://localhost:7000/img/Images/Chapter 6/power_distributor_usage.png
       
   utter_power_distributor_buttons:
     - text: ""
@@ -1416,7 +1443,7 @@ Click OK and follow the Attention instructions
       
   utter_tubeID_verification_fails:
     - text: "SmartID verifies the tube ID at start up. If the tube ID verification fails, attention screens display indicatingtheX-ray tube installedonthe systemisnotrecognized. Youcan continue scanning;however, you need to contact your service representative. ASiR is disabled when a non-GE tube is installed."
-      image: (pg 172)  
+      image: http://localhost:7000/img/Images/Chapter 7/tubeID_verification_fails_1.png
       
   utter_turnon_suggestions:
     - text: "find the suggestions below"
@@ -1437,7 +1464,7 @@ Click OK and follow the Attention instructions
           title: restart the system
   utter_daily_prep_screen:
     - text: "From the monitor, click the Daily Prep icon, to display the Daily Preparation screen"
-      image: (pg 181)      
+      image: http://localhost:7000/img/Images/Chapter 7/daily_prep_screen.png  
   utter_tube_warm_up:
     - text: "The system operates most efficiently within certain parameters. These parameters are established by warming up the tube using a preset group of exposures. When you perform a tube warm-up at least once per24 hour period and at any system prompt,the tube warm-up reduces the possibility of artifacts and may aid in prolonging the life of the tube."
       
@@ -1479,7 +1506,7 @@ The system finishes the Fast Cal procedure by performing the actual Fast Cal air
       
   utter_non_ge_xray_tube:
     - text: "When the system is configured as a non-GE tube or if the tube is unrecognized by the system, one of the following messages may alert you during system start-up,tube warmup,and fast calibrations that a non-GE X-ray tube is detected in the system configuration. System configurations with non-GE X-ray tubes will also be notified on the Dose Report and in protocol selection and management. "
-      image: (179)      
+      image: http://localhost:7000/img/Images/Chapter 7/non_ge_xray_tube.png     
       
   utter_daily_qa_workflow:
     - text: "Execute this workflow every day before patients are scanned.
@@ -1610,7 +1637,7 @@ C indicates the record is completed. These patient studies were scheduled and ha
   utter_schedule_screen_display:
     - text: "Click the Patient Schedule icon to display the Schedule screen
 "
-      image: ()
+      image: http://localhost:7000/img/Images/Chapter 8/schedule_screen_display.png
   utter_add_patient:
     - text: "Opens the Patient Schedule information screen, where you can enter the patient’s information and add the number of a specific protocol.
 CLICK HERE TO KNOW HOW TO ADD PATIENT MANUALLY"
@@ -1671,7 +1698,7 @@ Close the Preferences screen before switching between Patient Schedule and Exam.
               description: If you have Connect Pro, click Yes to be able to edit any patient informationfromHIS/RIS.
             - title: Default update parameters
               description: Choose a location and date range
-      image: (8-3)
+      image: http://localhost:7000/img/Images/Chapter 8/preferences_patients.png
   utter_add_patient_to_schedule_manually:
     - text: "1.Click the Patient Schedule icon. 
 2. From the Schedule screen, click Add Patient. 
@@ -1695,7 +1722,7 @@ Select All Systems to pull the patient schedule for all the systems on the HIS/R
 5. Enter a Requested Procedure ID, accession number, patient name or ID to narrow the search. These are optional fields. 
 6. Click Continue Update to continue or click Cancel Update to exit and make no changes.
 "
-      image: (8-2)
+      image: http://localhost:7000/img/Images/Chapter 8/update_patient_screen.png
   
   utter_view_more_patients_info_on_schedule:
     - text: "Use this feature with the Connect Pro option to view other valuable information about a patient such as allergies, pregnancy status, and medical alerts. This information is pulled from the HIS/RIS using a DICOM connection. 
@@ -1739,7 +1766,7 @@ If more than one record with the same Patient ID is found in the Patient schedul
 
 ANRT is located in the Recon Option area, appearing as XNR 
 "
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/anrt_reconstruction.png
       
   utter_anrt_constraints:
     - text: "There are several constraints that apply to the acquisition of data where ASiR will be applied:  
@@ -1754,7 +1781,7 @@ ANRT cannot be used when the actual scanning current is less than 50mA
   utter_anrt_image_annotate:
     - text: "Use ANRT character string annotation on the bottom left corner of images
 "
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/anrt_image_annotate.png
   utter_enable_anrt_scanning:
     - text: "1. Set up a scanning plan. 
 2. In the ViewEdit area, press Recon. 
@@ -1781,7 +1808,7 @@ When [mAReduction] is pressed, if the actual mA value and the necessary mA value
 
 When [mAReduction] is pressed,the [ANRT] button located in the ReconOption area will be enabled automatically.
 "
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/constraints_anrtscan_ma_reduction_guidence.png
   utter_conduct_arntscan_ma_reduction_guidance:
     - text: "1. Set up a scanning plan. 
 2. Press mA in the ViewEdit area. 
@@ -1804,21 +1831,18 @@ When [mAReduction] is pressed,the [ANRT] button located in the ReconOption area 
     - text: "Signal to Noise Ratio (SNR) is equal when no ASiR is applied compared to 40% ASiR at a 40% mA reduction.
 
 "
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/snr.png
       
   utter_snr_formula:
-    - text: "The SNR1 metric presented relative to the % ASiR in Figure 10-1 was measured on the Low Contrast Section (CTP515 Section) of the CatPhan® 600 phantom. The measurement involves calculating a signal delta divided by the standard deviation (noise).
-
-"     image:
-      
+    - text: " "
   utter_roi_measurements_snr:
     - text: "find the image below"
-      image:
+      image: http://localhost:7000/img/Images/Chapter 10/roi_measurements_snr.png
       
   utter_mtf:
     - text: "MTF remains constant as the ASiR level is increased.
 "
-      image:       
+      image: http://localhost:7000/img/Images/Chapter 10/mtf_1.png 
   utter_asir_recon_mode:
     - text: "A warning is posted when ASiR is set to None reminding the user to check the mA and Noise Index prior to scanning without ASiR enabled.
 
@@ -1846,12 +1870,12 @@ WhenASiR is used for dose reduction or image quality improvement,parameter setti
   utter_dose_adjustment_factors_noise_index_adjustment_method:
     - text: "When usingSoft, Standard,Detail, Lung,Bone or BonePlus reconstruction algorithm use the following chart to calculate dose reduction for Noise Index (NI) based on the ASiR level selected.
 The factors were derived based on calculating the relative difference in measured noise standard deviation (SD) with Filtered Back Projection (FBP) and ASiR on a 20cm water phantom"
-      image: 
+      image: "http://localhost:7000/img/Images/Chapter 10/dose adjustment factors_noise index adjustment method_1.png"
   utter_dose_adjustment_factors_ma_adjustment_method:
     - text: "When using Soft, Standard,Detail, Lung,Bone or BonePlus reconstruction algorithms use the following chart to calculate dose reduction for mA based on the ASiR level selected.
 
 "
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/dose_adjustment factors_ma_adjustment method_1.png
       buttons:
         - payload: calculate dose reduction for Noise Index based on the ASiR level selected for auto mA
           title: calculate dose reduction for Noise Index based on the ASiR level selected for auto mA
@@ -2065,7 +2089,7 @@ ASiR Level
               description: Starts a DMPR session, which allows you to prospectively prescribe reformat protocols in a scan protocol.
             - title: Neuro 3D
               description: Starts a Neuro 3D Filter session,which removes noise from the image while preserving image resolution
-      image:
+      image: http://localhost:7000/img/Images/Chapter 10/session_setup_dmpr.png
   utter_filter_strength_dmpr:
     - text: "find the details below"
       custom: 
@@ -2140,7 +2164,7 @@ Please refer the manual for all consideration
 "
   utter_dmpr_interactive_review_screen:
     - text: "After a DMPR scan with Batch Reformat on is completed, click DMPR to display the Direct MPR Interactive Review screen"
-      image:
+      image: http://localhost:7000/img/Images/Chapter 10/session_setup_dmpr.png
       custom: 
             payload: "collapsible"
             data: 
@@ -2188,7 +2212,7 @@ Please refer the manual for all consideration
 "
   utter_dmpr_batch_rx_screen:
     - text: "When Batch Reformats is off, the Direct MPR BatchRx screen opens after DMPR generation is complete for you to manually prescribe batch reformats"
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/dmpr_batch_rx_screen.png
       custom: 
             payload: "collapsible"
             data: 
@@ -2205,7 +2229,7 @@ Please refer the manual for all consideration
   utter_DMPR_images_manipulation:
     - text: "Use the DMPR Review Controller to interact with the DMPR model
 "
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/DMPR_images_manipulation_1.png
   utter_Split_exams_usage:
     - text: "Use the Exam Split option to split images from a single acquisition and assign them to a Requested Procedure ID or accession number retrospectively. The smaller image groups can be accessed at reading stations for multiple reads and multiple billings on select patient exams.
 
@@ -2219,7 +2243,7 @@ Please refer the manual for all consideration
 "
   utter_Neuro_3D_filter_Auto_Transfer:
     - text: "Click OK from the Session Selection screen to display the Filter Auto Transfer By Series Host Selection Screen."
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/Neuro_3D_filter_Auto_Transfer.png
   utter_Neuro_3D_filter_usage:
     - text: "Neuro 3D Filter is a noise reduction 1 filter optimized for thin slice data that is intended for past processing in Reformat to create Average and MIP images. Volume Rendering and 3D models for Neurological studies such as Circle of Wills, Carotids, Sinuses,Orbits, Mandible and helical Brain. There are three levels. 
 Low- processed images are saved in a series that is the original series number plus 30.  
@@ -2279,7 +2303,7 @@ a. Click Host1. b. Click the network host in the list of available destinations.
     - text: "The SmartPrep scan desktop displays when a SmartPrep scan is prescribed
 
 "
-      image: 
+      image: http://localhost:7000/img/Images/Chapter 10/SmartPrep_scan_desktop.png
       custom: 
             payload: "collapsible"
             data: 
@@ -2326,16 +2350,16 @@ Diagnostic Delay, (range 3 to 60 in 0.1 second increments) typically set to the 
       
   utter_Motion_Correction:
     - text: "This feature minimizes Lateral Motion in Axial Head Scans. Available in all PMRs and RetroRecon. Note : Motion Correction does not apply to the following cases. Helical/Cine scans and Segment Rotation Length"
-      image:      
+      image:  http://localhost:7000/img/Images/Chapter 10/Motion_Correction.png  
   utter_Gray_Scale_Enhancement:
     - text: "This feature is available for all Head Scans. Improves Gray Scale in Head Images. Available in Prospective and Retro Recon Modes."
-      image:      
+      image: http://localhost:7000/img/Images/Chapter 10/Gray_Scale_Enhancement.png 
   utter_Image_Filter:
     - text: "This feature is available for all Scan Modes. Available in Prospective and Retro Recon Modes Smooth (S1, S11, S2, S21, S3), Edge (E1, E2, E21, E22, E23, E3), Lung (Lu)"
-      image:
+      image: http://localhost:7000/img/Images/Chapter 10/Image_Filter.png
       
 #-----------------------------------------------CHAPTER 11----------------------------------------------
-utter_recon_screen:
+  utter_recon_screen:
     - text: "Click the Retro Recon icon, select patient, exam and series. Then, click Select Series to display the Retro Recon 
     screen"
       custom: 
@@ -2343,49 +2367,48 @@ utter_recon_screen:
             data: 
             - title: Scan (raw) data
               description: With each rotation of the gantry, X-rays are emitted that pass through a portion of anatomy and strike 
-              the detectors. It contains all of the information gathered during an exposure.
-
+                the detectors. It contains all of the information gathered during an exposure.
             - title: Suspended entries
               description: Sometimes the system for a variety of reasons may not be able to complete the reconstruction of a 
-              particular image. This data is then automatically placed in a queue, where you can attempt to reconstruct it 
-              again or delete it.
+                particular image. This data is then automatically placed in a queue, where you can attempt to reconstruct it 
+                again or delete it.
 
             - title: Save scan data
               description: The media scan data is saved to be dependent on your operator console type. Personal computer-based 
-              systems save scan data to DVD2 -RAM3 media.
+                systems save scan data to DVD2 -RAM3 media.
 
             - title: Restore scan data
               description: Scan data that has been stored on a DVD-RAM or external USB hard drive can be placed back onto the 
-              system disk.Once On the system disk,the scan data can be reconstructed using any of the scan parameters
+                system disk.Once On the system disk,the scan data can be reconstructed using any of the scan parameters
 
             - title: Reserve scan data
               description:  It is important that when the scan data files are reserved, the remaining number of available scan 
-              files for use are reduced by the number reserved. If you do reserve scan files, when you no longer need the scan 
-              data you should release the scan files.
+                files for use are reduced by the number reserved. If you do reserve scan files, when you no longer need the scan 
+                data you should release the scan files.
 
             - title: Release scan
               description: Once scan data files that have been reserved are no longer needed, you can release them so they can 
-              be overwritten with new data. Releasing the files increases the available scan data files accordingly
+                be overwritten with new data. Releasing the files increases the available scan data files accordingly
 
             - title: Graphic Retro
               description: Graphic Retro provides the capability to graphically prescribe your retrospective reconstructions 
-              using an existing axial plane image as a reference image.
+                using an existing axial plane image as a reference image.
 
             - title: New Series
               description: New Series can be used to assign a new series number to a retro reconstruction. Normally 100 is added 
-              to the series number of the original scan. If multiple reconstructions are done, they will be all added to this 
-              series.
+                to the series number of the original scan. If multiple reconstructions are done, they will be all added to this 
+                series.
 
             - title: Overlapped axial imaging mode (w/ Advanced Acquisition)
               description: PMR 2-10 and RetroReconsupports the reconstruction of overlapped data from Axial scan type 10 mm 
-              detector coverage. The reconstruction of overlapped axial data can improve formatted data. The interval cannot be 
-              adjusted.
+                detector coverage. The reconstruction of overlapped axial data can improve formatted data. The interval cannot be 
+                adjusted.
 
   utter_list_select:
-     - text: "Click the Retro Recon icon to display the exams with available scan data on the Retro Recon List Select screen."
+    - text: "Click the Retro Recon icon to display the exams with available scan data on the Retro Recon List Select screen."
 
   utter_list_select_screen:
-     - text: "Find the options below"
+    - text: "Find the options below"
       custom: 
             payload: "collapsible"
             data: 
@@ -2404,19 +2427,19 @@ utter_recon_screen:
             - title: Update
               description:  Updates the list to include any exams added since entering the Retro Recon LIst Select screen
 
-    utter_list_select_suggestions:
-      - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
-            buttons:
+  utter_list_select_suggestions:
+    - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
+      buttons:
             - payload: List Select
               title: List Select
             - payload: List Select Screen
               title: List Select Screen
 
-  utter_recon_management:
-     - text: "On the monitor, click Recon Status to display Recon Management"
+  # utter_recon_management:
+  #   - text: "On the monitor, click Recon Status to display Recon Management"
 
   utter_new_image_from_scan:
-     - text: "1. Click Retro Recon. 
+    - text: "1. Click Retro Recon. 
      2. From the Retro Recon List Select screen, select the appropriate patient, exam, and series.
      3. Click Select Series.
      4. On the Retro Recon screen, type a new series description in the Series Description area if desired. 
@@ -2433,8 +2456,8 @@ utter_recon_screen:
      15. Click Graphic Retro Y to graphically prescribe the reconstructions, one group at a time
      16. Click Confirm to generate images"
 
- utter_Graphically_prescribe:
-  - text: "1. Select an exam and series from the Patient List. 
+  utter_Graphically_prescribe:
+    - text: "1. Select an exam and series from the Patient List. 
   2. Click Retro Recon. 
   3. Click Graphic Retro so that the button reads Y. 
   4. Click and drag on the blue boxes (seen inside the red squares on the image below) to change the size of the circle which 
@@ -2446,8 +2469,8 @@ utter_recon_screen:
   Display the image where you want the reconstruction to begin and click Set Retro Start.  
   Display the image where you want the reconstruction to end and click Set Retro End."
 
-utter_unreconstructed_image:
-  - text: "1. Click Recon Status to display the Recon Management screen. 
+  utter_unreconstructed_image:
+    - text: "1. Click Recon Status to display the Recon Management screen. 
 2. On The Recon Management screen, click Delete Suspended Entries if you do not want to reconstruct the images or 
 Unsuspend Entries. 
 Unsuspend Entries retries the reconstruction and places images in the correct exam and series if reconstruction was successful.  
@@ -2455,36 +2478,36 @@ Delete Suspended Entries displays a window to confirm deletion. Click OK to remo
 3. Click Update List to see images that may have been deleted or added. 
 4. Click Quit to exit."
 
-utter_pause_resume:
-  - text: "Click below"
+  utter_pause_resume:
+    - text: "Click below"
       custom: 
             payload: "collapsible"
             data: 
             - title: Pause the recon queue
               description: Pause Images being prospectively reconstructed cannot be deleted from the queue. 
-              Images being produced retrospectively can be removed from the queue. 
-              1. Click Recon Status to display the Recon Management screen. 
-              2. On the Recon Management screen, click Pause Queue. The recon queue can always be paused or restarted. 
-              Only the entries listed in the Retro queue can be deleted. 
-              3. Click Quit To exit Recon Management screen.
+                Images being produced retrospectively can be removed from the queue. 
+                1. Click Recon Status to display the Recon Management screen. 
+                2. On the Recon Management screen, click Pause Queue. The recon queue can always be paused or restarted. 
+                Only the entries listed in the Retro queue can be deleted. 
+                3. Click Quit To exit Recon Management screen.
 
             - title: Resume the recon queue
               description: The reconstruction queue is not automatically started, you mustresume the queue for reconstruction to 
-              restart.
-              1. Click Recon Status to display the Recon Management screen. 
-              2. On the Recon Management screen, click Restart Queue. 
-              3. Click Quit To exit Recon Management screen.
+               restart.
+               1. Click Recon Status to display the Recon Management screen. 
+               2. On the Recon Management screen, click Restart Queue. 
+               3. Click Quit To exit Recon Management screen.
 
-utter_remove_data:
-  - text: "1. Click Recon Status to display the Recon Management screen. 
+  utter_remove_data:
+    - text: "1. Click Recon Status to display the Recon Management screen. 
   2. On the Recon Management screen, click Pause Queue. 
   3. ClickDelete Retro Recon Entries. 
   4. On the Delete Retrospective Entries screen, click on each job you want to remove and click Delete Selected.
   5. Click Restart Queue. 
   6. Click Quit to exit."
 
-utter_reserve_data:
-  - text: "1. Click Recon Status to display the Recon Management screen. 
+  utter_reserve_data:
+    - text: "1. Click Recon Status to display the Recon Management screen. 
   2. On the Recon Management screen, click Reserve Scan data. 
   3. To reserve exams, click Reserve All Scanfiles, Select All Exams Listed or select individual exams.
   4. To reserve series, click Select All Series Listed or select individual series. 
@@ -2492,8 +2515,8 @@ utter_reserve_data:
   6. ClickReserve SelectedScanfiles.
   7. Click Quit to exit."
 
-utter_anonymous_scan:
-  - text: "Scan must be idle when you start this procedure. This procedure can take from 60 seconds (helical scan) to 1.5 hours 
+  utter_anonymous_scan:
+    - text: "Scan must be idle when you start this procedure. This procedure can take from 60 seconds (helical scan) to 1.5 hours 
   to save to DVD-RAM. Make sure the selected scan files do not exceed the space available on the DVD1-RAM2. 
   Only one scan file fits on one side of the DVD-RAM
     1. Place a DVD-RAM media into the DVD-RAM drive or connect a USB3 device into the USB port on the front of the 
@@ -2508,8 +2531,8 @@ utter_anonymous_scan:
     9. Once the save is complete to the USB device, exit Recon Management and disconnect the USB device. 
     Then, scanning can resume."
 
-utter_save_restore:
-  - text: "NOTE : The only validated USB drive is the Seagate 1 terabyte drive. If the device is not formatted correctly,
+  utter_save_restore:
+    - text: "NOTE : The only validated USB drive is the Seagate 1 terabyte drive. If the device is not formatted correctly,
   software asks if you want to format it. It takes about 1 minute per 100 GB, so a 1 terabyte device takes 10 minutes to 
   format.Make sure the selected scan files do not exceed the space available on the DVD-RAM. 
   Scan data can only be restored on the same system model that it was acquired on
@@ -2525,43 +2548,43 @@ utter_save_restore:
   9. Optional, click Save Selected Anon. Data to save the data with no patient information in the image header. 
   10. Click Quit when the save is complete."
 
-utter_prerequisites_data_scan_anonymously:
-  -text: "Scan must be idle when you start this procedure. This procedure can take from 60 seconds (helical scan) to 1.5 hours 
+  utter_prerequisites_data_scan_anonymously:
+    - text: "Scan must be idle when you start this procedure. This procedure can take from 60 seconds (helical scan) to 1.5 hours 
   to save to DVD-RAM.
   Make sure the selected scan files do not exceed the space available on the DVD1 -RAM2 . 
   Only one scan file fits on one side of the DVD-RAM." 
 
 #--------------------------------------------CHAPTER 13----------------------------------------------
-utter_image_add_subtract:
-      - text: "Expand down to know about IMAGE ADDITION AND IMAGE SUBTRACTION"
-        custom: 
+  utter_image_add_subtract:
+    - text: "Expand down to know about IMAGE ADDITION AND IMAGE SUBTRACTION"
+      custom: 
             payload: "collapsible"
             data: 
             - title: Image addition
               description: This adds image intensity values by pixel and is useful for adding thin slices together to get a thicker 
-              slice
+               slice
             - title: Image subtraction
               description: This subtract image intensity values pixel by pixel and is useful to evaluate contrasted vessels.
 
-    utter_max_min_pixel_value:
-      - text: "Expand down to know about IMAGE ADDITION AND IMAGE SUBTRACTION"
-        custom: 
+  utter_max_min_pixel_value:
+    - text: "Expand down to know about IMAGE ADDITION AND IMAGE SUBTRACTION"
+      custom: 
             payload: "collapsible"
             data: 
             - title: Maximum pixel
               description: The value extraction consists of finding minimum image intensity values pixel by pixel and 
-              is useful for contrasted vessels or calcifications. 
+               is useful for contrasted vessels or calcifications. 
             - title: Minimum pixel
               description: value extraction consists of finding minimum image intensity values pixel by pixel. 
-              This could be useful to evaluate soft tissue.
+               This could be useful to evaluate soft tissue.
 
-    utter_binding_series:
-      - text: "Binding Series creates a new series which consists of copies of selected images from one or more existing series. 
+  utter_binding_series:
+    - text: "Binding Series creates a new series which consists of copies of selected images from one or more existing series. 
       This could be useful if you had images in two separate series and wanted to have them in one series to perform 3D Reformat.
       Save State information is not maintained in the new series generated with Binding Series."
 
-    utter_perform_bind_series:
-      - text: "Open ImageWorks
+  utter_perform_bind_series:
+    - text: "Open ImageWorks
       1. From the browser list of applications, click Add/Sub. 
       2. Select the desired images. 
       3. On the Image Combination menu, click Select Set on the left side of the menu. 
@@ -2570,44 +2593,44 @@ utter_image_add_subtract:
       6. Typically,use the system provided series number, ortype a new series description and number in the Save Series textfield. 
       7. Click = (equal) to generate the images in the exam defined by the left Select Set button."
 
-    utter_bind_series_suggestions:
-            - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
-            buttons:
+  utter_bind_series_suggestions:
+    - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
+      buttons:
             - payload: binding series
               title: binding series
             - payload: perform bind series
               title: perform bind series
 
-    utter_procs_comb:
-      - text: "Click below to know about procs and comb"
-        custom: 
+  utter_procs_comb:
+    - text: "Click below to know about procs and comb"
+      custom: 
             payload: "collapsible"
             data: 
             - title: Proc
               description: Proc appears in the browser series list type column if the images in the series are the result of 
-              processing pairs of images that have identical locations in the patient’s body
+               processing pairs of images that have identical locations in the patient’s body
             - title: Comb
               description: Comb appears in the browser series list type column if the images in the series are the result of a 
-              combination of images having different locations in the patient's body.
+               combination of images having different locations in the patient's body.
 
-    utter_accept_negative_pixels:
-      - text: "Accept negative pixels allows negative pixel values in the resulting image. If this function is not enabled, 
+  utter_accept_negative_pixels:
+    - text: "Accept negative pixels allows negative pixel values in the resulting image. If this function is not enabled, 
       all negative pixel values are set to zero."
 
-    utter_procs_usage:
+  utter_procs_usage:
       - text: "Proc series can be used like any other series of acquisition images, i.e., geometrical measurements,reformatting, 
-      3Dreconstructions, etc"
+         3Dreconstructions, etc"
 
-    utter_comb_accuracy:
+  utter_comb_accuracy:
       - text: " The absolute anatomical coordinates accompanying Comb series are not accurate.Only relative geometrical 
-      measurements (i.e., distance, angle, or area) made within a resulting image are accurate."
+          measurements (i.e., distance, angle, or area) made within a resulting image are accurate."
 
-    utter_ratio_slide:
+  utter_ratio_slide:
       - text: "When both Select Set buttons are used during addition or subtraction, equal weighting is applied to the two pixels 
-      in each pair. You can change it via the Ratio slider."
+          in each pair. You can change it via the Ratio slider."
 
-    utter_add_subtract_image_combination:
-      - text: "On the right side of the browser, click Add/Subtract to open the Add/Subtract (ImageCombination) screen"
+  utter_add_subtract_image_combination:
+    - text: "On the right side of the browser, click Add/Subtract to open the Add/Subtract (ImageCombination) screen"
       custom: 
             payload: "collapsible"
             data: 
@@ -2619,29 +2642,29 @@ utter_image_add_subtract:
               description: Performs the selected operation and generate the new images.
             - title: Ratio slider
               description: Increases pixelweightingof the left(first) image when moced to the left and increases pixel weighting 
-              of the right(second) image when moved to the right. The slider is only available during addition and subtraction
-              when both Select Set buttons are selected.
+                of the right(second) image when moved to the right. The slider is only available during addition and subtraction
+                when both Select Set buttons are selected.
             - title: Save series
               description: Displays the current series and starting image number of the saved series.By default, images 
-              resulting from subsequent operations are added onto the end of the same series unless you click New Save Series.
+                resulting from subsequent operations are added onto the end of the same series unless you click New Save Series.
             - title: New save series
               description: Places images resulting from subsequent operations into a new series in the Patient List. If you do 
-              not select this option, the images are saved in the current saved series.
+                not select this option, the images are saved in the current saved series.
             - title: Modes
               description: 1. Max creats a new series that finds the highest corresponding signal intensity values in the selected 
-              set or sets of images.
-              2. Plus (+) creates a new series that adds the image intensity values of the selected image sets. 
-              3. Minus(-) creates a new series that subtracts the image intensity values of the selected image sets. 
-              4. Min creates a new series that finds the lowest corresponding signal intensity values in the selected set or sets 
-              of images. 
-              5. Bind creates a new series that consists of copies of the selected images from one or more existing series. 
+                set or sets of images.
+                2. Plus (+) creates a new series that adds the image intensity values of the selected image sets. 
+                3. Minus(-) creates a new series that subtracts the image intensity values of the selected image sets. 
+                4. Min creates a new series that finds the lowest corresponding signal intensity values in the selected set or sets 
+                of images. 
+                5. Bind creates a new series that consists of copies of the selected images from one or more existing series. 
             - title: Accept negative pixels
               description: Allows negative pixel values in the resulting images. If this function is not enabled, all negative 
-              pixel values are set to zero. This operation is useful on pre-and post- contrast studies of the same slice location. 
+                pixel values are set to zero. This operation is useful on pre-and post- contrast studies of the same slice location. 
             - title: Clear Selection
               description: Erases the selections so that both Select Set buttons have no prior values associated with them.
 
-    utter_add_subtract_image:
+  utter_add_subtract_image:
       - text: "Open ImageWorks
       1. From the browser list of applications, click Add/Sub.
       2. Select the desired images
@@ -2653,12 +2676,12 @@ utter_image_add_subtract:
       7. Typically, use the system provided series number. 
       8. Click = (equal) to generate the images in the exam defined by the left Select Set button."
 
-    utter_select_more_than_one_set:
+  utter_select_more_than_one_set:
       - text: "If only one set is selected, each operation performed produces one resulting image. 
       If two sets are selected, images in the two sets are paired according to physical location in the patient’s body. 
       Unpaired images in either set are ignored. "
 
-    utter_max_min_ct_number:
+  utter_max_min_ct_number:
       - text: "Open ImageWorks
       1. From the browser list of applications, click Add/Sub. 
       2. Select the desired images. 
@@ -2668,15 +2691,15 @@ utter_image_add_subtract:
       6. Click =(equal). 
       7. Optional:Click New Save Series to repeat the add/subtract procedure with a new series number and description."
 
-    utter_split_screen:
+  utter_split_screen:
       - text: "Click the ImageWorks icon . From the browser list of applications, click Exam Split to display the Exam Split 
       screen."
 
-      #image: 
+        image: http://localhost:7000/img/Images/Chapter 13/split_exam.png
 
-    utter_components_split_screen:
+  utter_components_split_screen:
       - text: "Components of Exam Split screen"
-      custom: 
+        custom: 
             payload: "collapsible"
             data: 
             - title: Screen format
@@ -2689,7 +2712,7 @@ utter_image_add_subtract:
               description: An area in which you can add a comment that is attached to the file you hace selected to solit.
             - title: Delete All/Delete/Add
               description: After a range of images has been selected, click an option to define how you want your primary port
-              displayed.
+               displayed.
             - title: Procedure
               description: A list Requested Procedure ID or Accession numbers.
             - title: Send
@@ -2697,15 +2720,15 @@ utter_image_add_subtract:
             - title: Browser
               description: Cancels your selection, ends theSpilt Exam sessionm and returns you to the browser.
 
-    utter_split_screen_suggestions:
-            - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
+  utter_split_screen_suggestions:
+          - text: " Kindly refer the bellow suggestions"
             buttons:
             - payload: split screen
               title: split screen
             - payload: split screen components
               title: split screen components
 
-    utter_split_exam:
+  utter_split_exam:
       - text: "1. Complete an exam where multiple Requested Procedure ID or Accession Numbers have been selected.
 2. Click the ImageWorks icon.
 3. From the browser, click the exam you wish to split.
@@ -2724,11 +2747,11 @@ Send.
 13. Click Browser to exit from Exam Split
 NOTE : To select multiple procedures, simultaneously press Shift and click each procedure. "
 
-utter_image_sent_VES_HES:
+  utter_image_sent_VES_HES:
   - text: "For systems configured for VES, send exams prior to splitting and it sends GSPS objects.  
 For systems configured as HES, images are sent after splitting and send a new series."
 
-utter_neuro_3d:
+  utter_neuro_3d:
   - text: "Neuro 3D Filter removes noise from an image while preserving image resolution. Neuro 3D Filter is optimized for thin 
   slice data that is intended for post processing in Reformat to create Average and MIP1 images, Volume Rendering and 3D models 
   for Neurological studies such as Circle of Willis, carotids, sinuses, orbits, mandible, and helical brain.
@@ -2739,20 +2762,20 @@ utter_neuro_3d:
 5. Click Go.
 6. Click the Close icon to close the screen when filtering is complete. "
 
-utter_neuro_3d_filter:
+  utter_neuro_3d_filter:
   - text: "Low filter = series number plus 30 (for example, series 427 becomes 457).  
   Medium filter = series number plus 40 (for example, series 427 becomes 467).  
   High filter = series number plus 50 (for example, series 427 becomes 477).  
-  The series description is "3DFiltered". "
+  The series description is 3DFiltered. "
 
-utter_rules_neuro3D_images:
+  utter_rules_neuro3D_images:
   - text: "1. Must have at least three non-duplicate location images.
   2. Must be less than 500 images.
   3. Must be a single group or multiple groups if the following parameters are the same : slice thickness, interval, tilt, SFOV, 
 DFOV, scan type,rotation, speed, image center, and algorithm. The groups must be contiguous. "  
 
-utter_neuro_3d_suggestions:
-            - text: "Sorry I'm Still learning, Kindly refer the bellow suggestions"
+  utter_neuro_3d_suggestions:
+          - text: " Kindly refer the bellow suggestions"
             buttons:
             - payload: neuro 3D
               title: neuro 3D
@@ -2760,6 +2783,327 @@ utter_neuro_3d_suggestions:
               title: neuro 3D filter
             - payload: neuro 3D image constraints
               title: neuro 3D image constraints
+  utter_reformat:
+    - text: "Reformatting allows you to define and display cross-sections of a 2D stack or 3D volume of image data that are oriented differently from the original acquisition images"
+  
+  utter_open_reformat:
+    - text: "1. Click the ImageWorks icon. 
+             2. From the browser, select the desired exam/series/images to reformat. 
+             3. From the browser list of applications, click Reformat.
+             4. Change the view type by selecting a view type from the red annotation"
+  
+  utter_reformat_image_controls:
+    - text: "1. Rotate freehand or page images
+    2. Zoom (magnify) images 
+    3. Pan (roam) images 
+    4. Select objects 
+    5. W/L images 
+    6. Change the image orientation 
+    7. Activate the Oblique mode"
+      image: http://localhost:7000/img/Images/Chapter 14/reformat_image_controls.png
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Rotate freehand or page images
+              description: 1. Click the Zoom icon to activate zoom mode. 
+                           2. Click and drag to zoom the image in or out
+            - title: Zoom (maginify) images
+              description: 1. Click the Rotation/Paging icon to activate a freehand rotation orto page through images. 
+                           2. Click and drag to rotate 3D/Oblique views and page axial/sagittal/coronal views.
+
+            - title: Select objects
+              description: Click the Selection icon to activate the selection mode
+
+            - title: W/L images 
+              description: 1. Click the W/L icon to activate the W/L mode. 
+                            2. Click and drag over an image to adjust the window width (left-right motion) or the window level (updownmotion). 
+
+            - title: Change the image orientation 
+              description: 1. Click an Image Orientation icon to change the plane or a 3D or oblique reformat image. S = Superior A = Anterior L = Left I = Interior P = Posterior R = Right 
+
+            - title: Activate the Oblique mode"
+              description: The Multiple Oblique Mode button left displays three oblique planes defined by three adjustable color axis
+                            orange,green, blue).
+                            1. Adjust any axis to update the two other oblique planes.
+                            2. Click again to deactivate theMultipleOblique mode,which keeps the orientations defined in oblique viewports.
+                            The Single Oblique Mode button(right) displays a line cursor in Reformat, which is used to define a new plane.
+                            1. Set the function of one viewport to Oblique.
+                            2. Make another viewport primary and then click the Single Oblique Mode button.
+                            A solid yellow line appears, which represents the plane of theOblique reformat.
+                            3. Place the cursor on the solid yellow line and click and drag it to tilt the yellow line to the desired plane
+        
+  utter_keyboard_shortcuts:
+      - text: "Please refer the image below"
+        
+  utter_display: 
+      - text: "A 3D view is different in that it displays an image of the 3D model (which may consist of one or more 3D
+              objects), and that you can manipulate this 3D model.
+              
+              There are two types of annotation:
+              System annotation which is automatically supplied by t he system and is always displayed in the
+              same place. The type and amount of annotation displayed can be modified but not moved.
+              User annotation which is annotation you add. This annotation can be text or measurements and can
+              be placed anywhere on the viewport
+              1. Text annotation
+              2. Preset annotation
+              3. Measurement annotation
+              4. ROI"
+        custom: 
+            payload: "collapsible"
+            data: 
+            - title:  Text annotation
+              description: You can add notes and comments directly on the views, and use a marker with the annotation to point out
+                          anatomical features. User text annotations can be edited, moved or deleted as necessary. When images are
+                          saved, any annotations shown on the images are saved with them.
+
+            - title: Preset annotation
+              description: Preset annotations are those which have already been created and saved forfuture use. These annotations
+                          can consist of text ortext with measurement annotations. The preset measurement annotations varu
+                          depending on the urrent protocal. In addition to the supplied default annotations supplied, you can create
+                          andsave annotations.
+
+
+            - title: Measurement annotation
+              description: You can create and view various measurements(voxel value,distance,angle,area,volume) on the views. Like text annotations, they can be moved, deleted or edited as necessary.
+
+            - title: ROI
+              description: The ROI
+                          tools exist in 2D and 3D. Several shapes are available to measure a region of interest in any view
+                          plane/volume, ie, circle, elliptic, rectangle, and cubic for 3D ROIs. You can use the ROI tools to obtain
+                          information, volumes, areas and statistics of anatomy or pathology
+
+
+
+
+  utter_modify_red_annotation:
+      - text: "All active (red) annotations on the image indicate adjustable fields. Red Numerical values can also be
+              adjusted with left/right-click to decrease/increase values. Otherred annotations can be modified selecting
+              options from menu."  
+        image: http://localhost:7000/                    
+  utter_Review_controller_screen:
+      - text: "The Review Controller screen contains the following selections."
+        image: http://localhost:7000/
+  utter_color_map_table:
+      - text: "When you draw a colored ROI, the Color Map Table screen displays."
+        image: (pg 555)
+        # image: (pg 557)
+        # image: (pg 559)
+  utter_ROI_preferences_screen:
+      - text: "From the Review Controller, click the ROI icon to display the ROI Preferences screen
+              VOI display Sets the display of the VOI on one or all viewports for 3D images.
+              Statistics Allows any combination of minimum, maximum, average, standard deviation and volume values.
+              Size Type in a height, width and depth. There is no depth for the sphere ROI. This will become the default size of
+              the ROI, but it can be modified directly on the image."
+  utter_annotate_image:
+      - text: "1. Click the Display tab.
+              2. Click the Annotation icon .
+              3. On the Annotation screen, click the annotation type (simple, linked or measure).
+              4. Place the cursor on the image and click to deposit the cursor and default text.
+              5. Enter new text in the Annotation text screen."
+  utter_Save_preset_annotation:
+      - text: "1. From the Display tab, click the Annotation icon .
+              2. On the Annotate screen, type text in the Annotation Text field.
+              3. Change the preset name.
+              4. Select the text.
+              5. PressBackspace.
+              6. Type in a new name.
+              7. Click Use for other anatomy if you want the annotation available for other anatomies or Use for
+              other protocol if you want the annotation available for other protocols.
+              8. Click Save as preset to add annotation to preset annotation list"
+    
+
+
+  utter_measure_distance:
+      - text: "1. Click the Measure Distance icon.
+              2. Make one selection for each menu choice
+              3. Position cursorfor start of measurement and move cursor to end point of measurement and click."
+  utter_measure_angle:
+      - text: "1. Click the Measure Angle icon.
+              2. Click and drag the squares to adjust the three points."
+  utter_measure_area:
+      - text: "1. Click the Measure Area icon.
+              2. Click and drag the squares to adjust the points around the region of interest.
+              3. Right-click to display results"
+
+  utter_measure_volume:
+      - text: "1. Click the Measure Volume icon.
+              2. Segment an object of interest.
+              3. Click the viewport of the segmented object.
+              4. Click any of the corners to size the volume"
+
+  utter_display_add_an_ROI:
+      - text: "1. Click the Display tab to view the ROI selections
+              2. Click the desired ROI tool.
+
+              3. Set the ROI statistics, default size, and display location on the ROI preferences screen.
+              4. Click the desired anatomy to deposit an ROI and view the measurements atthe bottom ofthe image.
+              5. Adjust the size by clicking and dragging on an ROI corner"
+
+
+  utter_Set_ROI_preferences:
+      - text: "1. From the Main Control screen, click More Tools.
+              2. Click Display to view the measurement tools.
+              3. Select the desired view on which you want to place the ROI.
+              4. Click the ROI icon on the Review Controller to view the ROI preferences screen.
+              5. For a 3D ROI, one of the following options.
+              6. Click oneormore Statistics option buttons to view any combination of minimum, maximum,average,
+              standard deviation and area (2D) or volume (3D).
+              7. Type in the Vertical and Horizontal direction fields: (2D) or ROI height,width anddepth(3D). The sphere
+              VOI does not have a depth entry.
+              8. To hide the ROI statistics, click on the edge of the ROI to make it active, then at the center of the ROI,
+              right-click on the center dot, and select Hide/Show statistics."
+  utter_view_types:
+      - text: "Please find the table below"
+        image: http://localhost:7000/
+  utter_curved_view:
+      - text: "The curved view does not need to lie along a single orthogonal or oblique plane but can follow anatomical lines.
+              1. In one of the viewports, right-click on the view type active annotation and select Curved.
+              2. On an axial, sagittal, or coronal image, press and hold Shift as you deposit points along the anatomy.
+              3. As you trace, the curved image updates automatically in the curved reformat viewport."
+  utter_Create_an_XSection_Histogram_view:
+      - text: "A histogram graph shows the percentage of occurrence of each voxel value, either in a user-defined surface area on a reformatted slice or in the entire 3D object
+              1. In one of the viewports, right-click on the view type active annotation and select Histo or X Section
+              2. For a cross-section (X Section) histogram, in the viewport containing the anatomy of interest, press
+              Shift and simultaneously click the image to deposit points on the area of interest to create a trace.
+              3. Click Exit.
+              4. Click OK."
+    
+  utter_Create_MPVR_view:
+      - text: "1. Click the red annotation in the upper-left corner of the viewport and select 3D or MIP render mode.
+              The selections available are dependent on the view type.
+              2. Click the Oblique Mode icon.
+              3. Click and drag the yellow line on the image.
+              4. Place the cursor over the red thickness annotation do one the following options.
+              5. Click Exit and OK to finish."
+  utter_Create_Profile_view:
+      - text: "1. Select the Profile Layout preset, if available.
+              2. In one of the viewports, right-click the view type active annotation and select Profile.
+              3. Onanaxial, sagittal, or coronal image, press and hold Shift as youdepositpoints alongthe anatomy.
+              4. On the profile view:
+              5. Click Exit and OK to return to the browser."
+
+  utter_reformat_suggestions:
+    - text: " Kindly refer the below suggestions"
+      buttons:
+       - payload: reformat
+         title: reformat
+       - payload: open reformat
+         title: open reformat
+       - payload: reformat image controls
+         title: reformat image controls
+
+
+  utter_annotation_suggestions:
+    - text: " Kindly refer the below suggestions"
+      buttons:
+       - payload: modify red annotation
+         title: modify red annotation
+       - payload: annotate image
+         title: annotate image
+       - payload: Save preset annotation
+         title: Save preset annotation
+       
+
+  utter_ROI_suggestions:
+    - text: " Kindly refer the below suggestions"
+      buttons:
+       - payload: ROI preferences screen
+         title: ROI preferences screen
+       - payload: display add an ROI
+         title: display add an ROI
+       - payload: Set ROI preferences
+         title: Set ROI preferences
+       - payload: AW server client upgrade
+         title: AW server client upgrade
+       - payload: AW server client close
+         title: AW server client close
+
+  utter_view_suggestions:
+    - text: " Kindly refer the below suggestions"
+      buttons:
+       - payload: view types
+         title: view types
+       - payload: curved view
+         title: curved view
+       - payload: create an X Section Histogram view
+         title: create an X Section Histogram view
+       - payload: create an MPV Review
+         title: create an MPV Review
+       - payload: create Profile view
+         title: create Profile view
+
+  utter_measure_suggestions:
+    - text: " Kindly refer the below suggestions"
+      buttons:
+       - payload: Measure angle
+         title: Measure angle
+       - payload: Measure area
+         title: Measure area
+       - payload: Measure volume
+         title: Measure volume
+       - payload: Measure distance
+         title: Measure distance
+      
+  
+
+#-------------------------------------------chapter15------------------------------------------------------------------------------------------------------------
+
+  utter_AW_server_client_usage:
+    - text: "The AW Server client on the CT console is a software option that
+              provides access to applications hosted on an AW Server, from the CT console. 
+              It offers customers the use of applications on the CT console for improved
+              workflow and productivity.Some of the benefits of having access to the applications
+              on the AW Server is reduces the need to have applications installed on the CT console 
+              or having to go to a workstation which might be in another area."
+
+  utter_AW_server_client_start:
+      - text: "1. Select ImageWorks desktop.
+              2. From the exam list browser, select the exam and series of interest for post processing.
+              3. Click Applications in the Data Apps list.
+              4. The AW Server client main window is opened and the same exam selected in the browser is
+                selected automatically in the AW Server exam list. If the exam and series selected in the console
+                exam list browser doesn’t exist in the AW Server exam list, a pop-up warning is displayed."
+  utter_AW_server_client_slow:
+    - text: "When the console becomes slow, exit the AW Server client and login again.
+                Loading images with the Results Viewer application within the AW Server client on the CT 
+                console may slow down the console processing because the images are transferred to the memory of the CT console.
+                Avoid launching the Results Viewer while other processing steps are executed, such as scanning or image
+                reconstruction. When the console becomes slow, exit the AW Server client and login again."
+
+  utter_AW_server_upgrade:
+    - text: "Use this procedure to exit the AW Server client on the CT console.
+              1. Exit the applications that are running.
+              2. Click the Close button to log out of the AW Server client"
+                        
+  utter_AW_server_client_close:
+    - text: "If the AW Server software version needs to be upgraded, please contact GE Service."          
+
+  utter_AW_server_client_suggestions:
+    - text: " Kindly refer the below suggestions"
+      buttons:
+       - payload: modify red annotation
+         title: modify red annotation
+       - payload:open reformat
+         title:open reformat
+       - payload: reformat image controls
+         title: reformat image controls
+       - payload: AW server client upgrade
+         title: AW server client upgrade
+       - payload: AW server client close
+         title: AW server client close
+
+
+
+ # <!----------------------------------------------------------chapter 16----------------------------------------------------------------------->
+
+#<!----------------------------------------------------------chapter 17----------------------------------------------------------------------->
+
+#<!---------------------------------------------------------chapter 18------------------------------------------------------------->
+
+
+#<!----------------------------------------------------------chapter 19------------------------------------------------------------->
+
+#<!---------------------------------------------------------chapter 20------------------------------------------------------------->
 
 actions:
 - action_greet_user
