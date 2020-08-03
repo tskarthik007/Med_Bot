@@ -381,6 +381,23 @@ intents:
 - system_management_how_to_leave_a_memo_for_service_engineer
 
 responses:
+  utter_pediatric_suggestions:
+    - text: "please select any one"
+      buttons:
+        - payload: Minimize pediatric and small patient dose
+          title: Minimize pediatric and small patient doses
+        - payload: Pediatric and small patient scans
+          title: Pediatric and small patient scans
+        - payload: optimize pediatric protocol
+          title: optimize pediatric protocol
+        - payload: pediatric protocols
+          title: pediatric protocols
+        - payload: Color Coding for Kids Protocol
+          title: Color Coding for Kids Protocol
+        - payload: Set up a pediatric or small patient exam
+          title: Set up a pediatric or small patient exam
+        - payload: Adjust pediatric and small patient scan parameters
+          title: Adjust pediatric and small patient scan parameters
   utter_greet:
   - text: Hey Buddy! How can I help you?
   utter_welcome:
@@ -1012,6 +1029,30 @@ Use pediatric positioning accessories
 Make a kid friendly environment
 
 "
+      custom: 
+            payload: "collapsible"
+            data: 
+            - title: Perform only necessary CT examinations
+              description: This important communication between the patient's physician and the radiologist is essential in determining the need for the CT examination. The indications and the appropriate technique to be used should be reviewed by the radiologist prior to every scan including the patient’s number of previous scans, reasons for the scan, and consideration of other effective lower dose modalities.
+            - title: Scan only the organ or anatomical region indicated
+              description: Limits can coverage to cover only the organ or anatomical region of the body indicated to avoid unnecessary exposure.
+            - title:  Minimize multi-phase contrast CT examinations
+              description: 1. CT studies with and without contrast material are not always needed.  
+                2. Multiphase imaging may double or triple the dose and may not add diagnostic information to the study
+            - title: Properly center all patients in the gantry
+              description: Center all patients in the gantry to allow the bow tie filters to deliver dose where it is needed and filter more where it is not
+            - title: Lower mA settings for chest and bone imaging
+              description: Consider using a lower mA setting and higher Noise Indexes if AutomA is used for chest and bone imaging. Higher Resolution/dose imaging is typically unnecessary for these types of studies where there is high inherent contrast between the structures being imaged.
+            - title: Scan signal-to-noise
+              description: Limit the highest quality images requiring the highest radiation dose to very specific indications such as angiography or visualizing small subtle lesions. Studies with higher noise may be just as diagnostic and require lower dose. 
+            - title: Use pediatric positioning accessories
+              description: Use papoose boards and neonatal immobilizers, as needed, with certain patients.
+            - title: Make a kid friendly environment
+              description: Help pediatric patients feel less scared.
+      attachment:
+       payload:
+         src: https://www.youtube.com/embed/ThYjLN-auuo
+       type: video
 
   utter_Pediatric_and_small_patient_scans:
     - text: "Follow the following steps. Select one to know more information on it

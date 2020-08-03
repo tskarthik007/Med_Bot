@@ -673,6 +673,12 @@
 - list down the steps for the parameters to be adjusted for small patients
 - How to change the pediatric parameters
 
+## intent:pediatrics
+- pediatrics
+- small patients
+- young patient
+- kids
+- children
 
 <!-------------------------------------------------------------- CHAPTER 6 -------------------------------------------------------->
 ## intent:computer_console_parts
@@ -2504,7 +2510,7 @@
 
 
 
-##intent:manually_film_image
+## intent:manually_film_image
 - manual film image
 - What is film screen
 - What is film MID
